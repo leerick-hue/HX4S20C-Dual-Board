@@ -1,0 +1,48 @@
+[
+  {
+    "id": "moraine",
+    "title": "梦莲湖与雪山",
+    "file": "Moraine_Lake_17092005.jpg",
+    "author": "Gorgo",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  {
+    "id": "lavender",
+    "title": "普罗旺斯薰衣草田",
+    "file": "Lavender_field_and_Mont_Ventoux.jpg",
+    "author": "Robert Brink",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "id": "huangshan",
+    "title": "黄山石人峰",
+    "file": "Huangshan_5753.jpg",
+    "author": "Doctoroftcm",
+    "license": "PENDING_VERIFY"
+  },
+  {
+    "id": "milford",
+    "title": "新西兰米尔福德峡湾",
+    "file": "Milford_Sound_in_Fiordland_National_Park_04.jpg",
+    "author": "Krzysztof Golik (Tournasol7)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": "horseshoe",
+    "title": "科罗拉多河马蹄湾",
+    "file": "Horseshoe_Bend_overview.jpg",
+    "author": "Daniel Schwen",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  {
+    "id": "waterfall",
+    "title": "冰岛塞里雅兰瀑布",
+    "file": "Seljalandsfoss_July_2014_-2.JPG",
+    "author": "Martin Falbisoner",
+    "license": "PENDING_VERIFY"
+  }
+]

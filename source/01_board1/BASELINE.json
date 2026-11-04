@@ -1,0 +1,728 @@
+{
+  "parent": "E:\\HX4S20C_Extensions\\hx4s20c_media_core\\board\\phone_ir_fit_hd720_20261030",
+  "sources": [
+    {
+      "path": "src/td_project/HX4S20C_Extensions.al",
+      "sha256": "5aaf3ee46860d5c7a27fdac061f1dd2e06406e3a402a873fc24bc9310d09efaf"
+    },
+    {
+      "path": "src/td_project/al_ip/AUDIO_SAMPLE_ROM.ipc",
+      "sha256": "650ab6133bd5b35260d34e3e984d15f0bfb45b74b8a88d323d46bb4ceab6aacc"
+    },
+    {
+      "path": "src/td_project/al_ip/AUDIO_SAMPLE_ROM.v",
+      "sha256": "0bc4a18dfd8d598103faea82e9f02a85beaba5a3e21047a4e6baab063ca005bd"
+    },
+    {
+      "path": "src/td_project/al_ip/AUDIO_SAMPLE_ROM.vhd",
+      "sha256": "4c3d4ea17939b4d07a8d95c006174f94ced027b91daae5fd065e094d1e8071af"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL.ipc",
+      "sha256": "8cb6df3a1bb99cf2f95f9a535d7f33213b837207b36e336848a6ed0db29ab8b5"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL.v",
+      "sha256": "4e873eef9499fa93508d8cf2cac90eea0e16c6f649ae29502cdc4c5886cd32aa"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL.vhd",
+      "sha256": "e46792bb3d2b72621b18b323c472213fd5880eb29e5e85f0b7d50e5117e47494"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL_HDMI_AUDIO.ipc",
+      "sha256": "ce38f1b2917ef9df107be46e716767b7c8a78af079412b2988cf266b589bd645"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL_HDMI_AUDIO.v",
+      "sha256": "1e174c1dc4edbce9c61d6b390aca3b7b94022b60995a92981d5278247b7f5867"
+    },
+    {
+      "path": "src/td_project/al_ip/PLL_HDMI_AUDIO.vhd",
+      "sha256": "1b5025b3fe29d4428c6aa58ef99e7c5d7c5d697e74dacd8ac8f2d068290e0e2f"
+    },
+    {
+      "path": "src/user_source/constraints_source/.edid_debug_bak.cwc",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/user_source/constraints_source/edid_debug.cwc",
+      "sha256": "6716411e2346de08976e0ad8ed2e09eb93bdc0f60efc31bf75ba70e6cebe1f95"
+    },
+    {
+      "path": "src/user_source/constraints_source/pin.adc",
+      "sha256": "7b44b3437592da07bd3068a0f186eaeaba766d3929503774187a7b7c0ec53e6d"
+    },
+    {
+      "path": "src/user_source/constraints_source/pll_locations.adc",
+      "sha256": "0560f523aeb7bedd526a6c47bb5bd0ede84bdcd4f42c1534e2d4a50c1f7fc202"
+    },
+    {
+      "path": "src/user_source/constraints_source/timing.sdc",
+      "sha256": "1afc785c4527029f4be6fc0a046e1374a4d0d5590de5a74d8c86059b26a53f2d"
+    },
+    {
+      "path": "src/user_source/hdl_source/audio_arc_calculate.v",
+      "sha256": "552d8d86afd237666b30ae08f31247808e89eb024efde5efc670b82eb617a7dc"
+    },
+    {
+      "path": "src/user_source/hdl_source/board_video_controls.v",
+      "sha256": "67dbd45c1c9a31467e319207fdde9c0d1d2b9a23234dec012f2998343e9e1f5a"
+    },
+    {
+      "path": "src/user_source/hdl_source/hdmi_audio_tone_i2s_64fs.v",
+      "sha256": "729cb1635091b7630e5b68306e9f51fff4e3e06bae8ce08cc3d7323b3fb9d5cf"
+    },
+    {
+      "path": "src/user_source/hdl_source/hdmi_audio_tone_pcm_scale.v",
+      "sha256": "0ff1ab2b39e1294c3aae814bf5a252c47c284c2cdb9568adf02d3c6cfd8ddd0b"
+    },
+    {
+      "path": "src/user_source/hdl_source/hdmi_phy_warpper.v",
+      "sha256": "3b1a8bf97c73b8156500a32f05ef21acd974fdae7b687e1d0fb1cd0501c54812"
+    },
+    {
+      "path": "src/user_source/hdl_source/I2S_receiver.v",
+      "sha256": "08904598b42c2e1a4836cd9fb3293bc6c791ea2f79e35c7663a33127dc97f47b"
+    },
+    {
+      "path": "src/user_source/hdl_source/key_remove_shakes.v",
+      "sha256": "8832f59e7ba94bfb8cf31e4f5a772ef7177d5257a5a2532d53cbfa1d9b7f5cd9"
+    },
+    {
+      "path": "src/user_source/hdl_source/lane_lvds_10_1.v",
+      "sha256": "7b550478839cb68537629fc423c354f6a6a20fbd9ce8b067eedc7e730bd1c6c0"
+    },
+    {
+      "path": "src/user_source/hdl_source/pixel_write_fifo.v",
+      "sha256": "6edd636304d309bccd57a8dfe51fa390e9533a05a8ac4e15e744aa05ce9c2415"
+    },
+    {
+      "path": "src/user_source/hdl_source/startup_pulse.v",
+      "sha256": "396e1e56febb8028339e646bc2f06b83e07ab11ef840e447422fb941956741c9"
+    },
+    {
+      "path": "src/user_source/hdl_source/top_tf_hdmi_audio.v",
+      "sha256": "69eaaeb86d1fdc32d93b61f0eddaeb2a1b4d3671d0304a766cf68c9e5d01d0c8"
+    },
+    {
+      "path": "src/user_source/hdl_source/video_rgb_to_axis_640x480.v",
+      "sha256": "fe03e38736492e73dfc58a67d9025af1ec01f516bd1cc0c5c4c898f757b9f69c"
+    },
+    {
+      "path": "src/user_source/hdl_source/video_source_test.v",
+      "sha256": "39cc05c9684a594d4254d11e66e97344053ab75bdb00f3f5a301643fd7aadbfc"
+    },
+    {
+      "path": "src/user_source/ip_source/pll.ipc",
+      "sha256": "5d632bad332785258c35ca41ce2b4a2a550e6bfd75be0b63a3f72403ca2ce11e"
+    },
+    {
+      "path": "src/user_source/ip_source/pll.v",
+      "sha256": "202799f886f12cfc1d837afa932328b636c6c3dee70167be68c084133647b39c"
+    },
+    {
+      "path": "src/user_source/ip_source/pll.vhd",
+      "sha256": "a8166865b5aef9caaee525d4633aa1dec4172244a7bbff239e0d658c0ca775e4"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/audio_bar_capture.v",
+      "sha256": "0bc9cee796b6bc20a88d759809348e7dc0e4df88c32766f0d5f4f93f8d6a55f9"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/audio_pcm_fifo.v",
+      "sha256": "a491d1be2a4d172bfce28d2a12c956b11c25833052b1bc53a3530ce6ea81502e"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/audio_volume.v",
+      "sha256": "4c6b6209a4b0539f6dad700c71bb2b6aa180c95577e1c0c3c941f312a10ec4cd"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/audio_wave_capture.v",
+      "sha256": "fd7e421fec61984a1011a9ac135a2e074a770382a8169f8ef3f603b09822afe8"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/bmp24_scale_stream.v",
+      "sha256": "ffb1371794def696362ac96eeb3ef0c41bb6f158b4b69a82b4495c8c57309067"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/board_remote_control.v",
+      "sha256": "00643e9a5550a7e1cd3491ff2b2631c7c39de84e26ac4d0878378a94fbb87e63"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/boot_read_alignment.v",
+      "sha256": "ef5aecb93c550e39bd9c95608ed4a65a076804d5afe7f0d9230968121661ed1b"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/bringup_status.v",
+      "sha256": "243f980a853199a9b59133fe99cbad9cd050f71c1fadbc8b5e96422db33572fe"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/diag_control.v",
+      "sha256": "63eb0794d5ee479e005a9ddfdbfde0485637c1a43b833268ff1822edfbe4dea0"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/event_fifo.v",
+      "sha256": "b00dea87def1890810eb4ce57fdc6e22e976aff8deb3775387913247250ca956"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/event_packet_rx.v",
+      "sha256": "44a071763da403bb6f98613717ee1fe2e187fab5e5b349a5eb993107c6026596"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/event_packet_tx.v",
+      "sha256": "7e3eb29c7f4ab772b68851bc0a0b7198f0623cade450fb398a0ca65ac89f1ff5"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/font5x7.v",
+      "sha256": "9f746ee3b55927d05f5b22629a15e04809ea3280de5611c906b147b89793aa94"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/framebuffer_bist.v",
+      "sha256": "f59bbbd46d85248a9b025323d43fc892550bc52e22bbfa6cf5508e8f00d7823b"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/frame_swap_fx_cdc.v",
+      "sha256": "2b1a6591270545aaf39a7f0cff5c569c5e958a8256246fd0be2797b651be539a"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/hdmi_acr_packet_ack.v",
+      "sha256": "28383e8a659f0220f2bac1f52edb1176029a1639332dd171a87365e7d1f4b63b"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/hdmi_acr_pcm_gate.v",
+      "sha256": "bf2ee1f96edc4e88e7241f30df56b7e46be715dcdf25446794a123cfa7619be1"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/hdmi_audio_diagnostic.v",
+      "sha256": "352cee05f6aa224b799cb068d257a440a4a582752e909923b9c0ae25219a8d1e"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/hdmi_background_quiet.v",
+      "sha256": "3a26d3ae4be935234dd9c600667f887fb9e5bce4bd7fe8d513d4ca023f6827fa"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/hdmi_pixel_probe.v",
+      "sha256": "55cddcda6ae192f93d3dfa223e926f3fb01c773af68da795bfbd06779d51de56"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/ir_keymap.v",
+      "sha256": "bd0eed781c5a9c831fd37d32aab89ec1456720db56b9cb21c464c868bfc2c78f"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/ir_media_bridge.v",
+      "sha256": "3e1e3b5fdf338363d695e5afd83b7816f7aa586f7af2b9f5e4bf46a9d8fc4030"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/ir_nec_rx.v",
+      "sha256": "578320a6ce6429cba37503003cff76306ff70f923687d8532b092987f031f719"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/key_debounce.v",
+      "sha256": "3b4db810a17299919c87629c82d7192989206db7107182021981f5d06cafcf4a"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/media_command_cdc.v",
+      "sha256": "da610ab69f9efb70c36250a97ae1fcb5f0abad720cf43fd209d8d4e8051bac00"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/media_control_arbiter.v",
+      "sha256": "380c170c73d2873b1365c5420613473857654851dac7b178e07b0d63505f4b69"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/media_viewport.v",
+      "sha256": "a84af3db3234db5d2828531f2d8c412fce074694f4c972463169700a642844af"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/native_video_timing.v",
+      "sha256": "8074854a67c0fe1613c77491bbf4efae665afad4584eb1a2d5560f4276ca74f3"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/photo_path_observer.v",
+      "sha256": "c60c8e052915b43376e083004c37863da77af9be7e788e3c41aa635288e7ee1f"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/reset_sync.v",
+      "sha256": "881cf430f1ddbb8a9d9532ea93683742f10fced01f3ff258af9e0b78da85cc66"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/rgb565_pack.v",
+      "sha256": "ab4d8281ea380a49c40f482ce32dcd788092000e39092424b806d8affa16d66f"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/rgb565_unpack.v",
+      "sha256": "2da271421ad5dc51ce7f4c7a66dcd6e79bc9410675a32bafe2e1eb7bb77c24e7"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/sd_sector_arbiter.v",
+      "sha256": "3339c0f3c0f34a782dd7e299f348f520b5fab71fbababcf66e8a3461ba92f892"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/tf_audio_player.v",
+      "sha256": "36c78af86246aed9b0b9111a59d6aad5e5c5a68f8ddeaa0de3f2ff789b984cce"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/uart_rx.v",
+      "sha256": "ccaccdd7f450f538cb383879b294112c363883c1c3cde6e11e34fcb396b2a0f1"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/uart_tx.v",
+      "sha256": "ab9018d9c2f44d97b0a1dd196603e531eb3ca7c37a90838e156c904608f9931a"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/us_tick_1m.v",
+      "sha256": "51c65a9f8651dd52c111203f5dcdeaadc75f65bae31ee042e05d8532505b2b59"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/video_canvas_coords.v",
+      "sha256": "1a609481b788b82759a660858a30a31939b6f54c687438c14e5675ac2cdcea44"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/video_effects.v",
+      "sha256": "8b41daf07c0d9fee9e7aa58ba5b701c802d13571ec78ead119c5e1b871a769e7"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/video_effects_hd.v",
+      "sha256": "2f3bb44d2aceec22f271ba5ffa15741bf9d02430a6faff2afeab07b067099012"
+    },
+    {
+      "path": "src/user_source/hdl_source/extensions/video_hd_pll.v",
+      "sha256": "0cde2b82ccf7f446fe9b38e05c1a219c400d401490b40044bd58011e4eadc706"
+    },
+    {
+      "path": "src/user_source/hdl_source/hdmi1.4b_transmitter_core/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "src/user_source/hdl_source/include/global_def.v",
+      "sha256": "981fea056aa3c7b8afc14511c992aa1af788d29879538b168254dffc4718ef64"
+    },
+    {
+      "path": "src/user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767dbdfbd83d42223b77dfa7deab42ce8216a8fd6f6cb41b7e7593d9a345ba57"
+    },
+    {
+      "path": "src/user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "6da5945f4af793610d0d64c65c7e5d2d1c86ed4c11bc5fdeacd27eb03178b9f6"
+    },
+    {
+      "path": "src/user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "c7d7fe07d75f66aa88d9f986b3006319c995162434f104f9990664b374cdfdd2"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_256.tcl",
+      "sha256": "5807155b00f2f749328339e01a85b4bb836f91598286dd167513836b60af33db"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_256.v",
+      "sha256": "dab43a76a35e21df4064a25edb940699b041427d70bae89cc03c5280b7bf4bf8"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_256.vhd",
+      "sha256": "50d6d10017b63e1ce5a77bad4a80e9a3de81402909d30ca0818674a1887eb46d"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_256_sim.v",
+      "sha256": "55b81ab3aa699902b6f11fe766658b852e0740844879a942dca81cd57b40f729"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_32_256.ipc",
+      "sha256": "9df57c0b914f2f6222f88e356528947224fddb866be2468f1391c26d4e60d371"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_32_256.tcl",
+      "sha256": "5807155b00f2f749328339e01a85b4bb836f91598286dd167513836b60af33db"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_16_32_256.v",
+      "sha256": "3d29b06655482184a9ad157b9bd71b79032debe3199168d3b4d9570fdac31835"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_32_16_256.ipc",
+      "sha256": "a74955dc68a02bbfb36780127008c4737ec80e0888a4648e98e6eac9f5d2c349"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_32_16_256.tcl",
+      "sha256": "5807155b00f2f749328339e01a85b4bb836f91598286dd167513836b60af33db"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/afifo_32_16_256.v",
+      "sha256": "7c3ee41f30be75ae686c9abff3a840fc5439209cda077e4aa275eac0dab9f564"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sdram.ipc",
+      "sha256": "c3092876d4a66739dfc52cbda4fe84eab75099218f65db7e7d922c41dee1c201"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sdram.v",
+      "sha256": "1487e8583bbf52fe6d079a2854c10ebff2e569a3872a9088c1c9717ba14d17fe"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sdram.vhd",
+      "sha256": "853170e99291fb6b2b1bf3f5f20cd1dd0cc723052864147810b674e18cd70705"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sys_pll.ipc",
+      "sha256": "5199d4459b3437892ed6be21a62f7528d3ce534bd9b1001a84e42074122266fe"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sys_pll.v",
+      "sha256": "a6cc82050915de12eea377f16749e7d9b8e8ae447f5a32f49510db9e9181ab1f"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/sys_pll.vhd",
+      "sha256": "0ba7e030d4e3d459d6e411a037b731700f4cb259be92b2e444b4deba10d301d2"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/video_pll.ipc",
+      "sha256": "b717f646067025a69b4021ed85adeeb6531fad881bce5a49fcb2171ccf401076"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/video_pll.v",
+      "sha256": "d5a2b3d3d0618d19619c36af0143f8bf9338415eef2eadd22456510ade9c6092"
+    },
+    {
+      "path": "src/user_source/hdl_source/IP/video_pll.vhd",
+      "sha256": "4c23a8a81b28c81bed4834e1e9a757db01eebd360c7fe3a7066f8f8f7b6a36c4"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_bitbuffer.v",
+      "sha256": "b4cfe631350b982e3f348610999f94596f9ec4cdc911799030af535adf58bf22"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_core.v",
+      "sha256": "bcec6089a061f66ce058e8a875cad75b67ee05013174931fdacd90b2ee507d39"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dht.v",
+      "sha256": "055de4d51bcc15e70ad8054064a23af91dc28763d576c121656ac750d5fd8883"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dht_std_cx_ac.v",
+      "sha256": "efd4192e61341e9ed919cd68d12a67d208273b36143e356f79332b8fdcffca92"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dht_std_cx_dc.v",
+      "sha256": "1b46dd8aba258f6fb20d75b7617a6ad3715297da032f615370fa4f0362feded4"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dht_std_y_ac.v",
+      "sha256": "27700bcd791489a825af5876d02c907ad9ee8b4b0eaf6a54a762ad6b2841ae93"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dht_std_y_dc.v",
+      "sha256": "72362d3bc664f2c2c29ed6dc5cbeda70676d6a82431892d9ce2e018e4c851b8e"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_dqt.v",
+      "sha256": "e99bb750bf20903b9cf80407aa1e8274170296c3366e43be0030265a08afcb99"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct.v",
+      "sha256": "f2a45496e29d43eb2b2f024921a5b96732ce57a3f74e4c856686cf00acacd0b6"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_fifo.v",
+      "sha256": "487d095dc70369d4bb7c9a27e6f27cc4db082b95e9bb6ce13292dc31fb2cf5e0"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_ram.v",
+      "sha256": "b45d1f8663c290a27085ed595d633caec980410a1483f10a80be1bfad87a570a"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_ram_dp.v",
+      "sha256": "191622cc6447224294c1cfe98aef9fbb329b3a8b00932ed1b33920e90d2b61ea"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_transpose.v",
+      "sha256": "4b765d2227366e6cfd7953f0f17de3fbbd9f1bf2f55e8207bd5611a96a21e54c"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_transpose_ram.v",
+      "sha256": "833abadcd8fb585d08dddc7e1cc24cfd3e39a9eb728aa72a8d7b016694fc370b"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_x.v",
+      "sha256": "99b8681e002d948fa4ed5fbd3a29704634400c31c376b5e120c07d1392ef62c0"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_idct_y.v",
+      "sha256": "df2bbd47864431354baa2dbc0160b809d94de624d5e16d1a45b313d4564bc9c8"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_input.v",
+      "sha256": "da2d2f9c72ee581db05a11d471364b6d41b4ef43a1cf9cddff8f59b36b6d0b8a"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_mcu_id.v",
+      "sha256": "82f2e44c2ada135d1e45d6b3d54d9bada29f5cfde1c0e4a6df8a3819c159e650"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_mcu_proc.v",
+      "sha256": "cfd8b35fe75a29c02950f5cfcc1493419bee6da155d253d0062aff91493d43af"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_output.v",
+      "sha256": "68153a6a5367dd37105165814681cb8c4f7dcba66d2040609cdc9ffb2b35ae11"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_output_cx_ram.v",
+      "sha256": "570bea46974744831816eceda8033425266ae4f3c2178fe8c4935e4194209da1"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_output_fifo.v",
+      "sha256": "66cde6db3c4f8c8b64ab35f80c7ef0b383b13d3e395114b9cff5e7ba0d22be72"
+    },
+    {
+      "path": "src/user_source/hdl_source/jpeg/jpeg_output_y_ram.v",
+      "sha256": "a17dcca6dc7a696453d8fb3ddae8155abce18e06f868fe41eedce55f7c0d04eb"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/1.wav",
+      "sha256": "0e6f8f626a0215a85dfcc94e431abab32e6828dbcb64249b7d4ff47721e7b2fd"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/audio_1khz_24bit_48deep.mif",
+      "sha256": "dcc918e3b442485a933831368567962bb39dc1060b1bcfada16033e050be34ed"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/audio_1khz_24bit_48deep.mif.dath",
+      "sha256": "e0f242a837b58f810813e1d6da5495473c4fa16dd6b283c30ec91b608b05ab85"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/audio_sine_24bit_48deep_scale8.mif",
+      "sha256": "aa20e68905fc41a094cf37e218489d3745eb6e46c62dabe772547961a7db64cf"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/audio_sine_24bit_48deep_scale8.mif.dath",
+      "sha256": "04a6ea5a31be7ffebfdef11a6afb06de17ef367b4b6600ec29c248246d639f02"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/song_48k.mif",
+      "sha256": "27a4b3b80627ec650d3b6f01b82a21badf7a8508d7a5e75827abf6b2de3579b9"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/song_48k.mif.dath",
+      "sha256": "34d7db62bc4e6b794f1970bec7ebf2ff504763069437445a095b8cf5da3cff58"
+    },
+    {
+      "path": "src/user_source/hdl_source/python/wav_to_mif.py",
+      "sha256": "70c06ae300bdaaa840f009af002805558fc4f309136db1d46e68285d2bcbd750"
+    },
+    {
+      "path": "src/user_source/hdl_source/rom/i2s_rom_player_single_pll_fix64_rom_ip.v",
+      "sha256": "f8e7c9c56c6a21154580e030dada604572d89a1e75e8945125b2ea0dd4b3094b"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/ax_debounce.v",
+      "sha256": "93aa6dd38051250cc7f777c88466ac180afe9bcdce7838b9ea506455d8cbc9b8"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/bmp_read.v",
+      "sha256": "8b81edee7e1ac61e02652c9416c05f6a32768acd5a9639365bc7bf87fa4febaa"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/bmp_read_scaled.v",
+      "sha256": "975d005c71ec826d8c001fb0c3020ba23069365e52a3276d6401caf7b8d7c769"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/color_bar.v",
+      "sha256": "afe1f56714ec58d2477ba1717e5a36c5a0da5fe5c07d70d11aa5ace710c4b152"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/frame_fifo_read.v",
+      "sha256": "b538b16d9364fa4f917f88830c007432c8b31605a0f4de4b90ce1f93015e2d56"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/frame_fifo_write.v",
+      "sha256": "540e07c53db2cf62a737b7e473f69029dccbae6b670b593aa6ed1e10c9cf78c4"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/frame_read_write.v",
+      "sha256": "598905a126844375dfea31d077d425cbaa253f2537eb1e26ae536456cc1eb58d"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/sdram.v",
+      "sha256": "2d985c2477384e677c25714241e1a50206def8916aa03189a5b313b2d22dfc99"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/sd_card_bmp.v",
+      "sha256": "a63d6a2624158a5761a4a0b7951610b39c428793fe30b00e92403ece106ac1da"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/sd_card_cmd.v",
+      "sha256": "ee10769a5cff184f2f4c37095d3001bf519a0a894bf8de5313eeef8c4288b7a2"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/sd_card_sec_read_write.v",
+      "sha256": "0caeb098ab42643b7a19ed00431a872c04eaf0c01c4e813cbadcd0c4eb6cc5ab"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/sd_card_top.v",
+      "sha256": "6f97aaed26a337b0b267ab06792fd435fb94bee657da6dee0171ca4f3df9785e"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/seg_decoder.v",
+      "sha256": "4592b6e4d2e9e8b7e4ab5266d850d30e43537ab9c4157d4221e3f8dfd342decd"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/seg_scan.v",
+      "sha256": "08759c329c33cdb7a6070e0b46773f0a6c9c8052b51652dec29406b9a9dac1e3"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/spi_master.v",
+      "sha256": "37f7a21144fa5cca3cc5c3b5f68a5ad40b3108336b600e45a1367734ac61403c"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/video_define.v",
+      "sha256": "77748966850a8f5af0d77f2cdb08006088ba5e1a31b98391fba6cc61c5247da2"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/video_delay.v",
+      "sha256": "93596fc5fb8ad5a081b06889e84e1f63c0cc42d3abb3d03c4da746d67fe24c68"
+    },
+    {
+      "path": "src/user_source/hdl_source/SD/video_timing_data.v",
+      "sha256": "31f2dd16fb4a4305b52e49426d5d0b06fab32165ba07a3c8e8a805fc1482bda9"
+    },
+    {
+      "path": "src/user_source/hdl_source/test/design_top_i2s_test_pll.v",
+      "sha256": "b6396c3e90c67d7e8aad8c83bfa8a1aa0b826db8f74a26936549cae57e86668c"
+    },
+    {
+      "path": "src/user_source/hdl_source/test/i2s_test_tone_gen_pll.v",
+      "sha256": "7614d4ca84c007a568e798b7c8cbc31eadd8a064bee53101194df13edb71e02f"
+    },
+    {
+      "path": "rtl/hxjv_pcm_player.v",
+      "sha256": "38279870e80c864df82a9d8644020220b2abeaaa6f269bafe2b242f7f2d7edf6"
+    },
+    {
+      "path": "rtl/jpeg_sector_stream.v",
+      "sha256": "43d784eb7576ec88a0e05af755b7fb5dffaeb4de7d7e0b0a256303959278a4f4"
+    },
+    {
+      "path": "rtl/media_catalog.v",
+      "sha256": "2a660e905b66e1a59ee8be0a6914720bb398c6b4aa5f15e0e4ba7b314c03c37d"
+    },
+    {
+      "path": "rtl/media_mode_reset.v",
+      "sha256": "9cca37d61a2455efdb3372cbb55d00094b98073f10d13e42586a7426dd28f9de"
+    },
+    {
+      "path": "rtl/mjpeg_video_player.v",
+      "sha256": "479d627248be824d879012b4f4bc6fbbca83496029d336e519afd682604287fe"
+    },
+    {
+      "path": "rtl/sd_sector_cdc.v",
+      "sha256": "981c5fc4dce2fc3025fefff234419fae061fb46485f5ee831fd87645cedc061b"
+    },
+    {
+      "path": "rtl/unified_media_source.v",
+      "sha256": "c3344938a92d80dd7560c3cdddf20c3a2c16a83eae0b08b1daa29ed816b4dd2d"
+    },
+    {
+      "path": "sim/run_top.py",
+      "sha256": "17e1fc15e86de7d2958048a089e2945893154c9ee1ae2e7dfcaf5fca8c5ad06e"
+    },
+    {
+      "path": "sim/tb_acr_service_top.sv",
+      "sha256": "f3716c7296d5f28b73f7ab6ffa8b03c83d94b9337c6ee2d97e782872eb9e8934"
+    },
+    {
+      "path": "sim/tb_album720.sv",
+      "sha256": "55ccdfad4f2cc40e151564c69780f835583e8ec6ac22ff006aa01658a86c7fe4"
+    },
+    {
+      "path": "sim/tb_auto_interval.sv",
+      "sha256": "b14690b5bba790804694cf23b1bb13b0dd24717493f6636c4cd8226834657716"
+    },
+    {
+      "path": "sim/tb_hdmi_native_core.sv",
+      "sha256": "90bfcd4fe4667aa10638958c7cbbeee6fbbe97737255c88ef97c53643d5105f3"
+    },
+    {
+      "path": "sim/tb_link_ack.sv",
+      "sha256": "164cf967641ebd00cdd29b0cf687af140c3e536d867a90e640a8c425ec86ec16"
+    },
+    {
+      "path": "sim/tb_phone_ir_media.sv",
+      "sha256": "0d82c38146618be2834ad037ee0fe345e170e0a50f79f25012272ab527b5421f"
+    },
+    {
+      "path": "sim/tb_phone_keymap.sv",
+      "sha256": "b05eb901ace2ddb3dcfe413342981b23991b9dc61c1f46334ddd34ce9fd54cf9"
+    },
+    {
+      "path": "sim/tb_scale.sv",
+      "sha256": "0ecb006e1604d569555e4b250de8d92060f10492e041b35aad8193b1d6a01852"
+    },
+    {
+      "path": "sim/tb_unified_controls.sv",
+      "sha256": "7b8ef4d84ff709f94b82202074b47561422ca0f8ab10880aa067ff0f911c5803"
+    },
+    {
+      "path": "tools/audit_release.py",
+      "sha256": "c24c2d7d441a20b1220a3f6df395a522119aba07fdb7d026148136a176e82f83"
+    },
+    {
+      "path": "tools/build_video.py",
+      "sha256": "ca7d56c5f235ea440da577121bb9ce35018d495953be4822a2be00a9cb19ec3f"
+    },
+    {
+      "path": "tools/check_album720.py",
+      "sha256": "0e9337ab3775e35d6e89939be92c6d935fc42ed4e0a5b8eb44fb65ce1a030396"
+    },
+    {
+      "path": "tools/check_card.py",
+      "sha256": "58059d010ae44943fca1d42761abc4d7e79caf488ae7d17c39efefb55bb32409"
+    },
+    {
+      "path": "tools/check_controls.py",
+      "sha256": "b4cac3fc3e6313a2f3b7c5cecbb67374bb367f1a1f83b7f069966f5aff83e581"
+    },
+    {
+      "path": "tools/finish_clock_hold.py",
+      "sha256": "9e4e9a68730c08ee321ad4e3fa93d365a2f385308c35437c72a2e87ac00daf00"
+    },
+    {
+      "path": "tools/inspect_implementations.py",
+      "sha256": "0be29caa6d6499520934cbc567770283f8ac1fdde4d88833d8ac5ea77bb8793f"
+    },
+    {
+      "path": "tools/integrate_controls.py",
+      "sha256": "d88bf7e280dabecfbbae237b1c8bf870ee2c21e41f9c5e0c0bbd02576cc2ecb1"
+    },
+    {
+      "path": "tools/prepare_tests.py",
+      "sha256": "29e48c26423284c591d6d4986159370dfd1c3b86ecfe852b1476484fd3c04d8e"
+    },
+    {
+      "path": "tools/prepare_ui_test.py",
+      "sha256": "8ec123a2574e3ef56261af6fa07313cf29ccaae7283b13d3ae362d1fd971fa20"
+    },
+    {
+      "path": "tools/publish_release.py",
+      "sha256": "5975ee1625c4fa930ea6a360d8ac1e575f27acbe50cda46c34139cbf89365405"
+    },
+    {
+      "path": "tools/publish_route_comparison.py",
+      "sha256": "856825b37eed990389517bdb99be371d0be05d27159904a733d12ebfdec3802d"
+    },
+    {
+      "path": "tools/record_functional_acceptance.py",
+      "sha256": "965761caa70231d4a030ddd020fc4977993ced200ddc9d733a47d00789e2402b"
+    },
+    {
+      "path": "tools/record_hd720_acceptance.py",
+      "sha256": "6f858370309df0e5bc55a4e65129c72f2f726222e1444880aaa84678cad86b5e"
+    },
+    {
+      "path": "tools/run_hdmi_native_core.py",
+      "sha256": "3ae5e7efcc9ad8b1f42fa92ad579189e3e714686aface3f22d9a535dec13a417"
+    }
+  ],
+  "board1_base_bit": "E:/HX4S20C_Extensions/hx4s20c_media_core/board/build/HX4S20C_HD720_LINK_ACK_ROUTE_8D600E63.bit",
+  "existing_interval_candidate": "3564369B",
+  "notes": "Copied current interval candidate sources; frozen original8D bit preserved"
+}

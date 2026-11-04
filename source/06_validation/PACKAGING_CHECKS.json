@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "smoke_checks": [
+    {
+      "name": "board1_unit",
+      "passed": true,
+      "report": "06_validation\\packaged_board1_unit\\summary.json"
+    },
+    {
+      "name": "board2_link",
+      "passed": true,
+      "report": "06_validation\\packaged_board2_link\\summary.json"
+    }
+  ],
+  "host_checks": [
+    "dependency_doctor",
+    "bundle_verifier_tests",
+    "capture_selftest",
+    "diagnostic_selftest"
+  ],
+  "original_and_copied_hashes_match": true,
+  "selected_build_inputs": 252,
+  "no_rebuild": true,
+  "no_hardware_or_card_operations": true,
+  "new_hardware_acceptance": true,
+  "user_reported_hardware_accepted": true,
+  "acceptance_record": "06_validation/USER_ACCEPTANCE_20261103.json",
+  "agent_performed_hardware_test": false
+}

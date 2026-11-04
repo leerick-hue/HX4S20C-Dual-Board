@@ -1,0 +1,26 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_phone_ir_media -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 10:50:31 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_phone_ir_media
+# Loading work.ir_media_bridge
+# Loading work.ir_nec_rx
+# Loading work.us_tick_1m
+# Loading work.ir_keymap
+# Loading work.media_command_cdc
+# Loading work.board_video_controls
+# Loading work.key_debounce
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS phone physical NEC: BF00 wire address, five keys through production receiver/bridge/CDC/controls, volume 8->7->8, mute/restore, queued next, slideshow on/off, unknown/foreign rejection
+# ** Note: $finish    : E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_phone_ir_media.sv(74)
+#    Time: 862321062184 ps  Iteration: 0  Instance: /tb_phone_ir_media
+# Break in Module tb_phone_ir_media at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_phone_ir_media.sv line 74
+# Stopped at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_phone_ir_media.sv line 74
+#  quit -code 0
+# End time: 10:58:30 on Nov 03,2026, Elapsed time: 0:07:59
+# Errors: 0, Warnings: 0

@@ -1,0 +1,48 @@
+{
+  "stage": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_unit_b296c3edc8",
+  "sources": {
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\SD\\sd_card_bmp.v": "03a416fcb8c614d22227bcd2a84ae7c19d7c27cf7cbbc7e5b89bf11a19875b83",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\SD\\bmp_read_scaled.v": "975d005c71ec826d8c001fb0c3020ba23069365e52a3276d6401caf7b8d7c769",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\bmp24_scale_stream.v": "ffb1371794def696362ac96eeb3ef0c41bb6f158b4b69a82b4495c8c57309067",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\tb_period_regression.sv": "ce6e9528c9ed25eea8aacca39eea69e2a59d9fbefeb0ed42a8ae66c754b46be7",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\run_period_unit.py": "4d653f47d1420c1ccf535aa7573c3bd2929bb376fba2019842c4797568bfc534"
+  },
+  "commands": [
+    [
+      "vlib.exe",
+      "work"
+    ],
+    [
+      "vlog.exe",
+      "-sv",
+      "-permissive",
+      "sd_card_bmp.v",
+      "bmp_read_scaled.v",
+      "bmp24_scale_stream.v",
+      "tb_period_regression.sv"
+    ],
+    [
+      "vsim.exe",
+      "-c",
+      "-t",
+      "1ps",
+      "-onfinish",
+      "stop",
+      "work.tb_period_regression",
+      "-do",
+      "run -all; quit -code 0"
+    ]
+  ],
+  "scope": "Actual period/gesture scheduler RTL with forced ideal parser/display/consumer.\nNo full-album, SD, SDRAM, HDMI, routed/SDF, or physical-button acceptance claim.",
+  "pass": true,
+  "results": [
+    "# PERIOD_CASE real_debounce_short_long_wrap=PASS",
+    "# PERIOD_CASE natural_period seconds=1 cycles=1000 PASS",
+    "# PERIOD_CASE natural_period seconds=2 cycles=2000 PASS",
+    "# PERIOD_CASE natural_period seconds=5 cycles=5000 PASS",
+    "# PERIOD_CASE natural_period seconds=10 cycles=10000 PASS",
+    "# PERIOD_CASE natural_period seconds=30 cycles=30000 PASS",
+    "# PASS period_regression checks=48062 actual_debounce=1 periods=1/2/5/10/30 threshold_release_priority=1 inhibit_cancel=1 pause_step_tick_priority=1 manual_pause=1 unsigned100MHz30s=1 scope=scheduler_unit_forced_ready_display_consumer"
+  ],
+  "wall_seconds": 4.327999999979511
+}

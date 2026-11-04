@@ -1,0 +1,12 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 22:34:26 on Nov 02,2026
+vlog -sv ../sim/sdram_retention_model.sv ../sim/tb_coexist.sv 
+-- Compiling module sdram_retention_model
+** Warning: ../sim/sdram_retention_model.sv(89): (vlog-LRM-2875) Task "check_index" is being called in function "read_word".
+-- Compiling module tb_coexist
+
+Top level modules:
+	sdram_retention_model
+	tb_coexist
+End time: 22:34:26 on Nov 02,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1

@@ -1,0 +1,44 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_jpeg_decode "+HEX=input.hex" "+W=640" "+H=480" "+WORDS=12490" "+REPEATS=2" "+GAP=58" "+STALL=1" -do "run -all; quit -code 0" 
+# Start time: 22:25:33 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.tb_jpeg_decode
+# Loading work.jpeg_core
+# Loading work.jpeg_input
+# Loading work.jpeg_dht
+# Loading work.jpeg_idct
+# Loading work.jpeg_idct_ram
+# Loading work.jpeg_idct_ram_dp
+# Loading work.jpeg_idct_x
+# Loading work.jpeg_idct_transpose
+# Loading work.jpeg_idct_transpose_ram
+# Loading work.jpeg_idct_y
+# Loading work.jpeg_idct_fifo
+# Loading work.jpeg_dqt
+# Loading work.jpeg_output
+# Loading work.jpeg_output_y_ram
+# Loading work.jpeg_output_y_ram_ram_dp_512_9
+# Loading work.jpeg_output_cx_ram
+# Loading work.jpeg_output_cx_ram_ram_dp_256_8
+# Loading work.jpeg_output_fifo
+# Loading work.jpeg_bitbuffer
+# Loading work.jpeg_mcu_proc
+# Loading work.jpeg_mcu_id
+# Loading work.jpeg_dht_std_y_dc
+# Loading work.jpeg_dht_std_y_ac
+# Loading work.jpeg_dht_std_cx_dc
+# Loading work.jpeg_dht_std_cx_ac
+# run -all
+# METRIC frame=0 cycles=855587 first=10604 last=855587 accepted_words=12490 output_stall_cycles=191722 pixels=307200
+# METRIC frame=1 cycles=855632 first=10613 last=855632 accepted_words=12490 output_stall_cycles=191408 pixels=307200
+# PASS jpeg_decode coverage, geometry, unique coordinates, resetless frames and stalled-output stability
+# ** Note: $finish    : tb_jpeg_decode.sv(93)
+#    Time: 42785525 ns  Iteration: 1  Instance: /tb_jpeg_decode
+# Break in Module tb_jpeg_decode at tb_jpeg_decode.sv line 93
+# Stopped at tb_jpeg_decode.sv line 93
+#  quit -code 0
+# End time: 22:27:19 on Nov 02,2026, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 0

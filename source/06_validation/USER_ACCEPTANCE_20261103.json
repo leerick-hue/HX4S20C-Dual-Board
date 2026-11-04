@@ -1,0 +1,20 @@
+{
+  "recorded_at_Asia_Shanghai": "2026-11-03T14:58:37.031870+08:00",
+  "recorded_date_Asia_Shanghai": "2026-11-03",
+  "state": "user_reported_both_boards_hardware_accepted",
+  "user_statement": "这两板已经验收了啊 改一下",
+  "versions": [
+    "8EB7D133",
+    "6F5DD197"
+  ],
+  "current_bits": {
+    "00_firmware_current/HX4S20C_BOARD1_ALBUM_PERIOD_8EB7D133.bit": "8eb7d133a6c5b3f1bacbfa363553d99f14f219d491439fc8a9bf655582d147d9",
+    "00_firmware_current/HX4S20C_BOARD2_VIDEO_480P15_6F5DD197.bit": "6f5dd1975f1776dd7ae1815c7a236df9faad3b7c26cb7a1d59a1fd1205f32a42"
+  },
+  "hardware_tested": true,
+  "user_reported_hardware_accepted": true,
+  "agent_performed_hardware_test": false,
+  "scope": "User explicitly confirms both selected boards have completed hardware acceptance; no additional per-feature measurements or test procedures inferred.",
+  "publication_history": "Original per-board release/build/simulation records retain their publication-time pending status; this subsequent user confirmation supersedes that status for the selected bit hashes.",
+  "changes": "Acceptance metadata, current documentation and package checksums only; firmware, RTL, constraints and original publication inputs unchanged."
+}

@@ -1,0 +1,12 @@
+{
+  "core_test_summary": "E:\\HX4S20C_\u8d5b\u9898\u4e00_\u57fa\u7840\u903b\u8f91\u6e90\u7801_v0.1\\hd_media_audio_ab_20261028\\sim_logs\\acr_service_compact_packets\\summary.json",
+  "summary_sha256": "69e93f364f894235d5e4cd64dd6d6cf1676791af196bf2cdb5271a1e0a2e9bdd",
+  "stage": "C:\\Users\\22920\\AppData\\Local\\Temp\\hx_acr_service_xawu3b7k",
+  "files": {
+    "tmds_0.hex": "9feebaa28129807aac2aaedc8951a560f33b9a83776177b142ea9444b368e59c",
+    "tmds_1.hex": "172a8bdecdb51321d39ae89470cc3bf9d5259285ab2fd5857e844797da27c7a5",
+    "tmds_2.hex": "dcbb82d447749777b8f58feecae9123e2d741f1ed2a3553711d412ff284e1ced"
+  },
+  "cycles_per_mode": 8192,
+  "capture_window": "First8192core-output cycles in each mode; does not guarantee an ACR lies inside these short windows."
+}

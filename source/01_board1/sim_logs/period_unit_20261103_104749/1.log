@@ -1,0 +1,13 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 10:47:50 on Nov 03,2026
+vlog -sv -permissive sd_card_bmp.v bmp_read_scaled.v bmp24_scale_stream.v tb_period_regression.sv 
+-- Compiling module sd_card_bmp
+-- Compiling module key_press_debounce
+-- Compiling module bmp_read_scaled
+-- Compiling module bmp24_scale_stream
+-- Compiling module tb_period_regression
+
+Top level modules:
+	tb_period_regression
+End time: 10:47:50 on Nov 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

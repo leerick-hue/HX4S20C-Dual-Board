@@ -1,0 +1,7 @@
+{
+  "E:/HX4S20C_Extensions/hx4s20c_media_core/board/media_hd_unified_20261025": "07_dependencies/album_fixture_root",
+  "E:/HX4S20C_Extensions/hx4s20c_media_core/board/mjpeg_20261023": "07_dependencies/jpeg_reference_root",
+  "E:/HX4S20C_Extensions/hx4s20c_media_core/board/phone_ir_fit_link_ack_20261030/src/user_source/hdl_source/extensions": "07_dependencies/peer",
+  "E:/HX4S20C_Board2/work/link_ack_20261026/data/conditioner.mem": "07_dependencies/conditioner.mem",
+  "E:/HX4S20C_Test_20261026/board2_adaptive_voice_20261101/media_bbb_20261102/DELIVERY/CARD_BBB_20s_320x240_25fps.img": "07_dependencies/old320_prefix.img"
+}

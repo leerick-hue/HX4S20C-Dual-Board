@@ -1,0 +1,72 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_period_integration "+IMAGE=E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105124_fe05f4\fixtures\combined.hex" "+BYTES=153088" "+FIXTURE=E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105124_fe05f4\fixtures" -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 10:51:27 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_period_integration
+# Loading work.media_mode_reset
+# Loading work.board_remote_control
+# Loading work.uart_rx
+# Loading work.event_packet_rx
+# Loading work.event_fifo
+# Loading work.ir_media_bridge
+# Loading work.ir_nec_rx
+# Loading work.us_tick_1m
+# Loading work.ir_keymap
+# Loading work.media_command_cdc
+# Loading work.unified_media_source
+# Loading work.media_catalog
+# Loading work.sd_card_bmp
+# Loading work.key_press_debounce
+# Loading work.bmp_read_scaled
+# Loading work.bmp24_scale_stream
+# Loading work.sd_sector_cdc
+# Loading work.reset_sync
+# Loading work.sd_sector_arbiter
+# Loading work.hxjv_pcm_player
+# Loading work.audio_pcm_fifo
+# Loading work.rgb565_pack
+# Loading work.pixel_write_fifo
+# Loading work.frame_fifo_write
+# Loading work.frame_swap_fx_cdc
+# ** Warning: (vsim-3017) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv(38): [TFMPC] - Too few port connections. Expected 52, found 50.
+# 
+#         Region: /tb_period_integration/source
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv(38): [TFMPC] - Missing connection for port 'source_width_debug'.
+# 
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv(38): [TFMPC] - Missing connection for port 'source_height_debug'.
+# 
+# ** Warning: (vsim-3015) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/rtl/unified_media_source.v(71): [PCDPC] - Port size (16) does not match connection size (32) for port 'bmp_width'. The port definition is at: E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/src/user_source/hdl_source/SD/sd_card_bmp.v(26).
+# 
+#         Region: /tb_period_integration/source/album
+# ** Warning: (vsim-3015) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/rtl/unified_media_source.v(71): [PCDPC] - Port size (16) does not match connection size (32) for port 'bmp_height'. The port definition is at: E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/src/user_source/hdl_source/SD/sd_card_bmp.v(27).
+# 
+#         Region: /tb_period_integration/source/album
+# ** Warning: (vsim-3017) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/src/user_source/hdl_source/SD/sd_card_bmp.v(143): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /tb_period_integration/source/album/u_key_next
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/src/user_source/hdl_source/SD/sd_card_bmp.v(143): [TFMPC] - Missing connection for port 'release_pulse'.
+# 
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# BEGIN epoch=0 asset=0 bank=0 t_ms=1.292337
+# METRIC commit=0 epoch=0 asset=0 t_ms=47.825212 interval_ms=47.825212 words=460800 playhead=2260 pcm_verified=2260 underruns=0 requests=31
+# PERIOD_KEYS_PASS tier=1 nominal_seconds=2 accelerated_native_cycles=80000 auto_stays_off=1
+# BEGIN epoch=0 asset=1 bank=1 t_ms=49.354962
+# METRIC commit=1 epoch=0 asset=1 t_ms=96.781387 interval_ms=48.956175 words=460800 playhead=4610 pcm_verified=4610 underruns=0 requests=53
+# BEGIN epoch=0 asset=0 bank=0 t_ms=99.765062
+# METRIC commit=2 epoch=0 asset=0 t_ms=146.976638 interval_ms=50.195250 words=460800 playhead=7019 pcm_verified=7019 underruns=0 requests=73
+# REMOTE_PAUSE_PASS commits=3 tier=1 ongoing_PCM=288 playhead_delta=288
+# BEGIN epoch=0 asset=1 bank=1 t_ms=156.720362
+# METRIC commit=3 epoch=0 asset=1 t_ms=204.134838 interval_ms=57.158200 words=460800 playhead=9763 pcm_verified=9763 underruns=0 requests=98
+# PASS period_integration:4 complete1280x720 fit photos,1843200 unique RGB565 words,physical manual next,long hold tier1,actual115200 UART resume/pause through receiver/legacy bridge,autoplay wrap/resume,tier preserved,PCM uninterrupted during slideshow pause,music pause/resume,both BMP orientations,bank ownership,native40/50/74.25/100MHz clocks,accelerated timer/debounce/fade,zero underruns (9945 PCM)
+# ** Note: $finish    : E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv(262)
+#    Time: 209918389408 ps  Iteration: 1  Instance: /tb_period_integration
+# Break in Module tb_period_integration at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv line 262
+# Stopped at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105124_fe05f4/sim/tb_period_integration.sv line 262
+#  quit -code 0
+# End time: 10:59:54 on Nov 03,2026, Elapsed time: 0:08:27
+# Errors: 0, Warnings: 7

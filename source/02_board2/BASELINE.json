@@ -1,0 +1,742 @@
+{
+  "parent": "E:\\HX4S20C_Test_20261026\\group2_voice_robust_20261102",
+  "files": [
+    {
+      "path": "src/afifo_32_16_256.tcl",
+      "sha256": "5807155b00f2f749328339e01a85b4bb836f91598286dd167513836b60af33db"
+    },
+    {
+      "path": "src/afifo_32_16_256.v",
+      "sha256": "7c3ee41f30be75ae686c9abff3a840fc5439209cda077e4aa275eac0dab9f564"
+    },
+    {
+      "path": "src/diag_control.v",
+      "sha256": "63eb0794d5ee479e005a9ddfdbfde0485637c1a43b833268ff1822edfbe4dea0"
+    },
+    {
+      "path": "src/diag_vga_pll.v",
+      "sha256": "9b0211491d15456f67135bcdc060613245a01d0084d7c9b7982fbb5229912f30"
+    },
+    {
+      "path": "src/font5x7.v",
+      "sha256": "9f746ee3b55927d05f5b22629a15e04809ea3280de5611c906b147b89793aa94"
+    },
+    {
+      "path": "src/frame_fifo_read.v",
+      "sha256": "b538b16d9364fa4f917f88830c007432c8b31605a0f4de4b90ce1f93015e2d56"
+    },
+    {
+      "path": "src/frame_fifo_write.v",
+      "sha256": "540e07c53db2cf62a737b7e473f69029dccbae6b670b593aa6ed1e10c9cf78c4"
+    },
+    {
+      "path": "src/frame_read_write.v",
+      "sha256": "598905a126844375dfea31d077d425cbaa253f2537eb1e26ae536456cc1eb58d"
+    },
+    {
+      "path": "src/frame_swap_fx_cdc.v",
+      "sha256": "2b1a6591270545aaf39a7f0cff5c569c5e958a8256246fd0be2797b651be539a"
+    },
+    {
+      "path": "src/hdmi_1_4b_transmitter_core_wrapper.enc.v",
+      "sha256": "867e0b0bdd874bc383d00918c9e1be3fe01edf41f343b6a0d73e262776596a63"
+    },
+    {
+      "path": "src/hdmi_audio_diagnostic.v",
+      "sha256": "352cee05f6aa224b799cb068d257a440a4a582752e909923b9c0ae25219a8d1e"
+    },
+    {
+      "path": "src/hdmi_phy_warpper.v",
+      "sha256": "3b1a8bf97c73b8156500a32f05ef21acd974fdae7b687e1d0fb1cd0501c54812"
+    },
+    {
+      "path": "src/hdmi_reference_tone.v",
+      "sha256": "d1866b88763275212ee9f4ee0b851d7d8340f75c493567ef442357457c1da9c4"
+    },
+    {
+      "path": "src/hxjv_pcm_player.v",
+      "sha256": "87e6191b2372b9eac8c8245196f2d5391e84352d30929b1350d58eecbcceea85"
+    },
+    {
+      "path": "src/jpeg_sector_stream.v",
+      "sha256": "43d784eb7576ec88a0e05af755b7fb5dffaeb4de7d7e0b0a256303959278a4f4"
+    },
+    {
+      "path": "src/lane_lvds_10_1.v",
+      "sha256": "7b550478839cb68537629fc423c354f6a6a20fbd9ce8b067eedc7e730bd1c6c0"
+    },
+    {
+      "path": "src/media_catalog.v",
+      "sha256": "2a660e905b66e1a59ee8be0a6914720bb398c6b4aa5f15e0e4ba7b314c03c37d"
+    },
+    {
+      "path": "src/media_viewport.v",
+      "sha256": "a84af3db3234db5d2828531f2d8c412fce074694f4c972463169700a642844af"
+    },
+    {
+      "path": "src/mjpeg_video_player.v",
+      "sha256": "87f6fc272a2cfcabda59786fde166dfac6c32d7944edd6caea00749ff75e08c5"
+    },
+    {
+      "path": "src/motion_path.v",
+      "sha256": "272fd6909a27811388bc76812e3b57cf82ca23309f3e0e6f66242f86cfd6c864"
+    },
+    {
+      "path": "src/motion_source.v",
+      "sha256": "9d8a4526348976800534c5e96c85578552a971ba23f663ad5305bb194d2f8deb"
+    },
+    {
+      "path": "src/native_video_timing.v",
+      "sha256": "8074854a67c0fe1613c77491bbf4efae665afad4584eb1a2d5560f4276ca74f3"
+    },
+    {
+      "path": "src/pin.adc",
+      "sha256": "5594d89153d1f0b63f220a05a554edc0425a5886995eb5101c5d83b5f2e02e0d"
+    },
+    {
+      "path": "src/pixel_write_fifo.v",
+      "sha256": "6edd636304d309bccd57a8dfe51fa390e9533a05a8ac4e15e744aa05ce9c2415"
+    },
+    {
+      "path": "src/reset_sync.v",
+      "sha256": "881cf430f1ddbb8a9d9532ea93683742f10fced01f3ff258af9e0b78da85cc66"
+    },
+    {
+      "path": "src/rgb565_pack.v",
+      "sha256": "ab4d8281ea380a49c40f482ce32dcd788092000e39092424b806d8affa16d66f"
+    },
+    {
+      "path": "src/rgb565_unpack.v",
+      "sha256": "2da271421ad5dc51ce7f4c7a66dcd6e79bc9410675a32bafe2e1eb7bb77c24e7"
+    },
+    {
+      "path": "src/sdram.v",
+      "sha256": "2d985c2477384e677c25714241e1a50206def8916aa03189a5b313b2d22dfc99"
+    },
+    {
+      "path": "src/sd_card_cmd.v",
+      "sha256": "dca2afe83ff6a68b34397ac1700917def81ec6a2fbcfd11f2a2cea620bc27664"
+    },
+    {
+      "path": "src/sd_card_sec_read_write.v",
+      "sha256": "3d8c0177bdd63cf469bbfadd1110addb09e027e440adcd6a9ce6cc1e064b51f6"
+    },
+    {
+      "path": "src/sd_card_top.v",
+      "sha256": "6f97aaed26a337b0b267ab06792fd435fb94bee657da6dee0171ca4f3df9785e"
+    },
+    {
+      "path": "src/sd_sector_arbiter.v",
+      "sha256": "406efb7f36ca822001f8b038839a24f354fab92bce3211c9658b8d827db4f8e5"
+    },
+    {
+      "path": "src/sd_sector_cdc.v",
+      "sha256": "981c5fc4dce2fc3025fefff234419fae061fb46485f5ee831fd87645cedc061b"
+    },
+    {
+      "path": "src/seg_decoder.v",
+      "sha256": "4592b6e4d2e9e8b7e4ab5266d850d30e43537ab9c4157d4221e3f8dfd342decd"
+    },
+    {
+      "path": "src/seg_scan.v",
+      "sha256": "08759c329c33cdb7a6070e0b46773f0a6c9c8052b51652dec29406b9a9dac1e3"
+    },
+    {
+      "path": "src/spi_master.v",
+      "sha256": "37f7a21144fa5cca3cc5c3b5f68a5ad40b3108336b600e45a1367734ac61403c"
+    },
+    {
+      "path": "src/sys_pll.v",
+      "sha256": "a6cc82050915de12eea377f16749e7d9b8e8ae447f5a32f49510db9e9181ab1f"
+    },
+    {
+      "path": "src/timing.sdc",
+      "sha256": "e934199e99767d38dbf3e29ac99caa74aaee22723681d99e8c942f3767569fcf"
+    },
+    {
+      "path": "src/top.v",
+      "sha256": "8a96df5cdc62b0b86a19914cff410dd89640ed90e2e4490cab686ffcefedf7c5"
+    },
+    {
+      "path": "src/video_canvas_coords.v",
+      "sha256": "1a609481b788b82759a660858a30a31939b6f54c687438c14e5675ac2cdcea44"
+    },
+    {
+      "path": "src/video_delay.v",
+      "sha256": "93596fc5fb8ad5a081b06889e84e1f63c0cc42d3abb3d03c4da746d67fe24c68"
+    },
+    {
+      "path": "src/video_effects_hd.v",
+      "sha256": "2f3bb44d2aceec22f271ba5ffa15741bf9d02430a6faff2afeab07b067099012"
+    },
+    {
+      "path": "src/video_hd_pll.v",
+      "sha256": "2e1bbcaeea8473c301d44f060635c4d23bd48cfaa867808214fc9640fe376086"
+    },
+    {
+      "path": "src/video_path.v",
+      "sha256": "695f1c031fb1a95e7b6f5d2b1be35943443f518921f21c59743d8a9aa5053964"
+    },
+    {
+      "path": "src/video_rgb_to_axis_640x480.v",
+      "sha256": "fe03e38736492e73dfc58a67d9025af1ec01f516bd1cc0c5c4c898f757b9f69c"
+    },
+    {
+      "path": "src/video_source.v",
+      "sha256": "14f64355476d42bf355f1dbe45b0f456e14aa8bf58b7f507d7475cb93741f339"
+    },
+    {
+      "path": "src/video_timing_data.v",
+      "sha256": "fdee16e29bc310c7eb150276be3fab7bdb4ceacafcd48b14e851aff03a2cec22"
+    },
+    {
+      "path": "src/word_replicator.v",
+      "sha256": "848e417ed716ebc57f934011b613a6b406b1f32874b30a669b401de7c901dbf3"
+    },
+    {
+      "path": "src/word_upscaler.v",
+      "sha256": "b9d6ebb8f8e4f51c8e261bec11bcd8bf5f9921ed8a40cd9c04554eb1360e19a7"
+    },
+    {
+      "path": "src/jpeg/jpeg_bitbuffer.v",
+      "sha256": "b4cfe631350b982e3f348610999f94596f9ec4cdc911799030af535adf58bf22"
+    },
+    {
+      "path": "src/jpeg/jpeg_core.v",
+      "sha256": "bcec6089a061f66ce058e8a875cad75b67ee05013174931fdacd90b2ee507d39"
+    },
+    {
+      "path": "src/jpeg/jpeg_dht.v",
+      "sha256": "055de4d51bcc15e70ad8054064a23af91dc28763d576c121656ac750d5fd8883"
+    },
+    {
+      "path": "src/jpeg/jpeg_dht_std_cx_ac.v",
+      "sha256": "efd4192e61341e9ed919cd68d12a67d208273b36143e356f79332b8fdcffca92"
+    },
+    {
+      "path": "src/jpeg/jpeg_dht_std_cx_dc.v",
+      "sha256": "1b46dd8aba258f6fb20d75b7617a6ad3715297da032f615370fa4f0362feded4"
+    },
+    {
+      "path": "src/jpeg/jpeg_dht_std_y_ac.v",
+      "sha256": "27700bcd791489a825af5876d02c907ad9ee8b4b0eaf6a54a762ad6b2841ae93"
+    },
+    {
+      "path": "src/jpeg/jpeg_dht_std_y_dc.v",
+      "sha256": "72362d3bc664f2c2c29ed6dc5cbeda70676d6a82431892d9ce2e018e4c851b8e"
+    },
+    {
+      "path": "src/jpeg/jpeg_dqt.v",
+      "sha256": "e99bb750bf20903b9cf80407aa1e8274170296c3366e43be0030265a08afcb99"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct.v",
+      "sha256": "f2a45496e29d43eb2b2f024921a5b96732ce57a3f74e4c856686cf00acacd0b6"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_fifo.v",
+      "sha256": "487d095dc70369d4bb7c9a27e6f27cc4db082b95e9bb6ce13292dc31fb2cf5e0"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_ram.v",
+      "sha256": "b45d1f8663c290a27085ed595d633caec980410a1483f10a80be1bfad87a570a"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_ram_dp.v",
+      "sha256": "191622cc6447224294c1cfe98aef9fbb329b3a8b00932ed1b33920e90d2b61ea"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_transpose.v",
+      "sha256": "4b765d2227366e6cfd7953f0f17de3fbbd9f1bf2f55e8207bd5611a96a21e54c"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_transpose_ram.v",
+      "sha256": "833abadcd8fb585d08dddc7e1cc24cfd3e39a9eb728aa72a8d7b016694fc370b"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_x.v",
+      "sha256": "99b8681e002d948fa4ed5fbd3a29704634400c31c376b5e120c07d1392ef62c0"
+    },
+    {
+      "path": "src/jpeg/jpeg_idct_y.v",
+      "sha256": "df2bbd47864431354baa2dbc0160b809d94de624d5e16d1a45b313d4564bc9c8"
+    },
+    {
+      "path": "src/jpeg/jpeg_input.v",
+      "sha256": "da2d2f9c72ee581db05a11d471364b6d41b4ef43a1cf9cddff8f59b36b6d0b8a"
+    },
+    {
+      "path": "src/jpeg/jpeg_mcu_id.v",
+      "sha256": "82f2e44c2ada135d1e45d6b3d54d9bada29f5cfde1c0e4a6df8a3819c159e650"
+    },
+    {
+      "path": "src/jpeg/jpeg_mcu_proc.v",
+      "sha256": "cfd8b35fe75a29c02950f5cfcc1493419bee6da155d253d0062aff91493d43af"
+    },
+    {
+      "path": "src/jpeg/jpeg_output.v",
+      "sha256": "68153a6a5367dd37105165814681cb8c4f7dcba66d2040609cdc9ffb2b35ae11"
+    },
+    {
+      "path": "src/jpeg/jpeg_output_cx_ram.v",
+      "sha256": "570bea46974744831816eceda8033425266ae4f3c2178fe8c4935e4194209da1"
+    },
+    {
+      "path": "src/jpeg/jpeg_output_fifo.v",
+      "sha256": "66cde6db3c4f8c8b64ab35f80c7ef0b383b13d3e395114b9cff5e7ba0d22be72"
+    },
+    {
+      "path": "src/jpeg/jpeg_output_y_ram.v",
+      "sha256": "a17dcca6dc7a696453d8fb3ddae8155abce18e06f868fe41eedce55f7c0d04eb"
+    },
+    {
+      "path": "src/voice/board2_voice_top.v",
+      "sha256": "442a457f36b96de5c4ec716a1d37c0ae8e5b0e610881b21db49b211dcbf8733f"
+    },
+    {
+      "path": "src/voice/event_arbiter.v",
+      "sha256": "21a3a0b9d910e6a46d66de7fbb61fccc850b6bf010a623dc97c8a9a518770d55"
+    },
+    {
+      "path": "src/voice/event_fifo.v",
+      "sha256": "b00dea87def1890810eb4ce57fdc6e22e976aff8deb3775387913247250ca956"
+    },
+    {
+      "path": "src/voice/event_packet_rx.v",
+      "sha256": "5ad55a80c999d8dba15ae4d2a80a3bd645c84e72f58ea7df1f442687769898ed"
+    },
+    {
+      "path": "src/voice/event_packet_tx.v",
+      "sha256": "7e3eb29c7f4ab772b68851bc0a0b7198f0623cade450fb398a0ca65ac89f1ff5"
+    },
+    {
+      "path": "src/voice/inmp441_rx.v",
+      "sha256": "01135d10ad34b49ab432a2e7c425e6e9850a853e4335ad337b18be93e38ebc14"
+    },
+    {
+      "path": "src/voice/keypad_scan_4x4.v",
+      "sha256": "d83b1e85bc0fafa79ff05621a8a3cfd08eaeb7af502789d38d8e7a71940d3f32"
+    },
+    {
+      "path": "src/voice/key_debounce.v",
+      "sha256": "3b4db810a17299919c87629c82d7192989206db7107182021981f5d06cafcf4a"
+    },
+    {
+      "path": "src/voice/mic_pcm_conditioner.v",
+      "sha256": "8bb1b487c6062a4e5ee50f50d07efb6c8f0efde4124de798683f6eb0a4f39be1"
+    },
+    {
+      "path": "src/voice/pcm_uart_stream.v",
+      "sha256": "2da0ca23bb24a163a91ae227b52b9296f28a0b1d75f2721b8edfba55caf6f4ca"
+    },
+    {
+      "path": "src/voice/reliable_event_link.v",
+      "sha256": "7aa358c5797ee5d90adf9169a43f4e254d217f9506e6e7d362ad68e4fe7c2e01"
+    },
+    {
+      "path": "src/voice/speech_command_core.v",
+      "sha256": "643ae254c89b468940b7d81c057e790f1ecb78cf0e6162ca3ec75536bc81f94c"
+    },
+    {
+      "path": "src/voice/speech_dtw.v",
+      "sha256": "20b6316c8860a61770e007073cde26bbe1e241b698dec6f1f294380d4ad1a68b"
+    },
+    {
+      "path": "src/voice/speech_features.v",
+      "sha256": "5fded7e876d4af5d7b59d585b85e48c9999128ea1d4a10dcf98da39fe4a636fd"
+    },
+    {
+      "path": "src/voice/uart_rx.v",
+      "sha256": "ccaccdd7f450f538cb383879b294112c363883c1c3cde6e11e34fcb396b2a0f1"
+    },
+    {
+      "path": "src/voice/uart_tx.v",
+      "sha256": "ab9018d9c2f44d97b0a1dd196603e531eb3ca7c37a90838e156c904608f9931a"
+    },
+    {
+      "path": "src/voice/voice_feature_preroll.v",
+      "sha256": "560970de4e6768aeb7ce7d7f5503877d2ec90be2c4a189406c2464dd1ff2c845"
+    },
+    {
+      "path": "src/voice/voice_status_leds.v",
+      "sha256": "0948cc0f8c0b08dc1a34db3117e9aeb48bc58ea58274b5242cfe056f827baa55"
+    },
+    {
+      "path": "project/HX4S20C_Extensions.al",
+      "sha256": "f0c4d1a26eb7d709823c7624a458b23efbd07bb3f8e6f6bac91d4377f29bfeb6"
+    },
+    {
+      "path": "user_source/hdl_source/include/global_def.v",
+      "sha256": "981fea056aa3c7b8afc14511c992aa1af788d29879538b168254dffc4718ef64"
+    },
+    {
+      "path": "user_source/hdl_source/include/sdr_as_ram.enc.v",
+      "sha256": "767dbdfbd83d42223b77dfa7deab42ce8216a8fd6f6cb41b7e7593d9a345ba57"
+    },
+    {
+      "path": "user_source/hdl_source/include/sdr_init_ref.enc.v",
+      "sha256": "6da5945f4af793610d0d64c65c7e5d2d1c86ed4c11bc5fdeacd27eb03178b9f6"
+    },
+    {
+      "path": "user_source/hdl_source/include/sdr_wrrd.enc.v",
+      "sha256": "c7d7fe07d75f66aa88d9f986b3006319c995162434f104f9990664b374cdfdd2"
+    },
+    {
+      "path": "sim/card_model.v",
+      "sha256": "dae091fc963aadfbc40685135d1d45d7ee453a7f141ebf957129ccad3322d583"
+    },
+    {
+      "path": "sim/check_publish_guard.py",
+      "sha256": "b5507efe1f34edc14a58c19f290398b5e1e04438e82f54e40c0c5532b566a241"
+    },
+    {
+      "path": "sim/hdmi_sequence_decoder.sv",
+      "sha256": "999e065888e41d46901e6e32a42eec278976dcc287938ab5b075b7b9fd53826f"
+    },
+    {
+      "path": "sim/ideal_plls.v",
+      "sha256": "64e5403db7b0ac5604e15335421a1dbb71e4b4f037b2df0edc54c11c503b4990"
+    },
+    {
+      "path": "sim/phy_omitted.v",
+      "sha256": "6d1168b5ad5a39e19e3d387e8d5f2bfec3bf2a51ae2ca4a46d97e62a3a36f2ec"
+    },
+    {
+      "path": "sim/prepare_boundary_test.py",
+      "sha256": "0454b10b48e3648b5ccd6352b6dc51a54d666e457ec3ff79c88d4268982cf8e8"
+    },
+    {
+      "path": "sim/prepare_voice_cases.py",
+      "sha256": "6d53d2eee5bd6e06deb6e67837f1915e84183bac834e0b650f9c90dd1cc134cf"
+    },
+    {
+      "path": "sim/run_boundary.py",
+      "sha256": "df02020129f9953ae6af0d6de3730cbe95a564dffac94ce94115f8e95f63bca5"
+    },
+    {
+      "path": "sim/run_coexist.py",
+      "sha256": "67f97c9570c46d86740c638648dfba4187f0b0975ed8b592d9bba71afa9037e0"
+    },
+    {
+      "path": "sim/run_natural_video.py",
+      "sha256": "687472f20d1075a630f10b83ad0e3cbcd6055be78af8997eebbc2d71f05eb4b7"
+    },
+    {
+      "path": "sim/run_read_capture_contract.py",
+      "sha256": "4dca2d41f2960c89e0c4caf179ada534b909cb863f5f7d83eb833ec6e3daac5e"
+    },
+    {
+      "path": "sim/run_replicator_contract.py",
+      "sha256": "e21b546fe37ec71f3791a9ddf938f7bdf15cfcd8d649a19edb071f35989d6d75"
+    },
+    {
+      "path": "sim/run_service_phy.py",
+      "sha256": "9b04f1c5d732935fee2ea6558824815757136c190251f43f0de8c0b8da085ffa"
+    },
+    {
+      "path": "sim/run_spi.py",
+      "sha256": "3bbd25891339b0947fda912d9b418a113e1ebf962518031fe8c9dfead7cad3fb"
+    },
+    {
+      "path": "sim/run_top.py",
+      "sha256": "f19558ef65011185dfca7c2859316b892cae1b2d1e41fd3b550c12fb3b351d36"
+    },
+    {
+      "path": "sim/run_video.py",
+      "sha256": "2ba2e4d40947f2e8d395cacb4884624002859cb85f52f74aa12b977a55b7a084"
+    },
+    {
+      "path": "sim/run_voice_robust.py",
+      "sha256": "dab52cfdf32711a162d3db7dc4e5db945e6bb7a397d5219a3bc950cbbdabb666"
+    },
+    {
+      "path": "sim/sdram_retention_model.sv",
+      "sha256": "c60de80ca649a0c9c14e4abef58a1a9fee49375005501742cc28b16e9b70eccd"
+    },
+    {
+      "path": "sim/tb_agc.sv",
+      "sha256": "c92435c3d0dc696ae9ceb6aa32ca6a7ab7ddcc485f89213f71bb51f0a556f18d"
+    },
+    {
+      "path": "sim/tb_capture_phy.sv",
+      "sha256": "0909081f85a77942bc62a78073f7067b4523da37e43c584ed94c8784876ba74a"
+    },
+    {
+      "path": "sim/tb_card_boundary.sv",
+      "sha256": "acb24c3990e8dbb810d6c3966bab155a9a87ebaa1466b4c5c0279dd66100bacd"
+    },
+    {
+      "path": "sim/tb_coexist.sv",
+      "sha256": "4f0c9442f0bedff9fb82b8ea44957c9448af208bc8b16751d0e66855509697f4"
+    },
+    {
+      "path": "sim/tb_conditioner_compat.sv",
+      "sha256": "df01926fca347a2c6fce311dbcca062e7fda878d2d28e445a0bb79a99051210b"
+    },
+    {
+      "path": "sim/tb_dtw_compat.sv",
+      "sha256": "6c36797629685eec6b5bdd40b3fe32680270f81bf55eeef10c1937cd90754c4c"
+    },
+    {
+      "path": "sim/tb_endpoint_robust.sv",
+      "sha256": "b27de44509b6f5e72ed2c35aba85cd289e4938ab9e302a6766eca5f461017316"
+    },
+    {
+      "path": "sim/tb_frontend_compat.sv",
+      "sha256": "a4e4cad7ce438ba6cd59620c408ea71504229ec512708eb4010b079d2fc820c9"
+    },
+    {
+      "path": "sim/tb_link_ack.sv",
+      "sha256": "3e67ea22f454c5197ec6756bcfca1a03d13580d3e982ab968f02217690760157"
+    },
+    {
+      "path": "sim/tb_motion_top.sv",
+      "sha256": "97c9692a9327266c02114800794c6fee54a330c66bdede6e42009e58d6ef7d71"
+    },
+    {
+      "path": "sim/tb_prefix_compat.sv",
+      "sha256": "9059a2281d2f09a72a8e7f2eb718d627c1e10eb09215f16b2562e0b102d3a62c"
+    },
+    {
+      "path": "sim/tb_preroll.sv",
+      "sha256": "73b1b1c2e13ea787615237edb6632e97e23dec8ca0ce953cb3f0c4ef9b163f6a"
+    },
+    {
+      "path": "sim/tb_read_capture_contract.sv",
+      "sha256": "aad291ffd4942a7680dc3787c75f7d3c4b2bb8ac95a976547b367c2ce692c34f"
+    },
+    {
+      "path": "sim/tb_replicator_contract.sv",
+      "sha256": "6cc4958ad0e367804b4da51609814b2fdbf2f9d8831e9a9e14ebabeacd3d051f"
+    },
+    {
+      "path": "sim/tb_spi_read.sv",
+      "sha256": "138667858ed1bd99f677d40942039aef10708ce090a382e45d11f55e4b2feb6f"
+    },
+    {
+      "path": "sim/tb_video_path.sv",
+      "sha256": "87175d70f9a8b1f8eccbc0d822a7e30d1d5d5d430ee3ee022c7bacb0bfb91849"
+    },
+    {
+      "path": "sim/tb_voice_replay.sv",
+      "sha256": "3fac6092746c6177312e926c317952cd26816bb4cf2ed2a43c41206c217678e0"
+    },
+    {
+      "path": "sim/tb_word_replicator.sv",
+      "sha256": "bc9d1eba75af5fd68e3461c0112c57cace50f35edfa0b96087e3d51bce6d0469"
+    },
+    {
+      "path": "sim/tb_word_upscaler.sv",
+      "sha256": "7fdb634b649e0074b70616a66d68ee47cd26526b5a2ebbaba3f765a3460bf557"
+    },
+    {
+      "path": "sim/top_storage.v",
+      "sha256": "9f05fd380e6f6e8621a7ac0653bd0d38e4df8e057b08671d46a0c01db2dec51f"
+    },
+    {
+      "path": "sim/voice_reference.py",
+      "sha256": "1974f4cb96c80ad09edf32ad73f9b35059e6d6fc588d2449346f9c9b0934d17e"
+    },
+    {
+      "path": "sim/fixtures/card_boot.hex",
+      "sha256": "bdd0d235cb36bd9da53d6c420c44229b60d95a6c645bdd6956cfacd9e400e7af"
+    },
+    {
+      "path": "sim/fixtures/card_boot.json",
+      "sha256": "c236f0aa8e26992916a432afdaee4b72add773c6cd2f50e344a552dcc287d503"
+    },
+    {
+      "path": "sim/fixtures/combined.img",
+      "sha256": "c226b758d5e31cc06621bc9bf3b9f21419ec34a803c17295a0aa487ef63aecb8"
+    },
+    {
+      "path": "sim/fixtures/combined_320x180.img",
+      "sha256": "7acfd7cb4c532c95c1e54bfdad7f879a1d74b32d6e33b6ff0a5ec0b0ac32245e"
+    },
+    {
+      "path": "sim/fixtures/combined_320x240.img",
+      "sha256": "fa31f26022ac2a49bf14b94003fec2eda961d555ae9463de07211a5122250ea6"
+    },
+    {
+      "path": "sim/fixtures/fps30.hex",
+      "sha256": "c1e6f9dcb7df3493ee9b879fcc19dd9a619ebb4f50d47147f409d2917f9584e9"
+    },
+    {
+      "path": "sim/fixtures/fps30_320x180.hex",
+      "sha256": "9797eb87a8f1a3aed2a005d2e4082a0ef0b55d904c0ee977f8b2cf33c08d3c89"
+    },
+    {
+      "path": "sim/fixtures/fps30_320x240.hex",
+      "sha256": "4871fbd5086a326f7840052cc02d990d510ddf849e4a33368fedc67bacb99b3b"
+    },
+    {
+      "path": "sim/fixtures/generate_positional_fixture.py",
+      "sha256": "40f36d91dc926848638b59da8e52821a67e8cb485c76f3b5f286e5a80c5b7dd7"
+    },
+    {
+      "path": "sim/fixtures/generate_solid_fixture.py",
+      "sha256": "5f3d4a0010610044259f4f9c8318875cc8cc046be0be697f54d3ea76023e07f0"
+    },
+    {
+      "path": "sim/fixtures/manifest.json",
+      "sha256": "1c7171c09cd6750072b2682d86e10f07669bf34a12949c320a15f776e8d2517c"
+    },
+    {
+      "path": "sim/fixtures/video0.hex",
+      "sha256": "2dd9eda2e4cedc1410d8413490f92157feae5a14b75fe7b8fb59c9e2f81fae5d"
+    },
+    {
+      "path": "sim/fixtures/video0_320x180.hex",
+      "sha256": "fd27dd7b768d8e77192231cd513a270f1d9043c56e41581b2a5fe74604f6ca97"
+    },
+    {
+      "path": "sim/fixtures/video0_320x240.hex",
+      "sha256": "21c08e00f6fd514ae05241a6e12d77a07db260c41644aab232b8e9fc0df398b6"
+    },
+    {
+      "path": "sim/fixtures/video1.hex",
+      "sha256": "c38da656b80bf7068afd125b4b39addf8f6ba3b232b3e3d68cf39a353090f525"
+    },
+    {
+      "path": "sim/fixtures/video1_320x180.hex",
+      "sha256": "2f57e68a4cb6c9e4dfd69dafe65be2f4291c052a84582962e392b29eae94fba3"
+    },
+    {
+      "path": "sim/fixtures/video1_320x240.hex",
+      "sha256": "dbcc368327bf4bd9f9dc81486c6bf14839d52ceba073e18e722f7e026fa4d89d"
+    },
+    {
+      "path": "sim/fixtures/video2.hex",
+      "sha256": "12b8a1e9ea354f78c1c086255fcdee283c4c12e2ac75cf5e78d670bc3e82ee65"
+    },
+    {
+      "path": "sim/fixtures/video2_320x180.hex",
+      "sha256": "d6356d0eb31a87d7237a3b3487c29a0f2795881920960eb6c86d67f9916b0cee"
+    },
+    {
+      "path": "sim/fixtures/video2_320x240.hex",
+      "sha256": "69729d371fcf10bda53251a2b78c1737f5bd9ef006105c42087a3a6d37d380cb"
+    },
+    {
+      "path": "sim/natural_fixture/fps30_320x240.hex",
+      "sha256": "8014850fe22b8181435ca1ad54963a593b7a092ccb44f9e6641333352e7cf72f"
+    },
+    {
+      "path": "sim/natural_fixture/natural.img",
+      "sha256": "e10d79e1674b80ec4e9eada7feb1983f51dada78e3cca7366cdeba962392dfd9"
+    },
+    {
+      "path": "sim/natural_fixture/natural.img.json",
+      "sha256": "2d97d82afeaae2ae7c839a2e62a974a3eed171a0f5d4b178fc1d07f92cf0fbb6"
+    },
+    {
+      "path": "sim/natural_fixture/video0_320x240.hex",
+      "sha256": "567a756e6210273564a74abb8b35aa54ef7675ae2c189d9381ec6c3786124c0c"
+    },
+    {
+      "path": "sim/natural_fixture/video1_320x240.hex",
+      "sha256": "e0920df63d27847a61073e04cde207511935ffac9d3e0797015ca168a7ac93a9"
+    },
+    {
+      "path": "sim/natural_fixture/video2_320x240.hex",
+      "sha256": "05a7e3314da29b53e31e2e02c3691bd8d831cc59227519d3b0e3cdbd3a4488eb"
+    },
+    {
+      "path": "sim/vectors/provenance.json",
+      "sha256": "9989241765c98a3b4b488b18b1e320bf6bfd5848b0333cc30a1c498fc39ba699"
+    },
+    {
+      "path": "sim/vectors/tmds_0.hex",
+      "sha256": "9feebaa28129807aac2aaedc8951a560f33b9a83776177b142ea9444b368e59c"
+    },
+    {
+      "path": "sim/vectors/tmds_1.hex",
+      "sha256": "172a8bdecdb51321d39ae89470cc3bf9d5259285ab2fd5857e844797da27c7a5"
+    },
+    {
+      "path": "sim/vectors/tmds_2.hex",
+      "sha256": "dcbb82d447749777b8f58feecae9123e2d741f1ed2a3553711d412ff284e1ced"
+    },
+    {
+      "path": "sim/voice_data/cases.json",
+      "sha256": "4a7a7eb62a0b041e84ea6d92fbd8797eb5cc1548143e9aafc1ac777aa4fccfb0"
+    },
+    {
+      "path": "sim/voice_data/conditioner.mem",
+      "sha256": "6760f351440ab68ea885a532c70dcfb8b93f3650a735de6e74143f5e682fadef"
+    },
+    {
+      "path": "sim/voice_data/conditioner_count.vh",
+      "sha256": "d6e5446364bf482c2e48e16f1ca2e7f889495db291108cf7c01205e699133bd6"
+    },
+    {
+      "path": "sim/voice_data/reference_analysis.json",
+      "sha256": "795ae12f943caf5ba4a504f67ae8098670fd672eb942e1cf8d0b5301d203c6eb"
+    },
+    {
+      "path": "sim/voice_data/voice_cases.hex",
+      "sha256": "75bdc63867adddc3e75c6c49d2aaf67cde3d048ba2c2c6a5184d2ab3f7c50b7a"
+    },
+    {
+      "path": "sim/voice_data/voice_counts.vh",
+      "sha256": "1558c2351f0763e36117ec3bc3605bc6b7f5e6e766e812f91d767b94382a5aeb"
+    },
+    {
+      "path": "sim/voice_data/voice_raw.hex",
+      "sha256": "0cf1aab0c9d70e20d20d2bf3359b22304e52b53e2f6b535e527551b9dc2ee3cf"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/combined_320x180.img",
+      "sha256": "f78a47a814ebecda675e439cdfdac11d7d8b067bc3c69e6f4d296477fbaeb666"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/combined_320x240.img",
+      "sha256": "13c142c9960cd30d06ccda16a4dca1316a1d0a4cbafdf5ca5af45cd79fe0d6c1"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/fps30_320x180.hex",
+      "sha256": "1b55228b530512971babd9b0a7269bf6f33baae8cec338664000b39af30e4135"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/fps30_320x240.hex",
+      "sha256": "0d44c074bb55aee0440486be6d5297c68860f944c74a3e1d3fe1fd90cfc09e3d"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video0_320x180.hex",
+      "sha256": "c139355444f12897abb392d1c6424a6995b29de76769ac9717b6ce20cc8c8732"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video0_320x240.hex",
+      "sha256": "9cddfadc073e5fe110ed7fbdc8de64ef02481a076503a9041697372f3cfe44b5"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video1_320x180.hex",
+      "sha256": "c54da2ef746586d91d33eca397b9274b341ee4ba9666bbd3b379400a9feb3a1d"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video1_320x240.hex",
+      "sha256": "8d0793cdde42143c34a5f41e7a56e679c4d0f997938b50b60d663311020baf04"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video2_320x180.hex",
+      "sha256": "c26a4dbd36a1e262d65f940db6da851408e4cf8e9a9d07a9299d7e7ea2dc1e31"
+    },
+    {
+      "path": "sim/fixtures/_solid_backup/video2_320x240.hex",
+      "sha256": "05c6d7d5e6b49f63971ded3078028af894108420afeaf3aa13281d99edbfeff2"
+    },
+    {
+      "path": "sim/natural_fixture/jpegs/0.jpg",
+      "sha256": "64f18e064d1d29b631dfffa7de9089c22f3e3bb280bc5a12f1b34c53b03be92e"
+    },
+    {
+      "path": "sim/natural_fixture/jpegs/1.jpg",
+      "sha256": "63a46f2a41ac2888e6512c0bdc789a8d6196f9257030a65c747b60d9376aad7d"
+    },
+    {
+      "path": "sim/natural_fixture/jpegs/2.jpg",
+      "sha256": "f26d962ad942fbf8b7c863f623b2091550da626415e7b9dbf5f712eb10bab68a"
+    }
+  ],
+  "note": "640x480@15fps isolated candidate; inherited voice unchanged"
+}

@@ -1,0 +1,25 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_period_regression -do "run -all; quit -code 0" 
+# Start time: 10:47:32 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_period_regression
+# Loading work.sd_card_bmp
+# Loading work.key_press_debounce
+# Loading work.bmp_read_scaled
+# ** Error: (vsim-3033) bmp_read_scaled.v(77): Instantiation of 'bmp24_scale_stream' failed. The design unit was not found.
+# 
+#         Region: /tb_period_regression/dut/bmp_read_m0
+#         Searched libraries:
+#             E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_unit_5b74b53118/work
+# ** Error: (vsim-3033) bmp_read_scaled.v(77): Instantiation of 'bmp24_scale_stream' failed. The design unit was not found.
+# 
+#         Region: /tb_period_regression/wide/bmp_read_m0
+#         Searched libraries:
+#             E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_unit_5b74b53118/work
+# Error loading design
+Error loading design
+# End time: 10:47:32 on Nov 03,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0

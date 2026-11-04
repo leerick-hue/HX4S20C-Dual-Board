@@ -1,0 +1,27 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.glbl work.tb_link_ack -do "run -all; quit -code 0" 
+# Start time: 14:49:39 on Nov 03,2026
+# Loading work.glbl
+# Loading sv_std.std
+# Loading work.tb_link_ack
+# Loading work.reliable_event_link
+# Loading work.event_packet_tx
+# Loading work.uart_tx
+# Loading work.uart_rx
+# Loading work.event_packet_rx
+# Loading work.board_remote_control
+# Loading work.peer_uart_rx
+# Loading work.peer_event_packet_rx
+# Loading work.peer_event_fifo
+# run -all
+# PASS reliable link: actual50/100MHz 115200, bad command/ACK retry, no duplicate NEXT, busy receipt vs execution, ordered NEXT/PAUSE recovery, disconnect/reconnect, wrong sequence rejection and late ACK after retry start
+# ** Note: $finish    : ../sim/tb_link_ack.sv(69)
+#    Time: 37344350 ns  Iteration: 1  Instance: /tb_link_ack
+# Break in Module tb_link_ack at ../sim/tb_link_ack.sv line 69
+# Stopped at ../sim/tb_link_ack.sv line 69
+#  quit -code 0
+# End time: 14:49:54 on Nov 03,2026, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

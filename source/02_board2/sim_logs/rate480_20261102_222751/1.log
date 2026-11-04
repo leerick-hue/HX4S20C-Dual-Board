@@ -1,0 +1,60 @@
+Start time: 22:27:52 on Nov 02,2026
+vlog -permissive ../src/video_source.v ../src/video_path.v ../src/mjpeg_video_player.v ../src/media_catalog.v ../src/jpeg_sector_stream.v ../src/sd_sector_cdc.v ../src/rgb565_pack.v ../src/sdram.v ../src/frame_read_write.v ../src/frame_fifo_read.v ../src/frame_fifo_write.v ../src/frame_swap_fx_cdc.v ../src/reset_sync.v ../src/pixel_write_fifo.v ../src/afifo_32_16_256.v ../src/media_viewport.v ../src/video_timing_data.v ../src/video_delay.v ../src/rgb565_unpack.v ../src/native_video_timing.v ../src/jpeg/jpeg_bitbuffer.v ../src/jpeg/jpeg_core.v ../src/jpeg/jpeg_dht.v ../src/jpeg/jpeg_dht_std_cx_ac.v ../src/jpeg/jpeg_dht_std_cx_dc.v ../src/jpeg/jpeg_dht_std_y_ac.v ../src/jpeg/jpeg_dht_std_y_dc.v ../src/jpeg/jpeg_dqt.v ../src/jpeg/jpeg_idct.v ../src/jpeg/jpeg_idct_fifo.v ../src/jpeg/jpeg_idct_ram.v ../src/jpeg/jpeg_idct_ram_dp.v ../src/jpeg/jpeg_idct_transpose.v ../src/jpeg/jpeg_idct_transpose_ram.v ../src/jpeg/jpeg_idct_x.v ../src/jpeg/jpeg_idct_y.v ../src/jpeg/jpeg_input.v ../src/jpeg/jpeg_mcu_id.v ../src/jpeg/jpeg_mcu_proc.v ../src/jpeg/jpeg_output.v ../src/jpeg/jpeg_output_cx_ram.v ../src/jpeg/jpeg_output_fifo.v ../src/jpeg/jpeg_output_y_ram.v ../user_source/hdl_source/include/sdr_as_ram.enc.v ../user_source/hdl_source/include/sdr_init_ref.enc.v ../user_source/hdl_source/include/sdr_wrrd.enc.v 
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module video_source
+-- Compiling module video_path
+-- Compiling module mjpeg_video_player
+-- Compiling module media_catalog
+-- Compiling module jpeg_sector_stream
+-- Compiling module sd_sector_cdc
+-- Compiling module rgb565_pack
+-- Compiling module sdram
+-- Compiling module frame_read_write
+-- Compiling module frame_fifo_read
+-- Compiling module frame_fifo_write
+-- Compiling module frame_swap_fx_cdc
+-- Compiling module reset_sync
+-- Compiling module pixel_write_fifo
+-- Compiling module rfifo_32_32_512
+-- Compiling module fifo_cross_domain_addr_process_al_rfifo_32_32_512
+-- Compiling module ram_infer_rfifo_32_32_512
+-- Compiling module media_viewport
+-- Compiling module board_frame_request
+-- Compiling module video_delay
+-- Compiling module rgb565_unpack
+-- Compiling module native_video_timing
+-- Compiling module jpeg_bitbuffer
+-- Compiling module jpeg_core
+-- Compiling module jpeg_dht
+-- Compiling module jpeg_dht_std_cx_ac
+-- Compiling module jpeg_dht_std_cx_dc
+-- Compiling module jpeg_dht_std_y_ac
+-- Compiling module jpeg_dht_std_y_dc
+-- Compiling module jpeg_dqt
+-- Compiling module jpeg_idct
+-- Compiling module jpeg_idct_fifo
+-- Compiling module jpeg_idct_ram
+-- Compiling module jpeg_idct_ram_dp
+-- Compiling module jpeg_idct_transpose
+-- Compiling module jpeg_idct_transpose_ram
+-- Compiling module jpeg_idct_x
+-- Compiling module jpeg_idct_y
+-- Compiling module jpeg_input
+-- Compiling module jpeg_mcu_id
+-- Compiling module jpeg_mcu_proc
+-- Compiling module jpeg_output
+-- Compiling module jpeg_output_cx_ram
+-- Compiling module jpeg_output_cx_ram_ram_dp_256_8
+-- Compiling module jpeg_output_fifo
+-- Compiling module jpeg_output_y_ram
+-- Compiling module jpeg_output_y_ram_ram_dp_512_9
+-- Compiling module sdr_as_ram
+-- Compiling module sdr_init_ref
+** Warning: ../user_source/hdl_source/include/sdr_init_ref.enc.v(213): (vlog-LRM-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+** Warning: ../user_source/hdl_source/include/sdr_wrrd.enc.v(83): in protected region
+
+Top level modules:
+	video_path
+	native_video_timing
+End time: 22:27:53 on Nov 02,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 2

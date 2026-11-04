@@ -1,0 +1,531 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -gCARD_BYTES=131072 -gRATE_TEST=1 -gSECTOR_FIXED_US=0 -gSECTOR_JITTER_US=50 -onfinish stop work.tb_video_path -do "run -all; quit -code 0" 
+# Start time: 22:27:54 on Nov 02,2026
+# Loading sv_std.std
+# Loading work.tb_video_path
+# Loading work.native_video_timing
+# Loading work.video_path
+# Loading work.video_source
+# Loading work.sd_sector_cdc
+# Loading work.reset_sync
+# Loading work.media_catalog
+# Loading work.mjpeg_video_player
+# Loading work.jpeg_sector_stream
+# Loading work.jpeg_core
+# Loading work.jpeg_input
+# Loading work.jpeg_dht
+# Loading work.jpeg_idct
+# Loading work.jpeg_idct_ram
+# Loading work.jpeg_idct_ram_dp
+# Loading work.jpeg_idct_x
+# Loading work.jpeg_idct_transpose
+# Loading work.jpeg_idct_transpose_ram
+# Loading work.jpeg_idct_y
+# Loading work.jpeg_idct_fifo
+# Loading work.jpeg_dqt
+# Loading work.jpeg_output
+# Loading work.jpeg_output_y_ram
+# Loading work.jpeg_output_y_ram_ram_dp_512_9
+# Loading work.jpeg_output_cx_ram
+# Loading work.jpeg_output_cx_ram_ram_dp_256_8
+# Loading work.jpeg_output_fifo
+# Loading work.jpeg_bitbuffer
+# Loading work.jpeg_mcu_proc
+# Loading work.jpeg_mcu_id
+# Loading work.rgb565_pack
+# Loading work.media_viewport
+# Loading work.video_delay
+# Loading work.rgb565_unpack
+# Loading work.frame_swap_fx_cdc
+# Loading work.board_frame_request
+# Loading work.frame_read_write
+# Loading work.pixel_write_fifo
+# Loading work.frame_fifo_write
+# Loading work.rfifo_32_32_512
+# Loading work.fifo_cross_domain_addr_process_al_rfifo_32_32_512
+# Loading work.ram_infer_rfifo_32_32_512
+# Loading work.frame_fifo_read
+# Loading work.sdram
+# Loading work.sdr_as_ram
+# Loading work.sdr_init_ref
+# Loading work.EG_PHY_SDRAM_2M_32
+# Loading work.sdram_retention_model
+# Loading work.jpeg_dht_std_y_dc
+# Loading work.jpeg_dht_std_y_ac
+# Loading work.jpeg_dht_std_cx_dc
+# Loading work.jpeg_dht_std_cx_ac
+# ** Warning: (vsim-3017) ../src/frame_read_write.v(159): [TFMPC] - Too few port connections. Expected 14, found 11.
+# 
+#         Region: /tb_video_path/dut/dma/read_buf
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'valid'.
+# 
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'afull'.
+# 
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'aempty'.
+# 
+# ** Warning: (vsim-3017) ../src/afifo_32_16_256.v(231): [TFMPC] - Too few port connections. Expected 16, found 14.
+# 
+#         Region: /tb_video_path/dut/dma/read_buf/ram_inst
+# ** Warning: (vsim-3722) ../src/afifo_32_16_256.v(231): [TFMPC] - Missing connection for port 'doa'.
+# 
+# ** Warning: (vsim-3722) ../src/afifo_32_16_256.v(231): [TFMPC] - Missing connection for port 'dib'.
+# 
+# run -all
+# HB t=1ms swaps=0 writes=0 wr_total=0 state=0 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=0 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=2ms swaps=0 writes=0 wr_total=0 state=0 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=0 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=3ms swaps=0 writes=0 wr_total=0 state=1 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=0 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=4ms swaps=0 writes=2924 wr_total=2924 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=2924 rdfifo=20 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=5ms swaps=0 writes=11332 wr_total=11332 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=11332 rdfifo=60 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=6ms swaps=0 writes=19648 wr_total=19648 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=19648 rdfifo=64 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=7ms swaps=0 writes=26628 wr_total=26628 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=26628 rdfifo=62 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=8ms swaps=0 writes=34612 wr_total=34612 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=34612 rdfifo=72 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=9ms swaps=0 writes=41484 wr_total=41484 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=41484 rdfifo=71 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=10ms swaps=0 writes=49348 wr_total=49348 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=49348 rdfifo=60 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=11ms swaps=0 writes=56440 wr_total=56440 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=56440 rdfifo=8 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=12ms swaps=0 writes=64244 wr_total=64244 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=64244 rdfifo=12 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=13ms swaps=0 writes=71426 wr_total=71426 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=71426 rdfifo=63 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=14ms swaps=0 writes=78720 wr_total=78720 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=78720 rdfifo=45 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=15ms swaps=0 writes=84864 wr_total=84864 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=84864 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=16ms swaps=0 writes=91776 wr_total=91776 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=91776 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=17ms swaps=0 writes=98688 wr_total=98688 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=98688 rdfifo=24 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=18ms swaps=0 writes=105600 wr_total=105600 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=105600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=19ms swaps=0 writes=113036 wr_total=113036 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=113036 rdfifo=63 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=20ms swaps=0 writes=120620 wr_total=120620 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=120620 rdfifo=64 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0      0      0
+# HB t=21ms swaps=0 writes=128896 wr_total=128896 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=128896 rdfifo=42 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=22ms swaps=0 writes=135680 wr_total=135680 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=135680 rdfifo=27 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=23ms swaps=0 writes=141696 wr_total=141696 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=141696 rdfifo=32 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=24ms swaps=0 writes=145920 wr_total=145920 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=145920 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=25ms swaps=0 writes=150016 wr_total=150016 state=8 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=150016 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# DECODE_DRAIN frame=0 cycles=899337 ms=22.483425
+# DECODE_DUE frame=0 cycles=899556 ms=22.488900 late=0
+# HB t=26ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=27ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=28ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=29ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=30ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=31ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=32ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# HB t=33ms swaps=0 writes=153600 wr_total=153600 state=11 err=0 drops=0 comp=0 rreq=0 rret=0 wapp=153600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0      0      0
+# JPEG_SWAP n=1 asset=0 time_ns=33444956000 dropped=0 wb=1 wr_addr_range=153600..307199
+# XSDRAM t=33446910000 data=zzzzzzzz addr_of_response~=153664 logical=64 seen=1 wr_total=153600 rdcnt=0
+# XSDRAM t=33448510000 data=zzzzzzzz addr_of_response~=153728 logical=128 seen=1 wr_total=153600 rdcnt=64
+# XSDRAM t=33450110000 data=zzzzzzzz addr_of_response~=153792 logical=192 seen=1 wr_total=153600 rdcnt=128
+# XSDRAM t=33451710000 data=zzzzzzzz addr_of_response~=153856 logical=256 seen=1 wr_total=153600 rdcnt=192
+# XSDRAM t=33453310000 data=zzzzzzzz addr_of_response~=153920 logical=320 seen=1 wr_total=153600 rdcnt=256
+# XSDRAM t=33454910000 data=zzzzzzzz addr_of_response~=153984 logical=384 seen=1 wr_total=153600 rdcnt=320
+# HB t=34ms swaps=1 writes=0 wr_total=153600 state=8 err=0 drops=0 comp=6400 rreq=448 rret=448 wapp=153600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=35ms swaps=1 writes=7912 wr_total=161512 state=8 err=0 drops=0 comp=64000 rreq=448 rret=448 wapp=161512 rdfifo=24 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=36ms swaps=1 writes=16320 wr_total=169920 state=8 err=0 drops=0 comp=121600 rreq=448 rret=448 wapp=169920 rdfifo=64 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=37ms swaps=1 writes=24454 wr_total=178054 state=8 err=0 drops=0 comp=179200 rreq=6784 rret=6784 wapp=178054 rdfifo=340 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   6784 153600
+# HB t=38ms swaps=1 writes=32236 wr_total=185836 state=8 err=0 drops=0 comp=236800 rreq=21184 rret=21184 wapp=185836 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  21184 153600
+# HB t=39ms swaps=1 writes=40020 wr_total=193620 state=8 err=0 drops=0 comp=294400 rreq=35584 rret=35584 wapp=193620 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  35584 153600
+# HB t=40ms swaps=1 writes=47807 wr_total=201407 state=8 err=0 drops=0 comp=352000 rreq=49984 rret=49984 wapp=201407 rdfifo=509 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  49984 153600
+# HB t=41ms swaps=1 writes=55588 wr_total=209188 state=8 err=0 drops=0 comp=409600 rreq=64384 rret=64384 wapp=209188 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  64384 153600
+# HB t=42ms swaps=1 writes=63372 wr_total=216972 state=8 err=0 drops=0 comp=467200 rreq=78784 rret=78784 wapp=216972 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  78784 153600
+# HB t=43ms swaps=1 writes=71158 wr_total=224758 state=8 err=0 drops=0 comp=524800 rreq=93184 rret=93184 wapp=224758 rdfifo=509 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  93184 153600
+# HB t=44ms swaps=1 writes=78944 wr_total=232544 state=8 err=0 drops=0 comp=582400 rreq=107584 rret=107584 wapp=232544 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 107584 153600
+# HB t=45ms swaps=1 writes=86740 wr_total=240340 state=8 err=0 drops=0 comp=640000 rreq=121984 rret=121984 wapp=240340 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 121984 153600
+# HB t=46ms swaps=1 writes=94520 wr_total=248120 state=8 err=0 drops=0 comp=697600 rreq=136384 rret=136384 wapp=248120 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 136384 153600
+# HB t=47ms swaps=1 writes=102304 wr_total=255904 state=8 err=0 drops=0 comp=755200 rreq=150784 rret=150784 wapp=255904 rdfifo=511 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 150784 153600
+# HB t=48ms swaps=1 writes=111104 wr_total=264704 state=8 err=0 drops=0 comp=812800 rreq=153600 rret=153600 wapp=264704 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=49ms swaps=1 writes=119512 wr_total=273112 state=8 err=0 drops=0 comp=870400 rreq=153600 rret=153600 wapp=273112 rdfifo=40 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=50ms swaps=1 writes=127488 wr_total=281088 state=8 err=0 drops=0 comp=921600 rreq=153600 rret=153600 wapp=281088 rdfifo=36 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=1 asset=0 checked=921600 freeze=0
+# HB t=51ms swaps=1 writes=135932 wr_total=289532 state=8 err=0 drops=0 comp=25600 rreq=154048 rret=154048 wapp=289532 rdfifo=4 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=52ms swaps=1 writes=143960 wr_total=297560 state=8 err=0 drops=0 comp=83200 rreq=154048 rret=154048 wapp=297560 rdfifo=40 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=53ms swaps=1 writes=148992 wr_total=302592 state=8 err=0 drops=0 comp=140800 rreq=154048 rret=154048 wapp=302592 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=54ms swaps=1 writes=153248 wr_total=306848 state=8 err=0 drops=0 comp=198400 rreq=165184 rret=165184 wapp=306848 rdfifo=128 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  11584 153600
+# DECODE_DRAIN frame=1 cycles=814585 ms=20.364625
+# DECODE_DUE frame=1 cycles=815482 ms=20.387050 late=0
+# HB t=55ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=256000 rreq=179648 rret=179648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=56ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=313600 rreq=194048 rret=194048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# HB t=57ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=371200 rreq=208448 rret=208448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=58ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=428800 rreq=222848 rret=222848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=59ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=486400 rreq=237248 rret=237248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=60ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=544000 rreq=251648 rret=251648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=61ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=601600 rreq=266048 rret=266048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=62ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=659200 rreq=280448 rret=280448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=63ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=716800 rreq=294848 rret=294848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=64ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=774400 rreq=307200 rret=307200 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=65ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=832000 rreq=307200 rret=307200 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=66ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=889600 rreq=307200 rret=307200 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=2 asset=0 checked=921600 freeze=0
+# HB t=67ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=0 rreq=307648 rret=307648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=68ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=44800 rreq=307648 rret=307648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=69ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=102400 rreq=307648 rret=307648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=70ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=160000 rreq=309248 rret=309248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   2048 153600
+# HB t=71ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=217600 rreq=323648 rret=323648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  16448 153600
+# HB t=72ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=275200 rreq=338048 rret=338048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  30848 153600
+# HB t=73ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=332800 rreq=352448 rret=352448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  45248 153600
+# HB t=74ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=390400 rreq=366848 rret=366848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  59648 153600
+# HB t=75ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=448000 rreq=381248 rret=381248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  74048 153600
+# HB t=76ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=505600 rreq=395648 rret=395648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  88448 153600
+# HB t=77ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=563200 rreq=410048 rret=410048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 102848 153600
+# HB t=78ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=620800 rreq=424448 rret=424448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=79ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=678400 rreq=438848 rret=438848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=80ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=736000 rreq=453248 rret=453248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 146048 153600
+# HB t=81ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=793600 rreq=460800 rret=460800 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=82ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=851200 rreq=460800 rret=460800 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=83ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=908800 rreq=460800 rret=460800 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=3 asset=0 checked=921600 freeze=0
+# HB t=84ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=6400 rreq=461248 rret=461248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=85ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=64000 rreq=461248 rret=461248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=86ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=121600 rreq=461248 rret=461248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=87ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=179200 rreq=467648 rret=467648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   6848 153600
+# HB t=88ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=236800 rreq=482048 rret=482048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  21248 153600
+# HB t=89ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=294400 rreq=496448 rret=496448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  35648 153600
+# HB t=90ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=352000 rreq=510848 rret=510848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  50048 153600
+# HB t=91ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=409600 rreq=525248 rret=525248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  64448 153600
+# HB t=92ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=467200 rreq=539648 rret=539648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  78848 153600
+# HB t=93ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=524800 rreq=554048 rret=554048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  93248 153600
+# HB t=94ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=582400 rreq=568448 rret=568448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=95ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=640000 rreq=582848 rret=582848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 122048 153600
+# HB t=96ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=697600 rreq=597248 rret=597248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 136448 153600
+# HB t=97ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=755200 rreq=611648 rret=611648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 150848 153600
+# HB t=98ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=812800 rreq=614400 rret=614400 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=99ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=870400 rreq=614400 rret=614400 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=100ms swaps=1 writes=153600 wr_total=307200 state=10 err=0 drops=0 comp=921600 rreq=614400 rret=614400 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=4 asset=0 checked=921600 freeze=0
+# HB t=101ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=25600 rreq=614848 rret=614848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=102ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=83200 rreq=614848 rret=614848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=103ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=140800 rreq=614848 rret=614848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=104ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=198400 rreq=626048 rret=626048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  11648 153600
+# HB t=105ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=256000 rreq=640448 rret=640448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=106ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=313600 rreq=654848 rret=654848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# HB t=107ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=371200 rreq=669248 rret=669248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=108ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=428800 rreq=683648 rret=683648 wapp=307200 rdfifo=0 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=109ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=486400 rreq=698048 rret=698048 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=110ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=544000 rreq=712448 rret=712448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=111ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=601600 rreq=726848 rret=726848 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=112ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=659200 rreq=741248 rret=741248 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=113ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=716800 rreq=755648 rret=755648 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=114ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=774400 rreq=768000 rret=768000 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=115ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=832000 rreq=768000 rret=768000 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=116ms swaps=1 writes=153600 wr_total=307200 state=11 err=0 drops=0 comp=889600 rreq=768000 rret=768000 wapp=307200 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=5 asset=0 checked=921600 freeze=0
+# JPEG_SWAP n=2 asset=1 time_ns=116778206000 dropped=0 wb=0 wr_addr_range=0..153599
+# HB t=117ms swaps=2 writes=153600 wr_total=307200 state=4 err=0 drops=0 comp=0 rreq=768448 rret=768448 wapp=307200 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=118ms swaps=2 writes=3980 wr_total=311180 state=8 err=0 drops=0 comp=44800 rreq=768448 rret=768448 wapp=311180 rdfifo=63 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=119ms swaps=2 writes=12416 wr_total=319616 state=8 err=0 drops=0 comp=102400 rreq=768448 rret=768448 wapp=319616 rdfifo=32 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=120ms swaps=2 writes=20496 wr_total=327696 state=8 err=0 drops=0 comp=160000 rreq=769984 rret=769984 wapp=327696 rdfifo=112 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   1984 153600
+# HB t=121ms swaps=2 writes=28284 wr_total=335484 state=8 err=0 drops=0 comp=217600 rreq=784384 rret=784384 wapp=335484 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  16384 153600
+# HB t=122ms swaps=2 writes=36072 wr_total=343272 state=8 err=0 drops=0 comp=275200 rreq=798784 rret=798784 wapp=343272 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  30784 153600
+# HB t=123ms swaps=2 writes=43744 wr_total=350944 state=8 err=0 drops=0 comp=332800 rreq=813184 rret=813184 wapp=350944 rdfifo=68 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  45184 153600
+# HB t=124ms swaps=2 writes=51437 wr_total=358637 state=8 err=0 drops=0 comp=390400 rreq=827584 rret=827584 wapp=358637 rdfifo=417 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  59584 153600
+# HB t=125ms swaps=2 writes=59224 wr_total=366424 state=8 err=0 drops=0 comp=448000 rreq=841984 rret=841984 wapp=366424 rdfifo=233 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  73984 153600
+# HB t=126ms swaps=2 writes=66912 wr_total=374112 state=8 err=0 drops=0 comp=505600 rreq=856384 rret=856384 wapp=374112 rdfifo=494 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  88384 153600
+# HB t=127ms swaps=2 writes=74400 wr_total=381600 state=8 err=0 drops=0 comp=563200 rreq=870784 rret=870784 wapp=381600 rdfifo=125 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 102784 153600
+# HB t=128ms swaps=2 writes=81984 wr_total=389184 state=8 err=0 drops=0 comp=620800 rreq=885184 rret=885184 wapp=389184 rdfifo=177 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117184 153600
+# HB t=129ms swaps=2 writes=89088 wr_total=396288 state=8 err=0 drops=0 comp=678400 rreq=899648 rret=899648 wapp=396288 rdfifo=3 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=130ms swaps=2 writes=96368 wr_total=403568 state=8 err=0 drops=0 comp=736000 rreq=913984 rret=913984 wapp=403568 rdfifo=148 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 145984 153600
+# HB t=131ms swaps=2 writes=103740 wr_total=410940 state=8 err=0 drops=0 comp=793600 rreq=921600 rret=921600 wapp=410940 rdfifo=66 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=132ms swaps=2 writes=110832 wr_total=418032 state=8 err=0 drops=0 comp=851200 rreq=921600 rret=921600 wapp=418032 rdfifo=16 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=133ms swaps=2 writes=118616 wr_total=425816 state=8 err=0 drops=0 comp=908800 rreq=921600 rret=921600 wapp=425816 rdfifo=40 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=6 asset=1 checked=921600 freeze=0
+# HB t=134ms swaps=2 writes=126464 wr_total=433664 state=8 err=0 drops=0 comp=6400 rreq=922048 rret=922048 wapp=433664 rdfifo=6 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=135ms swaps=2 writes=134200 wr_total=441400 state=8 err=0 drops=0 comp=64000 rreq=922048 rret=922048 wapp=441400 rdfifo=65 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=136ms swaps=2 writes=141696 wr_total=448896 state=8 err=0 drops=0 comp=121600 rreq=922048 rret=922048 wapp=448896 rdfifo=25 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=137ms swaps=2 writes=147248 wr_total=454448 state=8 err=0 drops=0 comp=179200 rreq=928384 rret=928384 wapp=454448 rdfifo=80 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   6784 153600
+# HB t=138ms swaps=2 writes=151480 wr_total=458680 state=8 err=0 drops=0 comp=236800 rreq=942784 rret=942784 wapp=458680 rdfifo=94 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  21184 153600
+# DECODE_DRAIN frame=2 cycles=852089 ms=21.302225
+# DECODE_DUE frame=2 cycles=852737 ms=21.318425 late=0
+# HB t=139ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=294400 rreq=957248 rret=957248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  35648 153600
+# HB t=140ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=352000 rreq=971648 rret=971648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  50048 153600
+# HB t=141ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=409600 rreq=986048 rret=986048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  64448 153600
+# HB t=142ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=467200 rreq=1000448 rret=1000448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  78848 153600
+# HB t=143ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=524800 rreq=1014848 rret=1014848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  93248 153600
+# HB t=144ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=582400 rreq=1029248 rret=1029248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=145ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=640000 rreq=1043648 rret=1043648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 122048 153600
+# HB t=146ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=697600 rreq=1058048 rret=1058048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 136448 153600
+# HB t=147ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=755200 rreq=1072448 rret=1072448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 150848 153600
+# HB t=148ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=812800 rreq=1075200 rret=1075200 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=149ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=870400 rreq=1075200 rret=1075200 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=150ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=921600 rreq=1075200 rret=1075200 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=7 asset=1 checked=921600 freeze=0
+# HB t=151ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=25600 rreq=1075648 rret=1075648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=152ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=83200 rreq=1075648 rret=1075648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=153ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=140800 rreq=1075648 rret=1075648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=154ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=198400 rreq=1086848 rret=1086848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  11648 153600
+# HB t=155ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=256000 rreq=1101248 rret=1101248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=156ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=313600 rreq=1115648 rret=1115648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# HB t=157ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=371200 rreq=1130048 rret=1130048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=158ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=428800 rreq=1144448 rret=1144448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=159ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=486400 rreq=1158848 rret=1158848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=160ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=544000 rreq=1173248 rret=1173248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=161ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=601600 rreq=1187648 rret=1187648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=162ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=659200 rreq=1202048 rret=1202048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=163ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=716800 rreq=1216448 rret=1216448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=164ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=774400 rreq=1228800 rret=1228800 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=165ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=832000 rreq=1228800 rret=1228800 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=166ms swaps=2 writes=153600 wr_total=460800 state=10 err=0 drops=0 comp=889600 rreq=1228800 rret=1228800 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=8 asset=1 checked=921600 freeze=0
+# HB t=167ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=0 rreq=1229248 rret=1229248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=168ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=44800 rreq=1229248 rret=1229248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=169ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=102400 rreq=1229248 rret=1229248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=170ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=160000 rreq=1230848 rret=1230848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   2048 153600
+# HB t=171ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=217600 rreq=1245248 rret=1245248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  16448 153600
+# HB t=172ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=275200 rreq=1259648 rret=1259648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  30848 153600
+# HB t=173ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=332800 rreq=1274048 rret=1274048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  45248 153600
+# HB t=174ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=390400 rreq=1288448 rret=1288448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  59648 153600
+# HB t=175ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=448000 rreq=1302848 rret=1302848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  74048 153600
+# HB t=176ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=505600 rreq=1317248 rret=1317248 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  88448 153600
+# HB t=177ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=563200 rreq=1331648 rret=1331648 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 102848 153600
+# HB t=178ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=620800 rreq=1346048 rret=1346048 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=179ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=678400 rreq=1360448 rret=1360448 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=180ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=736000 rreq=1374848 rret=1374848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 146048 153600
+# HB t=181ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=793600 rreq=1382400 rret=1382400 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=182ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=851200 rreq=1382400 rret=1382400 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=183ms swaps=2 writes=153600 wr_total=460800 state=11 err=0 drops=0 comp=908800 rreq=1382400 rret=1382400 wapp=460800 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=9 asset=1 checked=921600 freeze=0
+# JPEG_SWAP n=3 asset=2 time_ns=183444806000 dropped=0 wb=1 wr_addr_range=153600..307199
+# HB t=184ms swaps=3 writes=0 wr_total=460800 state=8 err=0 drops=0 comp=6400 rreq=1382848 rret=1382848 wapp=460800 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=185ms swaps=3 writes=7424 wr_total=468224 state=8 err=0 drops=0 comp=64000 rreq=1382848 rret=1382848 wapp=468224 rdfifo=15 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=186ms swaps=3 writes=15360 wr_total=476160 state=8 err=0 drops=0 comp=121600 rreq=1382848 rret=1382848 wapp=476160 rdfifo=55 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=187ms swaps=3 writes=22793 wr_total=483593 state=8 err=0 drops=0 comp=179200 rreq=1389184 rret=1389184 wapp=483593 rdfifo=247 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   6784 153600
+# HB t=188ms swaps=3 writes=30060 wr_total=490860 state=8 err=0 drops=0 comp=236800 rreq=1403584 rret=1403584 wapp=490860 rdfifo=276 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  21184 153600
+# HB t=189ms swaps=3 writes=36980 wr_total=497780 state=8 err=0 drops=0 comp=294400 rreq=1417984 rret=1417984 wapp=497780 rdfifo=224 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  35584 153600
+# HB t=190ms swaps=3 writes=44744 wr_total=505544 state=8 err=0 drops=0 comp=352000 rreq=1432384 rret=1432384 wapp=505544 rdfifo=436 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  49984 153600
+# HB t=191ms swaps=3 writes=51912 wr_total=512712 state=8 err=0 drops=0 comp=409600 rreq=1446784 rret=1446784 wapp=512712 rdfifo=184 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  64384 153600
+# HB t=192ms swaps=3 writes=59200 wr_total=520000 state=8 err=0 drops=0 comp=467200 rreq=1461184 rret=1461184 wapp=520000 rdfifo=320 rdusedw=384 busy=1 idlem=0 ordb=1 owrb=0 empty=0 und=0 3  78720 153600
+# HB t=193ms swaps=3 writes=66457 wr_total=527257 state=8 err=0 drops=0 comp=524800 rreq=1475584 rret=1475584 wapp=527257 rdfifo=153 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  93184 153600
+# HB t=194ms swaps=3 writes=74068 wr_total=534868 state=8 err=0 drops=0 comp=582400 rreq=1489984 rret=1489984 wapp=534868 rdfifo=300 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 107584 153600
+# HB t=195ms swaps=3 writes=80404 wr_total=541204 state=8 err=0 drops=0 comp=640000 rreq=1504384 rret=1504384 wapp=541204 rdfifo=89 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 121984 153600
+# HB t=196ms swaps=3 writes=87180 wr_total=547980 state=8 err=0 drops=0 comp=697600 rreq=1518784 rret=1518784 wapp=547980 rdfifo=132 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 136384 153600
+# HB t=197ms swaps=3 writes=94056 wr_total=554856 state=8 err=0 drops=0 comp=755200 rreq=1533184 rret=1533184 wapp=554856 rdfifo=251 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 150784 153600
+# HB t=198ms swaps=3 writes=100736 wr_total=561536 state=8 err=0 drops=0 comp=812800 rreq=1536000 rret=1536000 wapp=561536 rdfifo=60 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=199ms swaps=3 writes=107724 wr_total=568524 state=8 err=0 drops=0 comp=870400 rreq=1536000 rret=1536000 wapp=568524 rdfifo=52 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=200ms swaps=3 writes=115200 wr_total=576000 state=8 err=0 drops=0 comp=921600 rreq=1536000 rret=1536000 wapp=576000 rdfifo=26 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=10 asset=2 checked=921600 freeze=0
+# HB t=201ms swaps=3 writes=123205 wr_total=584005 state=8 err=0 drops=0 comp=25600 rreq=1536448 rret=1536448 wapp=584005 rdfifo=59 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=202ms swaps=3 writes=131072 wr_total=591872 state=8 err=0 drops=0 comp=83200 rreq=1536448 rret=1536448 wapp=591872 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=203ms swaps=3 writes=137404 wr_total=598204 state=8 err=0 drops=0 comp=140800 rreq=1536448 rret=1536448 wapp=598204 rdfifo=68 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=204ms swaps=3 writes=142848 wr_total=603648 state=8 err=0 drops=0 comp=198400 rreq=1547648 rret=1547648 wapp=603648 rdfifo=21 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  11648 153600
+# HB t=205ms swaps=3 writes=147200 wr_total=608000 state=8 err=0 drops=0 comp=256000 rreq=1562048 rret=1562048 wapp=608000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=206ms swaps=3 writes=150656 wr_total=611456 state=8 err=0 drops=0 comp=313600 rreq=1576448 rret=1576448 wapp=611456 rdfifo=0 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# DECODE_DRAIN frame=0 cycles=912543 ms=22.813575
+# DECODE_DUE frame=0 cycles=913332 ms=22.833300 late=0
+# HB t=207ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=371200 rreq=1590848 rret=1590848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=208ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=428800 rreq=1605248 rret=1605248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=209ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=486400 rreq=1619648 rret=1619648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=210ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=544000 rreq=1634048 rret=1634048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=211ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=601600 rreq=1648448 rret=1648448 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=212ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=659200 rreq=1662848 rret=1662848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=213ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=716800 rreq=1677248 rret=1677248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=214ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=774400 rreq=1689600 rret=1689600 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=215ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=832000 rreq=1689600 rret=1689600 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=216ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=889600 rreq=1689600 rret=1689600 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=11 asset=2 checked=921600 freeze=0
+# HB t=217ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=0 rreq=1690048 rret=1690048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=218ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=44800 rreq=1690048 rret=1690048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=219ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=102400 rreq=1690048 rret=1690048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=220ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=160000 rreq=1691648 rret=1691648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   2048 153600
+# HB t=221ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=217600 rreq=1706048 rret=1706048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  16448 153600
+# HB t=222ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=275200 rreq=1720448 rret=1720448 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  30848 153600
+# HB t=223ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=332800 rreq=1734848 rret=1734848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  45248 153600
+# HB t=224ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=390400 rreq=1749248 rret=1749248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  59648 153600
+# HB t=225ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=448000 rreq=1763648 rret=1763648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  74048 153600
+# HB t=226ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=505600 rreq=1778048 rret=1778048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  88448 153600
+# HB t=227ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=563200 rreq=1792448 rret=1792448 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 102848 153600
+# HB t=228ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=620800 rreq=1806848 rret=1806848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=229ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=678400 rreq=1821248 rret=1821248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=230ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=736000 rreq=1835648 rret=1835648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 146048 153600
+# HB t=231ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=793600 rreq=1843200 rret=1843200 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=232ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=851200 rreq=1843200 rret=1843200 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=233ms swaps=3 writes=153600 wr_total=614400 state=10 err=0 drops=0 comp=908800 rreq=1843200 rret=1843200 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=12 asset=2 checked=921600 freeze=0
+# HB t=234ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=6400 rreq=1843648 rret=1843648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=235ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=64000 rreq=1843648 rret=1843648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=236ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=121600 rreq=1843648 rret=1843648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=237ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=179200 rreq=1850048 rret=1850048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   6848 153600
+# HB t=238ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=236800 rreq=1864448 rret=1864448 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  21248 153600
+# HB t=239ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=294400 rreq=1878848 rret=1878848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  35648 153600
+# HB t=240ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=352000 rreq=1893248 rret=1893248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  50048 153600
+# HB t=241ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=409600 rreq=1907648 rret=1907648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  64448 153600
+# HB t=242ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=467200 rreq=1922048 rret=1922048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  78848 153600
+# HB t=243ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=524800 rreq=1936448 rret=1936448 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  93248 153600
+# HB t=244ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=582400 rreq=1950848 rret=1950848 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=245ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=640000 rreq=1965248 rret=1965248 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 122048 153600
+# HB t=246ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=697600 rreq=1979648 rret=1979648 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 136448 153600
+# HB t=247ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=755200 rreq=1994048 rret=1994048 wapp=614400 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 150848 153600
+# HB t=248ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=812800 rreq=1996800 rret=1996800 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=249ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=870400 rreq=1996800 rret=1996800 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=250ms swaps=3 writes=153600 wr_total=614400 state=11 err=0 drops=0 comp=921600 rreq=1996800 rret=1996800 wapp=614400 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=13 asset=2 checked=921600 freeze=0
+# JPEG_SWAP n=4 asset=0 time_ns=250111406000 dropped=0 wb=0 wr_addr_range=0..153599
+# HB t=251ms swaps=4 writes=2232 wr_total=616632 state=8 err=0 drops=0 comp=25600 rreq=1997248 rret=1997248 wapp=616632 rdfifo=68 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=252ms swaps=4 writes=10640 wr_total=625040 state=8 err=0 drops=0 comp=83200 rreq=1997248 rret=1997248 wapp=625040 rdfifo=65 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=253ms swaps=4 writes=19072 wr_total=633472 state=8 err=0 drops=0 comp=140800 rreq=1997248 rret=1997248 wapp=633472 rdfifo=38 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=254ms swaps=4 writes=26980 wr_total=641380 state=8 err=0 drops=0 comp=198400 rreq=2008384 rret=2008384 wapp=641380 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  11584 153600
+# HB t=255ms swaps=4 writes=34764 wr_total=649164 state=8 err=0 drops=0 comp=256000 rreq=2022784 rret=2022784 wapp=649164 rdfifo=511 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  25984 153600
+# HB t=256ms swaps=4 writes=42552 wr_total=656952 state=8 err=0 drops=0 comp=313600 rreq=2037184 rret=2037184 wapp=656952 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  40384 153600
+# HB t=257ms swaps=4 writes=50336 wr_total=664736 state=8 err=0 drops=0 comp=371200 rreq=2051584 rret=2051584 wapp=664736 rdfifo=509 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  54784 153600
+# HB t=258ms swaps=4 writes=58128 wr_total=672528 state=8 err=0 drops=0 comp=428800 rreq=2065984 rret=2065984 wapp=672528 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  69184 153600
+# HB t=259ms swaps=4 writes=65912 wr_total=680312 state=8 err=0 drops=0 comp=486400 rreq=2080384 rret=2080384 wapp=680312 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  83584 153600
+# HB t=260ms swaps=4 writes=73694 wr_total=688094 state=8 err=0 drops=0 comp=544000 rreq=2094784 rret=2094784 wapp=688094 rdfifo=509 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  97984 153600
+# HB t=261ms swaps=4 writes=81480 wr_total=695880 state=8 err=0 drops=0 comp=601600 rreq=2109184 rret=2109184 wapp=695880 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 112384 153600
+# HB t=262ms swaps=4 writes=89264 wr_total=703664 state=8 err=0 drops=0 comp=659200 rreq=2123584 rret=2123584 wapp=703664 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 126784 153600
+# HB t=263ms swaps=4 writes=97046 wr_total=711446 state=8 err=0 drops=0 comp=716800 rreq=2137984 rret=2137984 wapp=711446 rdfifo=509 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 141184 153600
+# HB t=264ms swaps=4 writes=105436 wr_total=719836 state=8 err=0 drops=0 comp=774400 rreq=2150400 rret=2150400 wapp=719836 rdfifo=36 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=265ms swaps=4 writes=113844 wr_total=728244 state=8 err=0 drops=0 comp=832000 rreq=2150400 rret=2150400 wapp=728244 rdfifo=65 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=266ms swaps=4 writes=122252 wr_total=736652 state=8 err=0 drops=0 comp=889600 rreq=2150400 rret=2150400 wapp=736652 rdfifo=63 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=14 asset=0 checked=921600 freeze=0
+# HB t=267ms swaps=4 writes=129716 wr_total=744116 state=8 err=0 drops=0 comp=0 rreq=2150848 rret=2150848 wapp=744116 rdfifo=66 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=268ms swaps=4 writes=138124 wr_total=752524 state=8 err=0 drops=0 comp=44800 rreq=2150848 rret=2150848 wapp=752524 rdfifo=63 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=269ms swaps=4 writes=145264 wr_total=759664 state=8 err=0 drops=0 comp=102400 rreq=2150848 rret=2150848 wapp=759664 rdfifo=16 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=270ms swaps=4 writes=150272 wr_total=764672 state=8 err=0 drops=0 comp=160000 rreq=2152448 rret=2152448 wapp=764672 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   2048 153600
+# DECODE_DRAIN frame=1 cycles=811173 ms=20.279325
+# DECODE_DUE frame=1 cycles=811947 ms=20.298675 late=0
+# HB t=271ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=217600 rreq=2166848 rret=2166848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  16448 153600
+# HB t=272ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=275200 rreq=2181248 rret=2181248 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  30848 153600
+# HB t=273ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=332800 rreq=2195648 rret=2195648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  45248 153600
+# HB t=274ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=390400 rreq=2210048 rret=2210048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  59648 153600
+# HB t=275ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=448000 rreq=2224448 rret=2224448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  74048 153600
+# HB t=276ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=505600 rreq=2238848 rret=2238848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  88448 153600
+# HB t=277ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=563200 rreq=2253248 rret=2253248 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 102848 153600
+# HB t=278ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=620800 rreq=2267648 rret=2267648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=279ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=678400 rreq=2282048 rret=2282048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=280ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=736000 rreq=2296448 rret=2296448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 146048 153600
+# HB t=281ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=793600 rreq=2304000 rret=2304000 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=282ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=851200 rreq=2304000 rret=2304000 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=283ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=908800 rreq=2304000 rret=2304000 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=15 asset=0 checked=921600 freeze=0
+# HB t=284ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=6400 rreq=2304448 rret=2304448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=285ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=64000 rreq=2304448 rret=2304448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=286ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=121600 rreq=2304448 rret=2304448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=287ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=179200 rreq=2310848 rret=2310848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   6848 153600
+# HB t=288ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=236800 rreq=2325248 rret=2325248 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  21248 153600
+# HB t=289ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=294400 rreq=2339648 rret=2339648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  35648 153600
+# HB t=290ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=352000 rreq=2354048 rret=2354048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  50048 153600
+# HB t=291ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=409600 rreq=2368448 rret=2368448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  64448 153600
+# HB t=292ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=467200 rreq=2382848 rret=2382848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  78848 153600
+# HB t=293ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=524800 rreq=2397248 rret=2397248 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  93248 153600
+# HB t=294ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=582400 rreq=2411648 rret=2411648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=295ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=640000 rreq=2426048 rret=2426048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 122048 153600
+# HB t=296ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=697600 rreq=2440448 rret=2440448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 136448 153600
+# HB t=297ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=755200 rreq=2454848 rret=2454848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 150848 153600
+# HB t=298ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=812800 rreq=2457600 rret=2457600 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=299ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=870400 rreq=2457600 rret=2457600 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=300ms swaps=4 writes=153600 wr_total=768000 state=10 err=0 drops=0 comp=921600 rreq=2457600 rret=2457600 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=16 asset=0 checked=921600 freeze=0
+# HB t=301ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=25600 rreq=2458048 rret=2458048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=302ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=83200 rreq=2458048 rret=2458048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=303ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=140800 rreq=2458048 rret=2458048 wapp=768000 rdfifo=0 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=304ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=198400 rreq=2469248 rret=2469248 wapp=768000 rdfifo=0 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  11648 153600
+# HB t=305ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=256000 rreq=2483648 rret=2483648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=306ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=313600 rreq=2498048 rret=2498048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# HB t=307ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=371200 rreq=2512448 rret=2512448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=308ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=428800 rreq=2526848 rret=2526848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=309ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=486400 rreq=2541248 rret=2541248 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=310ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=544000 rreq=2555648 rret=2555648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=311ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=601600 rreq=2570048 rret=2570048 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=312ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=659200 rreq=2584448 rret=2584448 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=313ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=716800 rreq=2598848 rret=2598848 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=314ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=774400 rreq=2611200 rret=2611200 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=315ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=832000 rreq=2611200 rret=2611200 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=316ms swaps=4 writes=153600 wr_total=768000 state=11 err=0 drops=0 comp=889600 rreq=2611200 rret=2611200 wapp=768000 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=17 asset=0 checked=921600 freeze=0
+# JPEG_SWAP n=5 asset=1 time_ns=316778006000 dropped=0 wb=1 wr_addr_range=153600..307199
+# HB t=317ms swaps=5 writes=0 wr_total=768000 state=8 err=0 drops=0 comp=0 rreq=2611648 rret=2611648 wapp=768000 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=318ms swaps=5 writes=4736 wr_total=772736 state=8 err=0 drops=0 comp=44800 rreq=2611648 rret=2611648 wapp=772736 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=319ms swaps=5 writes=12977 wr_total=780977 state=8 err=0 drops=0 comp=102400 rreq=2611648 rret=2611648 wapp=780977 rdfifo=67 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=320ms swaps=5 writes=21012 wr_total=789012 state=8 err=0 drops=0 comp=160000 rreq=2613184 rret=2613184 wapp=789012 rdfifo=118 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   1984 153600
+# HB t=321ms swaps=5 writes=28798 wr_total=796798 state=8 err=0 drops=0 comp=217600 rreq=2627584 rret=2627584 wapp=796798 rdfifo=509 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  16384 153600
+# HB t=322ms swaps=5 writes=36584 wr_total=804584 state=8 err=0 drops=0 comp=275200 rreq=2641984 rret=2641984 wapp=804584 rdfifo=508 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  30784 153600
+# HB t=323ms swaps=5 writes=44368 wr_total=812368 state=8 err=0 drops=0 comp=332800 rreq=2656384 rret=2656384 wapp=812368 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  45184 153600
+# HB t=324ms swaps=5 writes=52153 wr_total=820153 state=8 err=0 drops=0 comp=390400 rreq=2670784 rret=2670784 wapp=820153 rdfifo=327 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  59584 153600
+# HB t=325ms swaps=5 writes=59940 wr_total=827940 state=8 err=0 drops=0 comp=448000 rreq=2685184 rret=2685184 wapp=827940 rdfifo=204 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  73984 153600
+# HB t=326ms swaps=5 writes=67724 wr_total=835724 state=8 err=0 drops=0 comp=505600 rreq=2699584 rret=2699584 wapp=835724 rdfifo=510 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  88384 153600
+# HB t=327ms swaps=5 writes=75449 wr_total=843449 state=8 err=0 drops=0 comp=563200 rreq=2713984 rret=2713984 wapp=843449 rdfifo=107 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 102784 153600
+# HB t=328ms swaps=5 writes=82560 wr_total=850560 state=8 err=0 drops=0 comp=620800 rreq=2728448 rret=2728448 wapp=850560 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=329ms swaps=5 writes=88280 wr_total=856280 state=8 err=0 drops=0 comp=678400 rreq=2742784 rret=2742784 wapp=856280 rdfifo=110 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 131584 153600
+# HB t=330ms swaps=5 writes=94960 wr_total=862960 state=8 err=0 drops=0 comp=736000 rreq=2757184 rret=2757184 wapp=862960 rdfifo=176 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 145984 153600
+# HB t=331ms swaps=5 writes=102288 wr_total=870288 state=8 err=0 drops=0 comp=793600 rreq=2764800 rret=2764800 wapp=870288 rdfifo=64 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=332ms swaps=5 writes=108800 wr_total=876800 state=8 err=0 drops=0 comp=851200 rreq=2764800 rret=2764800 wapp=876800 rdfifo=62 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=333ms swaps=5 writes=115712 wr_total=883712 state=8 err=0 drops=0 comp=908800 rreq=2764800 rret=2764800 wapp=883712 rdfifo=21 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=18 asset=1 checked=921600 freeze=0
+# HB t=334ms swaps=5 writes=123392 wr_total=891392 state=8 err=0 drops=0 comp=6400 rreq=2765248 rret=2765248 wapp=891392 rdfifo=13 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=335ms swaps=5 writes=131584 wr_total=899584 state=8 err=0 drops=0 comp=64000 rreq=2765248 rret=2765248 wapp=899584 rdfifo=33 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=336ms swaps=5 writes=139644 wr_total=907644 state=8 err=0 drops=0 comp=121600 rreq=2765248 rret=2765248 wapp=907644 rdfifo=4 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=337ms swaps=5 writes=145901 wr_total=913901 state=8 err=0 drops=0 comp=179200 rreq=2771584 rret=2771584 wapp=913901 rdfifo=19 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2   6784 153600
+# HB t=338ms swaps=5 writes=150180 wr_total=918180 state=8 err=0 drops=0 comp=236800 rreq=2786048 rret=2786048 wapp=918180 rdfifo=65 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  21248 153600
+# DECODE_DRAIN frame=2 cycles=865152 ms=21.628800
+# DECODE_DUE frame=2 cycles=865762 ms=21.644050 late=0
+# HB t=339ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=294400 rreq=2800448 rret=2800448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  35648 153600
+# HB t=340ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=352000 rreq=2814848 rret=2814848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  50048 153600
+# HB t=341ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=409600 rreq=2829248 rret=2829248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  64448 153600
+# HB t=342ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=467200 rreq=2843648 rret=2843648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  78848 153600
+# HB t=343ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=524800 rreq=2858048 rret=2858048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  93248 153600
+# HB t=344ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=582400 rreq=2872448 rret=2872448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=345ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=640000 rreq=2886848 rret=2886848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 122048 153600
+# HB t=346ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=697600 rreq=2901248 rret=2901248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 136448 153600
+# HB t=347ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=755200 rreq=2915648 rret=2915648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 150848 153600
+# HB t=348ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=812800 rreq=2918400 rret=2918400 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=349ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=870400 rreq=2918400 rret=2918400 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=350ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=921600 rreq=2918400 rret=2918400 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=19 asset=1 checked=921600 freeze=0
+# HB t=351ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=25600 rreq=2918848 rret=2918848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=352ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=83200 rreq=2918848 rret=2918848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=353ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=140800 rreq=2918848 rret=2918848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=354ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=198400 rreq=2930048 rret=2930048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  11648 153600
+# HB t=355ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=256000 rreq=2944448 rret=2944448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  26048 153600
+# HB t=356ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=313600 rreq=2958848 rret=2958848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  40448 153600
+# HB t=357ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=371200 rreq=2973248 rret=2973248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  54848 153600
+# HB t=358ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=428800 rreq=2987648 rret=2987648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  69248 153600
+# HB t=359ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=486400 rreq=3002048 rret=3002048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  83648 153600
+# HB t=360ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=544000 rreq=3016448 rret=3016448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  98048 153600
+# HB t=361ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=601600 rreq=3030848 rret=3030848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 112448 153600
+# HB t=362ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=659200 rreq=3045248 rret=3045248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 126848 153600
+# HB t=363ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=716800 rreq=3059648 rret=3059648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 141248 153600
+# HB t=364ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=774400 rreq=3072000 rret=3072000 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=365ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=832000 rreq=3072000 rret=3072000 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=366ms swaps=5 writes=153600 wr_total=921600 state=10 err=0 drops=0 comp=889600 rreq=3072000 rret=3072000 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=20 asset=1 checked=921600 freeze=0
+# HB t=367ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=0 rreq=3072448 rret=3072448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=368ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=44800 rreq=3072448 rret=3072448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=369ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=102400 rreq=3072448 rret=3072448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=370ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=160000 rreq=3074048 rret=3074048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   2048 153600
+# HB t=371ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=217600 rreq=3088448 rret=3088448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  16448 153600
+# HB t=372ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=275200 rreq=3102848 rret=3102848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  30848 153600
+# HB t=373ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=332800 rreq=3117248 rret=3117248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  45248 153600
+# HB t=374ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=390400 rreq=3131648 rret=3131648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  59648 153600
+# HB t=375ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=448000 rreq=3146048 rret=3146048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  74048 153600
+# HB t=376ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=505600 rreq=3160448 rret=3160448 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2  88448 153600
+# HB t=377ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=563200 rreq=3174848 rret=3174848 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 102848 153600
+# HB t=378ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=620800 rreq=3189248 rret=3189248 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 117248 153600
+# HB t=379ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=678400 rreq=3203648 rret=3203648 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 131648 153600
+# HB t=380ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=736000 rreq=3218048 rret=3218048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 146048 153600
+# HB t=381ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=793600 rreq=3225600 rret=3225600 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=382ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=851200 rreq=3225600 rret=3225600 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# HB t=383ms swaps=5 writes=153600 wr_total=921600 state=11 err=0 drops=0 comp=908800 rreq=3225600 rret=3225600 wapp=921600 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=21 asset=1 checked=921600 freeze=0
+# JPEG_SWAP n=6 asset=2 time_ns=383444606000 dropped=0 wb=0 wr_addr_range=0..153599
+# HB t=384ms swaps=6 writes=0 wr_total=921600 state=8 err=0 drops=0 comp=6400 rreq=3226048 rret=3226048 wapp=921600 rdfifo=0 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2    448 153600
+# HB t=385ms swaps=6 writes=7336 wr_total=928936 state=8 err=0 drops=0 comp=64000 rreq=3226048 rret=3226048 wapp=928936 rdfifo=66 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=386ms swaps=6 writes=15676 wr_total=937276 state=8 err=0 drops=0 comp=121600 rreq=3226048 rret=3226048 wapp=937276 rdfifo=68 rdusedw=448 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2    448 153600
+# HB t=387ms swaps=6 writes=23232 wr_total=944832 state=8 err=0 drops=0 comp=179200 rreq=3232384 rret=3232384 wapp=944832 rdfifo=320 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=0 empty=0 und=0 2   6784 153600
+# HB t=388ms swaps=6 writes=30556 wr_total=952156 state=8 err=0 drops=0 comp=236800 rreq=3246784 rret=3246784 wapp=952156 rdfifo=50 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  21184 153600
+# HB t=389ms swaps=6 writes=38081 wr_total=959681 state=8 err=0 drops=0 comp=294400 rreq=3261184 rret=3261184 wapp=959681 rdfifo=294 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  35584 153600
+# HB t=390ms swaps=6 writes=45776 wr_total=967376 state=8 err=0 drops=0 comp=352000 rreq=3275584 rret=3275584 wapp=967376 rdfifo=68 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  49984 153600
+# HB t=391ms swaps=6 writes=53228 wr_total=974828 state=8 err=0 drops=0 comp=409600 rreq=3289984 rret=3289984 wapp=974828 rdfifo=276 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  64384 153600
+# HB t=392ms swaps=6 writes=60308 wr_total=981908 state=8 err=0 drops=0 comp=467200 rreq=3304384 rret=3304384 wapp=981908 rdfifo=383 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  78784 153600
+# HB t=393ms swaps=6 writes=67555 wr_total=989155 state=8 err=0 drops=0 comp=524800 rreq=3318784 rret=3318784 wapp=989155 rdfifo=126 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2  93184 153600
+# HB t=394ms swaps=6 writes=74624 wr_total=996224 state=8 err=0 drops=0 comp=582400 rreq=3333248 rret=3333248 wapp=996224 rdfifo=45 rdusedw=448 busy=0 idlem=0 ordb=0 owrb=0 empty=0 und=0 2 107648 153600
+# HB t=395ms swaps=6 writes=81172 wr_total=1002772 state=8 err=0 drops=0 comp=640000 rreq=3347584 rret=3347584 wapp=1002772 rdfifo=120 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 121984 153600
+# HB t=396ms swaps=6 writes=88220 wr_total=1009820 state=8 err=0 drops=0 comp=697600 rreq=3361984 rret=3361984 wapp=1009820 rdfifo=228 rdusedw=384 busy=1 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 136384 153600
+# HB t=397ms swaps=6 writes=95285 wr_total=1016885 state=8 err=0 drops=0 comp=755200 rreq=3376384 rret=3376384 wapp=1016885 rdfifo=75 rdusedw=384 busy=0 idlem=0 ordb=0 owrb=1 empty=0 und=0 2 150784 153600
+# HB t=398ms swaps=6 writes=101872 wr_total=1023472 state=8 err=0 drops=0 comp=812800 rreq=3379200 rret=3379200 wapp=1023472 rdfifo=16 rdusedw=0 busy=1 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=399ms swaps=6 writes=108892 wr_total=1030492 state=8 err=0 drops=0 comp=870400 rreq=3379200 rret=3379200 wapp=1030492 rdfifo=36 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=1 empty=1 und=0 0 153600 153600
+# HB t=400ms swaps=6 writes=116096 wr_total=1037696 state=8 err=0 drops=0 comp=921600 rreq=3379200 rret=3379200 wapp=1037696 rdfifo=0 rdusedw=0 busy=0 idlem=1 ordb=0 owrb=0 empty=1 und=0 0 153600 153600
+# JPEG_FRAME n=22 asset=2 checked=921600 freeze=0
+# ** Fatal: rate below target fps=14.285729
+#    Time: 400000131986 ps  Scope: tb_video_path File: ../sim/tb_video_path.sv Line: 173
+# ** Note: $finish    : ../sim/tb_video_path.sv(173)
+#    Time: 400000131986 ps  Iteration: 1  Instance: /tb_video_path
+# Break in Module tb_video_path at ../sim/tb_video_path.sv line 173
+# Stopped at ../sim/tb_video_path.sv line 173
+#  quit -code 0
+# End time: 23:13:12 on Nov 02,2026, Elapsed time: 0:45:18
+# Errors: 1, Warnings: 7

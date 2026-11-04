@@ -1,0 +1,106 @@
+{
+  "format": "HXJV v1",
+  "header": {
+    "version": 1,
+    "header_bytes": 512,
+    "flags": 0,
+    "width": 320,
+    "height": 240,
+    "fps_num": 25,
+    "fps_den": 1,
+    "frame_count": 3,
+    "index_lba": 1,
+    "index_sectors": 1,
+    "video_start_lba": 2,
+    "audio_start_lba": 0,
+    "audio_sample_frames": 0,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "total_sectors": 84,
+    "max_jpeg_bytes": 14760,
+    "duration_pcm_samples": 5760,
+    "index_entry_bytes": 16
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "name": "0.jpg",
+      "start_lba": 2,
+      "jpeg_bytes": 12026,
+      "pts_pcm48k": 0,
+      "jpeg_crc32": 1102616455,
+      "sector_count": 24,
+      "sha256": "64f18e064d1d29b631dfffa7de9089c22f3e3bb280bc5a12f1b34c53b03be92e",
+      "profile": {
+        "size_bytes": 12026,
+        "width": 320,
+        "height": 240,
+        "components": 3,
+        "subsampling": "4:2:0"
+      }
+    },
+    {
+      "frame": 1,
+      "name": "1.jpg",
+      "start_lba": 26,
+      "jpeg_bytes": 14760,
+      "pts_pcm48k": 1920,
+      "jpeg_crc32": 1580560307,
+      "sector_count": 29,
+      "sha256": "63a46f2a41ac2888e6512c0bdc789a8d6196f9257030a65c747b60d9376aad7d",
+      "profile": {
+        "size_bytes": 14760,
+        "width": 320,
+        "height": 240,
+        "components": 3,
+        "subsampling": "4:2:0"
+      }
+    },
+    {
+      "frame": 2,
+      "name": "2.jpg",
+      "start_lba": 55,
+      "jpeg_bytes": 14619,
+      "pts_pcm48k": 3840,
+      "jpeg_crc32": 3234568380,
+      "sector_count": 29,
+      "sha256": "f26d962ad942fbf8b7c863f623b2091550da626415e7b9dbf5f712eb10bab68a",
+      "profile": {
+        "size_bytes": 14619,
+        "width": 320,
+        "height": 240,
+        "components": 3,
+        "subsampling": "4:2:0"
+      }
+    }
+  ],
+  "audio": {
+    "path": null,
+    "input_sample_frames": 0,
+    "output_sample_frames": 0,
+    "duration_adjustment": 0
+  },
+  "bandwidth": {
+    "duration_seconds": 0.12,
+    "frames_per_second": 25.0,
+    "jpeg_payload_bytes": 41405,
+    "jpeg_average_bytes": 13801.666666666666,
+    "jpeg_max_bytes": 14760,
+    "video_sector_bytes": 41984,
+    "audio_bytes": 0,
+    "audio_bytes_per_second": 0.0,
+    "index_bytes": 512,
+    "average_media_bytes_per_second": 354133.3333333334,
+    "peak_frame_interval_bytes_per_second": 371200.0,
+    "budget_bytes_per_second": 2000000,
+    "average_within_budget": true,
+    "every_frame_interval_within_budget": true,
+    "note": "Budget arithmetic includes sector padding and PCM, not CMD17/card stalls or measured hardware speed."
+  },
+  "output": {
+    "path": "E:\\HX4S20C_Test_20261026\\board2_video_voice_codex_20261102\\sim\\natural_fixture\\natural.img",
+    "size_bytes": 43008,
+    "sha256": "e10d79e1674b80ec4e9eada7feb1983f51dada78e3cca7366cdeba962392dfd9"
+  }
+}

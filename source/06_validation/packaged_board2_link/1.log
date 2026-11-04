@@ -1,0 +1,269 @@
+Start time: 14:49:36 on Nov 03,2026
+vlog -permissive ../vendor/eg_logic_arith.v ../vendor/eg_logic_bram.v ../vendor/eg_logic_clk.v ../vendor/eg_logic_config.v ../vendor/eg_logic_dram.v ../vendor/eg_logic_dram16x4.v ../vendor/eg_logic_fifo.v ../vendor/eg_logic_gate.v ../vendor/eg_logic_io.v ../vendor/eg_logic_iobuf.v ../vendor/eg_logic_mult.v ../vendor/eg_logic_ramfifo.v ../vendor/eg_phy_adc.v ../vendor/eg_phy_bankref.v ../vendor/eg_phy_bram.v ../vendor/eg_phy_bram32k.v ../vendor/eg_phy_clk.v ../vendor/eg_phy_config.v ../vendor/eg_phy_csb.v ../vendor/eg_phy_ddr_8m_16.v ../vendor/eg_phy_dff.v ../vendor/eg_phy_fifo.v ../vendor/eg_phy_glbl.v ../vendor/eg_phy_lslice.v ../vendor/eg_phy_mslice.v ../vendor/eg_phy_mult18.v ../vendor/eg_phy_osc.v ../vendor/eg_phy_pad.v ../vendor/eg_phy_pll.v ../vendor/eg_phy_pwrmnt.v ../src/afifo_32_16_256.v ../src/diag_control.v ../src/diag_vga_pll.v ../src/frame_fifo_read.v ../src/frame_fifo_write.v ../src/frame_read_write.v ../src/frame_swap_fx_cdc.v ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v ../src/hdmi_audio_diagnostic.v ../src/hdmi_reference_tone.v ../src/jpeg/jpeg_bitbuffer.v ../src/jpeg/jpeg_core.v ../src/jpeg/jpeg_dht.v ../src/jpeg/jpeg_dht_std_cx_ac.v ../src/jpeg/jpeg_dht_std_cx_dc.v ../src/jpeg/jpeg_dht_std_y_ac.v ../src/jpeg/jpeg_dht_std_y_dc.v ../src/jpeg/jpeg_dqt.v ../src/jpeg/jpeg_idct.v ../src/jpeg/jpeg_idct_fifo.v ../src/jpeg/jpeg_idct_ram.v ../src/jpeg/jpeg_idct_ram_dp.v ../src/jpeg/jpeg_idct_transpose.v ../src/jpeg/jpeg_idct_transpose_ram.v ../src/jpeg/jpeg_idct_x.v ../src/jpeg/jpeg_idct_y.v ../src/jpeg/jpeg_input.v ../src/jpeg/jpeg_mcu_id.v ../src/jpeg/jpeg_mcu_proc.v ../src/jpeg/jpeg_output.v ../src/jpeg/jpeg_output_cx_ram.v ../src/jpeg/jpeg_output_fifo.v ../src/jpeg/jpeg_output_y_ram.v ../src/jpeg_sector_stream.v ../src/media_catalog.v ../src/media_viewport.v ../src/mjpeg_video_player.v ../src/native_video_timing.v ../src/pixel_write_fifo.v ../src/reset_sync.v ../src/rgb565_pack.v ../src/rgb565_unpack.v ../src/sd_sector_cdc.v ../src/sdram.v ../src/seg_decoder.v ../src/seg_scan.v ../src/top.v ../src/video_delay.v ../src/video_path.v ../src/video_rgb_to_axis_640x480.v ../src/video_source.v ../src/video_timing_data.v ../user_source/hdl_source/include/sdr_as_ram.enc.v ../user_source/hdl_source/include/sdr_init_ref.enc.v ../user_source/hdl_source/include/sdr_wrrd.enc.v ../src/word_replicator.v ../src/word_upscaler.v ../src/voice/board2_voice_top.v ../src/voice/key_debounce.v ../src/voice/keypad_scan_4x4.v ../src/voice/event_arbiter.v ../src/voice/event_fifo.v ../src/voice/event_packet_tx.v ../src/voice/uart_tx.v ../src/voice/inmp441_rx.v ../src/voice/mic_pcm_conditioner.v ../src/voice/pcm_uart_stream.v ../src/voice/speech_command_core.v ../src/voice/speech_dtw.v ../src/voice/speech_features.v ../src/voice/voice_status_leds.v ../src/voice/reliable_event_link.v ../src/voice/uart_rx.v ../src/voice/event_packet_rx.v ../src/voice/voice_feature_preroll.v ../sim/top_storage.v ../sim/card_model.v ../sim/ideal_plls.v ../sim/phy_omitted.v ../peer/board_remote_control.v ../peer/uart_rx.v ../peer/event_packet_rx.v ../peer/event_fifo.v 
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module EG_LOGIC_SEQ_DIV
+-- Compiling module EG_LOGIC_BUFG
+-- Compiling module EG_LOGIC_BUFIO
+-- Compiling module EG_LOGIC_BUFGMUX
+-- Compiling module EG_LOGIC_MBOOT
+-- Compiling module EG_LOGIC_DNA
+-- Compiling module EG_LOGIC_GSRN
+-- Compiling module EG_LOGIC_CCLK
+-- Compiling module EG_LOGIC_DRAM
+-- Compiling module EG_LOGIC_DRAM16X4
+-- Compiling module EG_LOGIC_FIFO
+-- Compiling module EG_LOGIC_BUF
+-- Compiling module EG_LOGIC_IDELAY
+-- Compiling module EG_LOGIC_IDDR
+-- Compiling module EG_LOGIC_ODDR
+-- Compiling module EG_LOGIC_IDDRx2
+-- Compiling module EG_LOGIC_ODELAY
+-- Compiling module EG_LOGIC_ODDRx2
+-- Compiling module EG_LOGIC_ODDRx2l
+-- Compiling module EG_LOGIC_IBUF
+-- Compiling module EG_LOGIC_OBUF
+-- Compiling module EG_LOGIC_IOTRIBUF
+-- Compiling module EG_LOGIC_MULT
+-- Compiling module EG_LOGIC_RAMFIFO
+-- Compiling module gray2bin
+-- Compiling module gray_count
+-- Compiling module showahead_buffer
+-- Compiling module EG_PHY_ADC
+-- Compiling module HARD_SAR12_ADC
+-- Compiling module EG_PHY_BANKREF
+-- Compiling module EG_PHY_BRAM
+-- Compiling module EG_PHY_BRAM32K
+-- Compiling module EG_PHY_GCLK
+-- Compiling module EG_PHY_IOCLK
+-- Compiling module EG_PHY_CLKDIV
+-- Compiling module EG_PHY_CONFIG
+-- Compiling module EG_PHY_DDR_8M_16
+-- Compiling module dff_slice_half
+-- Compiling module pfb_dffctrl
+-- Compiling module dff_slice
+-- Compiling module EG_PHY_FIFO
+-- Compiling module glbl
+-- Compiling module EG_PHY_LSLICE
+-- Compiling module EG_PHY_MSLICE
+-- Compiling module EG_PHY_MULT18
+-- Compiling module EG_PHY_OSC
+-- Compiling module EG_PHY_PAD
+-- Compiling module EG_PHY_PLL
+-- Compiling module prediv_mux
+-- Compiling module eg_dphase_sel
+-- Compiling module eg_clko_premux
+-- Compiling module eg_clko_ctrl
+-- Compiling module eg_pll_div128
+-- Compiling module eg_pll_div2
+-- Compiling module EG_PHY_PWRMNT
+-- Compiling module rfifo_32_32_512
+-- Compiling module fifo_cross_domain_addr_process_al_rfifo_32_32_512
+-- Compiling module ram_infer_rfifo_32_32_512
+-- Compiling module diag_control
+-- Compiling module diag_vga_pll
+-- Compiling module frame_fifo_read
+-- Compiling module frame_fifo_write
+-- Compiling module frame_read_write
+-- Compiling module frame_swap_fx_cdc
+-- Compiling module hdmi_1_4b_transmitter_core_wrapper
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+** Warning: ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(130): in protected region
+-- Compiling module hdmi_audio_diagnostic
+-- Compiling module hdmi_reference_tone
+-- Compiling module jpeg_bitbuffer
+-- Compiling module jpeg_core
+-- Compiling module jpeg_dht
+-- Compiling module jpeg_dht_std_cx_ac
+-- Compiling module jpeg_dht_std_cx_dc
+-- Compiling module jpeg_dht_std_y_ac
+-- Compiling module jpeg_dht_std_y_dc
+-- Compiling module jpeg_dqt
+-- Compiling module jpeg_idct
+-- Compiling module jpeg_idct_fifo
+-- Compiling module jpeg_idct_ram
+-- Compiling module jpeg_idct_ram_dp
+-- Compiling module jpeg_idct_transpose
+-- Compiling module jpeg_idct_transpose_ram
+-- Compiling module jpeg_idct_x
+-- Compiling module jpeg_idct_y
+-- Compiling module jpeg_input
+-- Compiling module jpeg_mcu_id
+-- Compiling module jpeg_mcu_proc
+-- Compiling module jpeg_output
+-- Compiling module jpeg_output_cx_ram
+-- Compiling module jpeg_output_cx_ram_ram_dp_256_8
+-- Compiling module jpeg_output_fifo
+-- Compiling module jpeg_output_y_ram
+-- Compiling module jpeg_output_y_ram_ram_dp_512_9
+-- Compiling module jpeg_sector_stream
+-- Compiling module media_catalog
+-- Compiling module media_viewport
+-- Compiling module mjpeg_video_player
+-- Compiling module native_video_timing
+-- Compiling module pixel_write_fifo
+-- Compiling module reset_sync
+-- Compiling module rgb565_pack
+-- Compiling module rgb565_unpack
+-- Compiling module sd_sector_cdc
+-- Compiling module sdram
+-- Compiling module seg_decoder
+-- Compiling module seg_scan
+-- Compiling module top
+** Warning: ../src/top.v(54): (vlog-2618) 'mem_locked' already declared in this scope (top).
+-- Compiling module video_delay
+-- Compiling module video_path
+-- Compiling module video_rgb_to_axis_640x480
+-- Compiling module video_source
+-- Compiling module board_frame_request
+-- Compiling module sdr_as_ram
+-- Compiling module sdr_init_ref
+** Warning: ../user_source/hdl_source/include/sdr_init_ref.enc.v(213): (vlog-LRM-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+** Warning: ../user_source/hdl_source/include/sdr_wrrd.enc.v(83): in protected region
+-- Compiling module word_replicator
+-- Compiling module word_upscaler
+-- Compiling module board2_voice_top
+-- Compiling module key_debounce
+-- Compiling module keypad_scan_4x4
+-- Compiling module event_arbiter
+-- Compiling module event_fifo
+-- Compiling module event_packet_tx
+-- Compiling module uart_tx
+-- Compiling module inmp441_rx
+-- Compiling module mic_pcm_conditioner
+-- Compiling module pcm_uart_stream
+-- Compiling module speech_command_core
+-- Compiling module speech_dtw
+-- Compiling module speech_features
+-- Compiling module voice_status_leds
+-- Compiling module reliable_event_link
+-- Compiling module uart_rx
+-- Compiling module event_packet_rx
+-- Compiling module voice_feature_preroll
+-- Compiling module EG_PHY_SDRAM_2M_32
+-- Compiling module sd_card_top
+-- Compiling module video_hd_pll
+-- Compiling module sys_pll
+-- Compiling module hdmi_phy_wrapper
+-- Compiling module board_remote_control
+-- Compiling module peer_uart_rx
+-- Compiling module peer_event_packet_rx
+-- Compiling module peer_event_fifo
+
+Top level modules:
+	EG_LOGIC_SEQ_DIV
+	EG_LOGIC_BUFIO
+	EG_LOGIC_BUFGMUX
+	EG_LOGIC_MBOOT
+	EG_LOGIC_DNA
+	EG_LOGIC_GSRN
+	EG_LOGIC_CCLK
+	EG_LOGIC_DRAM
+	EG_LOGIC_DRAM16X4
+	EG_LOGIC_FIFO
+	EG_LOGIC_BUF
+	EG_LOGIC_IDELAY
+	EG_LOGIC_ODELAY
+	EG_LOGIC_ODDRx2l
+	EG_LOGIC_IBUF
+	EG_LOGIC_OBUF
+	EG_LOGIC_IOTRIBUF
+	EG_LOGIC_MULT
+	EG_PHY_ADC
+	EG_PHY_BANKREF
+	EG_PHY_BRAM
+	EG_PHY_BRAM32K
+	EG_PHY_GCLK
+	EG_PHY_CONFIG
+	EG_PHY_DDR_8M_16
+	EG_PHY_FIFO
+	glbl
+	EG_PHY_MULT18
+	EG_PHY_OSC
+	EG_PHY_PAD
+	EG_PHY_PWRMNT
+	hdmi_audio_diagnostic
+	hdmi_reference_tone
+	top
+	word_replicator
+	word_upscaler
+	board_remote_control
+End time: 14:49:38 on Nov 03,2026, Elapsed time: 0:00:02
+Errors: 0, Warnings: 83

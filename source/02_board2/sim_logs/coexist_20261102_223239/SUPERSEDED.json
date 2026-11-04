@@ -1,0 +1,6 @@
+{
+  "status": "superseded_incomplete",
+  "passed": false,
+  "reason": "Replaced to guarantee 512 samples whose entire physical I2S input starts after visible display_valid. Initial 512-only bench ended before display; second draft counted display state at UART packet end and was tightened to exclude a boundary-straddling sample. No final PASS was produced in superseded runs.",
+  "replacement_run": "sim_logs/coexist_20261102_223423"
+}

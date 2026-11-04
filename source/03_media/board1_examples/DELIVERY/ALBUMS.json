@@ -1,0 +1,270 @@
+[
+  {
+    "file": "01_ALBUM_USER2_SCENERY2_BOARD1.img",
+    "photos": [
+      {
+        "index": 1,
+        "title": "你提供的乡村水岸",
+        "source": "sources\\photos\\user_1.jpg",
+        "original_size": [
+          1438,
+          960
+        ],
+        "bmp_size": [
+          1438,
+          960
+        ],
+        "bmp_sha256": "f1a6e78e17a5dacce327cb22e4f9fcae5c9c4cd463f5e36b6ed4d35b048cdb8d",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 2,
+        "title": "你提供的灯塔",
+        "source": "sources\\photos\\user_2.jpg",
+        "original_size": [
+          960,
+          1164
+        ],
+        "bmp_size": [
+          891,
+          1080
+        ],
+        "bmp_sha256": "7d8758b7287051ca2a33666a209794affa20450739d1694b46b1ee405bd25f47",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 3,
+        "title": "梦莲湖与雪山",
+        "source": "sources\\photos\\moraine.jpg",
+        "original_size": [
+          2048,
+          1536
+        ],
+        "bmp_size": [
+          1440,
+          1080
+        ],
+        "bmp_sha256": "8ad3e95143da633ff7de9138231145f71beb0e38eaf10f36d2fa78fe8d3b2b4a",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 4,
+        "title": "云雾群山",
+        "source": "sources\\photos\\mist.jpg",
+        "original_size": [
+          1920,
+          1144
+        ],
+        "bmp_size": [
+          1813,
+          1080
+        ],
+        "bmp_sha256": "a36d2ca4a59405056b097a0e2922b51f9addf05fb5bb9180657ef8d13772cb1e",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      }
+    ],
+    "pack": {
+      "format": "HXAU v1",
+      "sector_size": 512,
+      "header": {
+        "version": 1,
+        "sample_rate": 48000,
+        "channels": 2,
+        "bits_per_sample": 16,
+        "audio_start_sector": 34328,
+        "audio_frame_count": 576000,
+        "photo_end_sector_exclusive": 34328,
+        "photo_count": 4,
+        "total_image_sectors": 38828
+      },
+      "output": {
+        "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\DELIVERY\\01_ALBUM_USER2_SCENERY2_BOARD1.img",
+        "size_bytes": 19879936,
+        "sha256": "0c415055414e5739c6c8c76308b856b92d9ca80ad57dd8d67ede4b6886a8c126"
+      },
+      "photos": [
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0001.BMP",
+          "name": "0001.BMP",
+          "size_bytes": 4143414,
+          "width": 1438,
+          "height": 960,
+          "start_sector": 1,
+          "end_sector_exclusive": 8094,
+          "sha256": "f1a6e78e17a5dacce327cb22e4f9fcae5c9c4cd463f5e36b6ed4d35b048cdb8d"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0002.BMP",
+          "name": "0002.BMP",
+          "size_bytes": 2890134,
+          "width": 891,
+          "height": 1080,
+          "start_sector": 8094,
+          "end_sector_exclusive": 13739,
+          "sha256": "7d8758b7287051ca2a33666a209794affa20450739d1694b46b1ee405bd25f47"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0003.BMP",
+          "name": "0003.BMP",
+          "size_bytes": 4665654,
+          "width": 1440,
+          "height": 1080,
+          "start_sector": 13739,
+          "end_sector_exclusive": 22852,
+          "sha256": "8ad3e95143da633ff7de9138231145f71beb0e38eaf10f36d2fa78fe8d3b2b4a"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0004.BMP",
+          "name": "0004.BMP",
+          "size_bytes": 5875254,
+          "width": 1813,
+          "height": 1080,
+          "start_sector": 22852,
+          "end_sector_exclusive": 34328,
+          "sha256": "a36d2ca4a59405056b097a0e2922b51f9addf05fb5bb9180657ef8d13772cb1e"
+        }
+      ],
+      "audio": {
+        "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\sources\\album_existing_demo_music.wav",
+        "frame_count": 576000,
+        "seconds": 12.0,
+        "payload_sha256": "f5271233c40a1f315ffa2e71e7a216cf7ce1deada3c64094d39421f0da120776"
+      }
+    },
+    "preview": "previews\\album1.jpg"
+  },
+  {
+    "file": "02_ALBUM_SCENERY4_BOARD1.img",
+    "photos": [
+      {
+        "index": 1,
+        "title": "山谷溪流",
+        "source": "sources\\photos\\valley.jpg",
+        "original_size": [
+          1920,
+          1281
+        ],
+        "bmp_size": [
+          1619,
+          1080
+        ],
+        "bmp_sha256": "23f612e99d13f3c1de748a8bb243c545457fe187c3944d141f4b4fbef619685a",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 2,
+        "title": "林间阳光",
+        "source": "sources\\photos\\forest.jpg",
+        "original_size": [
+          1920,
+          1279
+        ],
+        "bmp_size": [
+          1621,
+          1080
+        ],
+        "bmp_sha256": "82a0741535d1cfcdad0dfc703bbf1edf148a2025b8be9f8e9041433c5b892a17",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 3,
+        "title": "雪山群峰",
+        "source": "sources\\photos\\mountain.jpg",
+        "original_size": [
+          1440,
+          960
+        ],
+        "bmp_size": [
+          1440,
+          960
+        ],
+        "bmp_sha256": "14e46a0537e936cb339eaab6611abf5bcaf6a48fbef63339b406925523803e6d",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      },
+      {
+        "index": 4,
+        "title": "红岩荒漠",
+        "source": "sources\\photos\\desert.jpg",
+        "original_size": [
+          1920,
+          1272
+        ],
+        "bmp_size": [
+          1630,
+          1080
+        ],
+        "bmp_sha256": "9e30fcc19a86798cf75357824eb9e315e9167b0fb69a904deaff7a8d006b3567",
+        "modification": "EXIF orientation, RGB24 BMP; shrink only when exceeding1920x1080; no crop or color enhancement"
+      }
+    ],
+    "pack": {
+      "format": "HXAU v1",
+      "sector_size": 512,
+      "header": {
+        "version": 1,
+        "sample_rate": 48000,
+        "channels": 2,
+        "bits_per_sample": 16,
+        "audio_start_sector": 38935,
+        "audio_frame_count": 576000,
+        "photo_end_sector_exclusive": 38935,
+        "photo_count": 4,
+        "total_image_sectors": 43435
+      },
+      "output": {
+        "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\DELIVERY\\02_ALBUM_SCENERY4_BOARD1.img",
+        "size_bytes": 22238720,
+        "sha256": "d269134a6e5a167b4d22cbfbb960846e82f06e2795395ebaa50239c93eb5088c"
+      },
+      "photos": [
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album2_bmp\\0001.BMP",
+          "name": "0001.BMP",
+          "size_bytes": 5248854,
+          "width": 1619,
+          "height": 1080,
+          "start_sector": 1,
+          "end_sector_exclusive": 10253,
+          "sha256": "23f612e99d13f3c1de748a8bb243c545457fe187c3944d141f4b4fbef619685a"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album2_bmp\\0002.BMP",
+          "name": "0002.BMP",
+          "size_bytes": 5253174,
+          "width": 1621,
+          "height": 1080,
+          "start_sector": 10253,
+          "end_sector_exclusive": 20514,
+          "sha256": "82a0741535d1cfcdad0dfc703bbf1edf148a2025b8be9f8e9041433c5b892a17"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album2_bmp\\0003.BMP",
+          "name": "0003.BMP",
+          "size_bytes": 4147254,
+          "width": 1440,
+          "height": 960,
+          "start_sector": 20514,
+          "end_sector_exclusive": 28615,
+          "sha256": "14e46a0537e936cb339eaab6611abf5bcaf6a48fbef63339b406925523803e6d"
+        },
+        {
+          "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album2_bmp\\0004.BMP",
+          "name": "0004.BMP",
+          "size_bytes": 5283414,
+          "width": 1630,
+          "height": 1080,
+          "start_sector": 28615,
+          "end_sector_exclusive": 38935,
+          "sha256": "9e30fcc19a86798cf75357824eb9e315e9167b0fb69a904deaff7a8d006b3567"
+        }
+      ],
+      "audio": {
+        "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\sources\\album_existing_demo_music.wav",
+        "frame_count": 576000,
+        "seconds": 12.0,
+        "payload_sha256": "f5271233c40a1f315ffa2e71e7a216cf7ce1deada3c64094d39421f0da120776"
+      }
+    },
+    "preview": "previews\\album2.jpg"
+  }
+]

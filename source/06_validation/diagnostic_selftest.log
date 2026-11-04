@@ -1,0 +1,26 @@
+PASS crc8 known vector
+PASS short frame rejected
+PASS signed24 extremes
+PASS signed24 round trip
+PASS s24 little endian bytes
+PASS field round trip
+PASS split packets decode
+PASS corruption rejected
+PASS resync after bad crc
+PASS resync to real header
+PASS header kept across reads
+PASS reject {'protocol': 2}
+PASS reject {'length': 47}
+PASS reject {'tag': b'MD02'}
+PASS noise yields no frames
+PASS noise classified fail
+PASS wrap32
+PASS seq wrap decode
+PASS cumulative wrap delta
+PASS first seq need not be 0
+PASS classify no bytes
+PASS classify bytes no frame
+PASS classify crc only
+PASS classify ok
+PASS missing port error
+25/25 checks passed

@@ -1,0 +1,33 @@
+Start time: 22:15:37 on Nov 02,2026
+vlog jpeg_bitbuffer.v jpeg_core.v jpeg_dht.v jpeg_dht_std_cx_ac.v jpeg_dht_std_cx_dc.v jpeg_dht_std_y_ac.v jpeg_dht_std_y_dc.v jpeg_dqt.v jpeg_idct.v jpeg_idct_fifo.v jpeg_idct_ram.v jpeg_idct_ram_dp.v jpeg_idct_transpose.v jpeg_idct_transpose_ram.v jpeg_idct_x.v jpeg_idct_y.v jpeg_input.v jpeg_mcu_id.v jpeg_mcu_proc.v jpeg_output.v jpeg_output_cx_ram.v jpeg_output_fifo.v jpeg_output_y_ram.v 
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+-- Compiling module jpeg_bitbuffer
+-- Compiling module jpeg_core
+-- Compiling module jpeg_dht
+-- Compiling module jpeg_dht_std_cx_ac
+-- Compiling module jpeg_dht_std_cx_dc
+-- Compiling module jpeg_dht_std_y_ac
+-- Compiling module jpeg_dht_std_y_dc
+-- Compiling module jpeg_dqt
+-- Compiling module jpeg_idct
+-- Compiling module jpeg_idct_fifo
+-- Compiling module jpeg_idct_ram
+-- Compiling module jpeg_idct_ram_dp
+-- Compiling module jpeg_idct_transpose
+-- Compiling module jpeg_idct_transpose_ram
+-- Compiling module jpeg_idct_x
+-- Compiling module jpeg_idct_y
+-- Compiling module jpeg_input
+-- Compiling module jpeg_mcu_id
+-- Compiling module jpeg_mcu_proc
+-- Compiling module jpeg_output
+-- Compiling module jpeg_output_cx_ram
+-- Compiling module jpeg_output_cx_ram_ram_dp_256_8
+-- Compiling module jpeg_output_fifo
+-- Compiling module jpeg_output_y_ram
+-- Compiling module jpeg_output_y_ram_ram_dp_512_9
+
+Top level modules:
+	jpeg_core
+End time: 22:15:37 on Nov 02,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

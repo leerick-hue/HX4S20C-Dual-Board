@@ -1,0 +1,261 @@
+{
+  "state": "software_verified_480p_candidate_pending_hardware",
+  "hardware_tested": false,
+  "bit": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\DELIVERY\\HX4S20C_BOARD2_VIDEO_480P15_6F5DD197.bit",
+  "sha256": "6f5dd1975f1776dd7ae1815c7a236df9faad3b7c26cb7a1d59a1fd1205f32a42",
+  "setup_ns": 0.2,
+  "hold_ns": 0.021,
+  "sta_coverage_percent": 99.99,
+  "clocks_mhz": {
+    "memory_pll/pll_inst.clkc[3]": 40.0,
+    "ref_clk": 50.0,
+    "hd$pll/pll_inst.clkc[1]": 74.25,
+    "memory_pll/pll_inst.clkc[1]": 50.0,
+    "memory_pll/pll_inst.clkc[0]": 100.0,
+    "hd$pll/pll_inst.clkc[2]": 371.333,
+    "memory_pll/pll_inst.clkc[2]": 50.0,
+    "hd$pll/pll_inst.clkc[0]": 67.504
+  },
+  "resources": {
+    "lut": 15901,
+    "reg": 11041,
+    "le": 17831,
+    "bram": 56,
+    "dsp": 28,
+    "pll": 2
+  },
+  "source_video": {
+    "width": 640,
+    "height": 480,
+    "fps": 15
+  },
+  "hdmi": {
+    "width": 1280,
+    "height": 720,
+    "nominal_hz": 60,
+    "window": [
+      320,
+      120,
+      640,
+      480
+    ]
+  },
+  "card": {
+    "path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\DELIVERY\\CARD_BBB_20s_640x480_15fps.img",
+    "bytes": 12408320,
+    "sha256": "c9c7c50f40313dd598616b25c73ebfba14d3ff352381a2ddce7831ae86247c73"
+  },
+  "tests": {
+    "video": {
+      "path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\sim_logs\\video480_20261102_222751\\summary.json",
+      "sha256": "ab6b54a21e488f4a868f4c23adbcb0a703d9cf1a2e9743fcb326b9d33642e54d",
+      "scope": "Actual JPEG, native RGB565 pack/unpack, sector CDC, FIFOs, encrypted controller and retained physical-pin SDRAM BL4 model. First/middle/last independently C-checked RTL sample PNGs are exact golden. Every 720p pixel including centred 640x480 window and black border, each frame address, source/App BL4 continuity, front-bank isolation, freeze/resume and loop checked. Ideal clocks; synthetic sector byte360ns without physical TF token/command latency; CL2 early-return fault-injection model with existing capture delay; excludes HDMI electrical and hardware timing proof.",
+      "results": [
+        "# DECODE_DRAIN frame=0 cycles=846722 ms=21.168050",
+        "# DECODE_DUE frame=0 cycles=846961 ms=21.174025 late=0",
+        "# JPEG_SWAP n=1 asset=0 time_ns=33444956000 dropped=0 wb=1 wr_addr_range=153600..307199",
+        "# JPEG_FRAME n=1 asset=0 checked=921600 freeze=1",
+        "# DECODE_DRAIN frame=1 cycles=802868 ms=20.071700",
+        "# DECODE_DUE frame=1 cycles=803588 ms=20.089700 late=0",
+        "# JPEG_FRAME n=2 asset=0 checked=921600 freeze=1",
+        "# JPEG_FRAME n=3 asset=0 checked=921600 freeze=0",
+        "# JPEG_FRAME n=4 asset=0 checked=921600 freeze=0",
+        "# JPEG_FRAME n=5 asset=0 checked=921600 freeze=0",
+        "# JPEG_FRAME n=6 asset=0 checked=921600 freeze=0",
+        "# JPEG_FRAME n=7 asset=0 checked=921600 freeze=0",
+        "# JPEG_SWAP n=2 asset=1 time_ns=150111506000 dropped=0 wb=0 wr_addr_range=0..153599",
+        "# JPEG_FRAME n=8 asset=1 checked=921600 freeze=0",
+        "# DECODE_DRAIN frame=2 cycles=805815 ms=20.145375",
+        "# DECODE_DUE frame=2 cycles=806401 ms=20.160025 late=0",
+        "# JPEG_FRAME n=9 asset=1 checked=921600 freeze=0",
+        "# JPEG_FRAME n=10 asset=1 checked=921600 freeze=0",
+        "# JPEG_FRAME n=11 asset=1 checked=921600 freeze=0",
+        "# JPEG_SWAP n=3 asset=2 time_ns=216778106000 dropped=0 wb=1 wr_addr_range=153600..307199",
+        "# JPEG_FRAME n=12 asset=2 checked=921600 freeze=0",
+        "# DECODE_DRAIN frame=0 cycles=846722 ms=21.168050",
+        "# DECODE_DUE frame=0 cycles=847834 ms=21.195850 late=0",
+        "# JPEG_FRAME n=13 asset=2 checked=921600 freeze=0",
+        "# JPEG_FRAME n=14 asset=2 checked=921600 freeze=0",
+        "# JPEG_FRAME n=15 asset=2 checked=921600 freeze=0",
+        "# JPEG_SWAP n=4 asset=0 time_ns=283444706000 dropped=0 wb=0 wr_addr_range=0..153599",
+        "# JPEG_FRAME n=16 asset=0 checked=921600 freeze=0",
+        "# PASS video_path swaps=4 displayed_frames=16 pixels=14745600 writes=742400 sectors=385 drops=0 content_errors=0 freeze_resume=1 loop=1 actual_controller=1"
+      ]
+    },
+    "coexist": {
+      "path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\sim_logs\\coexist_20261102_223423\\summary.json",
+      "sha256": "e0a7e15c9ef3736369663ea1021bedcf845d5e117bf494d1d2d88d58c1d8d3d1",
+      "scope": "Actual candidate top and peer board_remote_control: I2S input/conditioner/debug UART, key mapping, forced recognition event IDs through real UART/ACK including lost ACK, concurrent 640x480@15 JPEG decode/direct RGB565/centred native 640x480 in 720p60 AXIS frame geometry and black borders. Ideal PLL, omitted serial PHY, synthetic sector service and functional SDRAM. No new speech accuracy or hardware claim.",
+      "results": [
+        "# FRAME n=1 displayed=0 id=0 committed=0 state=8 playhead=0",
+        "# NATIVE_FRAME_PASS frame=1 words=153600 RGB565_direct=1",
+        "# FRAME n=2 displayed=0 id=0 committed=0 state=11 playhead=0",
+        "# LINK_PASS key_mapping=3 commands=4 actual_UART=115200 lost_ACK_retry=1 duplicate_suppressed=1 LED_active_high=1",
+        "# FRAME n=3 displayed=1 id=0 committed=1 state=8 playhead=789",
+        "# MIC_PASS physical_I2S_conditioner_debug_UART_samples=1048 concurrent_displayed_video_samples=512 CRC_sequence_checked=1",
+        "# FRAME n=4 displayed=2 id=0 committed=1 state=10 playhead=1589",
+        "# FRAME n=5 displayed=3 id=0 committed=1 state=10 playhead=2389",
+        "# FRAME n=6 displayed=4 id=0 committed=1 state=10 playhead=3189",
+        "# NATIVE_FRAME_PASS frame=2 words=153600 RGB565_direct=1",
+        "# FRAME n=7 displayed=5 id=0 committed=1 state=11 playhead=3989",
+        "# PASS coexist complete_top source=640x480@15 native_center_x320_y120 frame_words=153600 video_frames=7 committed=2 I2S_PCM=512 concurrent_displayed_video_samples=512 UART_ACK_commands=4 forced_recognition_events=1 ideal_PLL_functional_SDRAM=1"
+      ]
+    },
+    "rate": {
+      "path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\sim_logs\\rate480_20261102_222751\\qualified_rate.json",
+      "sha256": "4cd1d44ec58e55e99b1a6529f5a8cfdfc33de7fb1dc09d6ea15d867f7fbcc033",
+      "scope": "Steady-state swap2..swap6 only; startup-inclusive swap1..swap6 average assertion remains failed in original summary.",
+      "original_report": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\sim_logs\\rate480_20261102_222751\\summary.json",
+      "original_passed": false,
+      "original_average_failed": true,
+      "results": {
+        "startup_interval_ms": 83.33324999999999,
+        "startup_inclusive_fps": 14.285728571442858,
+        "all_intervals_ms": [
+          83.33324999999999,
+          66.66659999999999,
+          66.66659999999999,
+          66.66660000000002,
+          66.66660000000002
+        ],
+        "steady_state_fps": 15.000015000014999,
+        "checked_display_pixels": 20275200,
+        "decode_due": [
+          {
+            "frame": 0,
+            "cycles": 899556,
+            "ms": 22.4889,
+            "late": 0
+          },
+          {
+            "frame": 1,
+            "cycles": 815482,
+            "ms": 20.38705,
+            "late": 0
+          },
+          {
+            "frame": 2,
+            "cycles": 852737,
+            "ms": 21.318425,
+            "late": 0
+          },
+          {
+            "frame": 0,
+            "cycles": 913332,
+            "ms": 22.8333,
+            "late": 0
+          },
+          {
+            "frame": 1,
+            "cycles": 811947,
+            "ms": 20.298675,
+            "late": 0
+          },
+          {
+            "frame": 2,
+            "cycles": 865762,
+            "ms": 21.64405,
+            "late": 0
+          }
+        ]
+      }
+    },
+    "jpeg_reference": {
+      "path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\RTL_SAMPLE_CHECK.json",
+      "sha256": "322c7da9eb18f396651d214c59b51bc70e674d3d992cba57afe39f25ced602bd",
+      "scope": "Exact 480p candidate JPEG RTL only; first/middle/last/largest JPEG, twice each without reset, 40MHz, input gaps and output stalls; independent C-model pixel comparison. Not all300frames in RTL, nor full player/TF/SDRAM/HDMI or hardware/frame-rate proof.",
+      "results": [
+        {
+          "frame": 0,
+          "jpeg_bytes": 45775,
+          "cmodel_max_channel_error": 6,
+          "cmodel_mae": 0.49351562500000007,
+          "channels_error_gt4": 64,
+          "repeats": 2,
+          "pixels_per_frame": 307200,
+          "decode_cycles": [
+            944886,
+            944790
+          ],
+          "decode_ms_40mhz": [
+            23.62215,
+            23.61975
+          ]
+        },
+        {
+          "frame": 149,
+          "jpeg_bytes": 29591,
+          "cmodel_max_channel_error": 2,
+          "cmodel_mae": 0.4908637152777778,
+          "channels_error_gt4": 0,
+          "repeats": 2,
+          "pixels_per_frame": 307200,
+          "decode_cycles": [
+            821734,
+            821593
+          ],
+          "decode_ms_40mhz": [
+            20.54335,
+            20.539825
+          ]
+        },
+        {
+          "frame": 230,
+          "jpeg_bytes": 49982,
+          "cmodel_max_channel_error": 3,
+          "cmodel_mae": 0.4896809895833334,
+          "channels_error_gt4": 0,
+          "repeats": 2,
+          "pixels_per_frame": 307200,
+          "decode_cycles": [
+            855541,
+            855450
+          ],
+          "decode_ms_40mhz": [
+            21.388525,
+            21.38625
+          ]
+        },
+        {
+          "frame": 299,
+          "jpeg_bytes": 49954,
+          "cmodel_max_channel_error": 2,
+          "cmodel_mae": 0.49136067708333336,
+          "channels_error_gt4": 0,
+          "repeats": 2,
+          "pixels_per_frame": 307200,
+          "decode_cycles": [
+            855587,
+            855632
+          ],
+          "decode_ms_40mhz": [
+            21.389675,
+            21.3908
+          ]
+        }
+      ],
+      "numerical_tolerance": {
+        "max_channel_error": 8,
+        "mean_absolute_error": 1.2,
+        "note": "Existing 4-level limit rejected first480p JPEG: max6 on64 red samples of921600 channels, MAE0.494; record and qualify bounded fixed-point differences at8/255, not bit-exact C equivalence."
+      }
+    }
+  },
+  "changed_production": [
+    "src/mjpeg_video_player.v",
+    "src/timing.sdc",
+    "src/video_path.v",
+    "src/video_source.v"
+  ],
+  "build_manifest_path": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\build\\manifest.json",
+  "build_manifest_sha256": "697c4bc54fb4ae4fccc63613d6aa7322f4763b86b90ec382986c3dc3a01f19f8",
+  "limits": [
+    "Native centred640x480 window, no full-screen scaler",
+    "No audio soundtrack",
+    "15fps refers to steady state; startup-inclusive rate and first-swap interval reported separately",
+    "Sampled JPEGs, not all300frames in RTL; bounded fixed-point C-reference differences explicitly recorded",
+    "Functional SDRAM and synthetic sector service; actual card/receiver/frame rate pending hardware",
+    "Coexistence injects recognition events, not physical speech-recognition acceptance",
+    "Inherited voice acquisition issue remains unresolved; no hardware programming or physical card write"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "state": "software_verified_board1_period_pending_hardware",
+  "hardware_tested": false,
+  "bit": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\DELIVERY\\HX4S20C_BOARD1_ALBUM_PERIOD_8EB7D133.bit",
+  "sha256": "8eb7d133a6c5b3f1bacbfa363553d99f14f219d491439fc8a9bf655582d147d9",
+  "setup_ns": 0.582,
+  "hold_ns": 0.004,
+  "sta_coverage_percent": 99.96,
+  "clocks_mhz": {
+    "video_clk": 74.25,
+    "jpeg_clk": 40.0,
+    "ext_mem_clk": 50.0,
+    "sd_card_clk": 100.0,
+    "clk": 50.0,
+    "hdmi_5x_clk": 371.333,
+    "audio_mclk": 12.295,
+    "sys_pll_m0/pll_inst.clkc[2]": 50.0,
+    "u_audio_pll/pll_inst.clkc[0]": 75.002,
+    "video_pll_m0/pll_inst.clkc[0]": 67.504
+  },
+  "resources": {
+    "lut": 9867,
+    "reg": 7801,
+    "le": 10999,
+    "bram": 39,
+    "dsp": 6,
+    "pll": 3
+  },
+  "periods_seconds": [
+    1,
+    2,
+    5,
+    10,
+    30
+  ],
+  "default_period_seconds": 1,
+  "default_auto_enabled": false,
+  "physical_keys": {
+    "KEY1": "reset",
+    "KEY2_B2": "next photo",
+    "KEY3_B1": "edit mode",
+    "KEY4_C1": "short-release auto toggle; hold1.2s step period"
+  },
+  "tests": {
+    "unit": {
+      "path": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_logs\\period_unit_20261103_105005\\summary.json",
+      "sha256": "3f76c78027561b704b2035359145bd33fdec66643d40b6513fe2ea9b7fa18b0d",
+      "scope": "Actual period/gesture scheduler RTL with forced ideal parser/display/consumer.\nNo full-album, SD, SDRAM, HDMI, routed/SDF, or physical-button acceptance claim.",
+      "results": [
+        "# PERIOD_CASE real_debounce_short_long_wrap=PASS",
+        "# PERIOD_CASE natural_period seconds=1 cycles=1000 PASS",
+        "# PERIOD_CASE natural_period seconds=2 cycles=2000 PASS",
+        "# PERIOD_CASE natural_period seconds=5 cycles=5000 PASS",
+        "# PERIOD_CASE natural_period seconds=10 cycles=10000 PASS",
+        "# PERIOD_CASE natural_period seconds=30 cycles=30000 PASS",
+        "# PASS period_regression checks=48076 actual_debounce=1 periods=1/2/5/10/30 threshold_release_priority=1 inhibit_cancel=1 pause_step_tick_priority=1 manual_pause=1 unsigned100MHz30s=1 scope=scheduler_unit_forced_ready_display_consumer"
+      ]
+    },
+    "album": {
+      "path": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_logs\\period_integration_20261103_105124_fe05f4\\album\\summary.json",
+      "sha256": "bcd9a0359108058d5327871947d60e5b39c15415eb0f8258293faa7e32968dca",
+      "results": [
+        "# METRIC commit=0 epoch=0 asset=0 t_ms=47.825212 interval_ms=47.825212 words=460800 playhead=2260 pcm_verified=2260 underruns=0 requests=31",
+        "# PERIOD_KEYS_PASS tier=1 nominal_seconds=2 accelerated_native_cycles=80000 auto_stays_off=1",
+        "# METRIC commit=1 epoch=0 asset=1 t_ms=96.781387 interval_ms=48.956175 words=460800 playhead=4610 pcm_verified=4610 underruns=0 requests=53",
+        "# METRIC commit=2 epoch=0 asset=0 t_ms=146.976638 interval_ms=50.195250 words=460800 playhead=7019 pcm_verified=7019 underruns=0 requests=73",
+        "# REMOTE_PAUSE_PASS commits=3 tier=1 ongoing_PCM=288 playhead_delta=288",
+        "# METRIC commit=3 epoch=0 asset=1 t_ms=204.134838 interval_ms=57.158200 words=460800 playhead=9763 pcm_verified=9763 underruns=0 requests=98",
+        "# PASS period_integration:4 complete1280x720 fit photos,1843200 unique RGB565 words,physical manual next,long hold tier1,actual115200 UART resume/pause through receiver/legacy bridge,autoplay wrap/resume,tier preserved,PCM uninterrupted during slideshow pause,music pause/resume,both BMP orientations,bank ownership,native40/50/74.25/100MHz clocks,accelerated timer/debounce/fade,zero underruns (9945 PCM)"
+      ]
+    },
+    "ui": {
+      "path": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_logs\\period_integration_20261103_105028_716c93\\ui\\summary.json",
+      "sha256": "a7c316f39f3d836d819b99eedf1cf5b9d3dfbe0d806f16b978b16a116621f95c",
+      "results": [
+        "# PASS photo_ui checks=74 controls=42 next=2 auto=6: six physical-key modes/debounce, vblank commits, all16 UART shortcuts through queue/arbiter/CDC, IR command mailbox, saturation/mute/music"
+      ]
+    },
+    "infrared": {
+      "path": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_logs\\period_integration_20261103_105028_716c93\\infrared\\summary.json",
+      "sha256": "c7763666445922150aab71dd76c22192b03f39907e3b2cc632065f27c41e2a06",
+      "results": [
+        "# PASS phone physical NEC: BF00 wire address, five keys through production receiver/bridge/CDC/controls, volume 8->7->8, mute/restore, queued next, slideshow on/off, unknown/foreign rejection"
+      ]
+    }
+  },
+  "changed_production": [
+    "src/user_source/hdl_source/SD/sd_card_bmp.v"
+  ],
+  "build_manifest": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\build\\album_period_seed11\\manifest.json",
+  "build_manifest_sha256": "70036a67dea080716c3170c36183efac7c59f707b95fdb8ba99ba9652dcd34e6",
+  "report_hashes": {
+    "HX4S20C_UNIFIED_phy.ts": "7b02f19c96265b86c5a5ff9e7b00b4cc688b42c995c8353c2a4bd25d6322e761",
+    "HX4S20C_UNIFIED_pr.timing": "203033f57bfc7b68f7a5c2ae3faf55ad4c59f69ffe84df8ca32c2497cb48383a",
+    "HX4S20C_UNIFIED_phy.area": "884eb45b833e70c7bff5eb3f5574d58ba304eadcef87cad6e1bb0f04ee262b6c"
+  },
+  "baseline_bit_sha256": "8d600e63c8ef8777cd048737b1a086dc5403e3adb5f059e10513c21608df48bc",
+  "limits": [
+    "Timing-clean candidate, no physical programming or TF write",
+    "Each period is idle display dwell time; image load/commit/fade adds to observed interval",
+    "One long press advances one tier; reset/power loss clears tier to1s",
+    "No on-screen numeric period readout added",
+    "Functional album/PCM app model, not physical SD/SDRAM/HDMI electrical acceptance"
+  ]
+}

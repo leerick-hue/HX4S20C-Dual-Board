@@ -1,0 +1,4 @@
+# Diagnostic PLL placement constraints for video, audio and system instances.
+set_inst_assignment {video_pll_m0/pll_inst} {LOCATION = X0Y71Z0;}
+set_inst_assignment {u_audio_pll/pll_inst} {LOCATION = X40Y71Z0;}
+set_inst_assignment {sys_pll_m0/pll_inst} {LOCATION = X0Y0Z0;}

@@ -1,0 +1,9 @@
+{
+  "image": "E:\\HX4S20C_Test_20261026\\TF_PHOTO_VIDEO_30FPS.img",
+  "sha256": "d2efb81c63ef640b6c0d66c58f85a3e55c0ed534e36d3ce4828edd8e9e1a8d76",
+  "video_base": 18569,
+  "index_relative": 1,
+  "frame_lba": 11,
+  "frame_bytes": 18142,
+  "frame_sectors": 36
+}

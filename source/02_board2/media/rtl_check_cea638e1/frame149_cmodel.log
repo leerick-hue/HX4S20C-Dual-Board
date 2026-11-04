@@ -1,0 +1,22 @@
+Section: SOI
+Section: APP0
+Section: DQT Table
+Section: DQT Table
+Section: SOF0
+ x=640, y=480, components=3
+ num: 1 a: 22 b: 00
+ horiz_factor: 2, vert_factor: 2
+ num: 2 a: 11 b: 01
+ horiz_factor: 1, vert_factor: 1
+ num: 3 a: 11 b: 01
+ horiz_factor: 1, vert_factor: 1
+ Mode: YCbCr 4:2:0
+Section: DHT Table
+Section: DHT Table
+Section: DHT Table
+Section: DHT Table
+Section: SOS
+ 0: ID=1 Table=0
+ 1: ID=2 Table=11
+ 2: ID=3 Table=11
+Section: EOI

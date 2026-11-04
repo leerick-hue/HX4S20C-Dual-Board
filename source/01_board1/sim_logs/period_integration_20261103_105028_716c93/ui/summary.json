@@ -1,0 +1,59 @@
+{
+  "pass": true,
+  "stage": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\jobs\\ui",
+  "sources": {
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_keymap.v": "bd0eed781c5a9c831fd37d32aab89ec1456720db56b9cb21c464c868bfc2c78f",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\us_tick_1m.v": "51c65a9f8651dd52c111203f5dcdeaadc75f65bae31ee042e05d8532505b2b59",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_nec_rx.v": "578320a6ce6429cba37503003cff76306ff70f923687d8532b092987f031f719",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_media_bridge.v": "3e1e3b5fdf338363d695e5afd83b7816f7aa586f7af2b9f5e4bf46a9d8fc4030",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\media_command_cdc.v": "da610ab69f9efb70c36250a97ae1fcb5f0abad720cf43fd209d8d4e8051bac00",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\key_debounce.v": "3b4db810a17299919c87629c82d7192989206db7107182021981f5d06cafcf4a",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\media_control_arbiter.v": "380c170c73d2873b1365c5420613473857654851dac7b178e07b0d63505f4b69",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\board_remote_control.v": "00643e9a5550a7e1cd3491ff2b2631c7c39de84e26ac4d0878378a94fbb87e63",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\event_packet_rx.v": "44a071763da403bb6f98613717ee1fe2e187fab5e5b349a5eb993107c6026596",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\uart_rx.v": "ccaccdd7f450f538cb383879b294112c363883c1c3cde6e11e34fcb396b2a0f1",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\event_fifo.v": "b00dea87def1890810eb4ce57fdc6e22e976aff8deb3775387913247250ca956",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\board_video_controls.v": "67dbd45c1c9a31467e319207fdde9c0d1d2b9a23234dec012f2998343e9e1f5a",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\rtl\\media_mode_reset.v": "9cca37d61a2455efdb3372cbb55d00094b98073f10d13e42586a7426dd28f9de",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\tb_unified_controls.sv": "7b8ef4d84ff709f94b82202074b47561422ca0f8ab10880aa067ff0f911c5803"
+  },
+  "commands": [
+    [
+      "vlib.exe",
+      "work"
+    ],
+    [
+      "vlog.exe",
+      "-sv",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_keymap.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\us_tick_1m.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_nec_rx.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_media_bridge.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\media_command_cdc.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\key_debounce.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\media_control_arbiter.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\board_remote_control.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\event_packet_rx.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\uart_rx.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\event_fifo.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\board_video_controls.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\rtl\\media_mode_reset.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\sim\\tb_unified_controls.sv"
+    ],
+    [
+      "vsim.exe",
+      "-c",
+      "-t",
+      "1ps",
+      "-onfinish",
+      "stop",
+      "work.tb_unified_controls",
+      "-do",
+      "onerror {quit -code 1}; run -all; quit -code 0"
+    ]
+  ],
+  "markers": [
+    "# PASS photo_ui checks=74 controls=42 next=2 auto=6: six physical-key modes/debounce, vblank commits, all16 UART shortcuts through queue/arbiter/CDC, IR command mailbox, saturation/mute/music"
+  ],
+  "wall_seconds": 3.3280000000377186
+}

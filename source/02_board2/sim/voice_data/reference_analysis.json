@@ -1,0 +1,1762 @@
+{
+  "scope": "Independent integer signal/DTW analysis for the labeled development cases.\n\nUsed to inspect behavior, not an oracle for recognition labels or a claim about\nphysical distance. The RTL replay independently requires the original labels.\n",
+  "results": [
+    {
+      "case": 3,
+      "name": "next_r2.wav",
+      "expected": 1,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 3,
+          "id": 1,
+          "scores": [
+            22,
+            35,
+            41
+          ],
+          "full_scores": [
+            27,
+            43,
+            47
+          ],
+          "combined": [
+            76,
+            121,
+            135
+          ],
+          "full": 27,
+          "frames": 52
+        },
+        {
+          "case": 3,
+          "id": 0,
+          "scores": [
+            46,
+            35,
+            45
+          ],
+          "full_scores": [
+            41,
+            44,
+            52
+          ],
+          "combined": [
+            128,
+            123,
+            149
+          ],
+          "full": 44,
+          "frames": 71
+        }
+      ],
+      "old": [
+        {
+          "case": 3,
+          "id": 1,
+          "scores": [
+            23,
+            47,
+            58
+          ],
+          "full_scores": [
+            24,
+            37,
+            42
+          ],
+          "combined": [
+            71,
+            121,
+            142
+          ],
+          "full": 24,
+          "frames": 69
+        }
+      ]
+    },
+    {
+      "case": 4,
+      "name": "pause_r2.wav",
+      "expected": 2,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 4,
+          "id": 2,
+          "scores": [
+            34,
+            21,
+            41
+          ],
+          "full_scores": [
+            42,
+            24,
+            38
+          ],
+          "combined": [
+            118,
+            69,
+            117
+          ],
+          "full": 24,
+          "frames": 98
+        },
+        {
+          "case": 4,
+          "id": 0,
+          "scores": [
+            36,
+            34,
+            46
+          ],
+          "full_scores": [
+            50,
+            52,
+            59
+          ],
+          "combined": [
+            136,
+            138,
+            164
+          ],
+          "full": 50,
+          "frames": 42
+        }
+      ],
+      "old": [
+        {
+          "case": 4,
+          "id": 2,
+          "scores": [
+            47,
+            25,
+            56
+          ],
+          "full_scores": [
+            41,
+            25,
+            40
+          ],
+          "combined": [
+            129,
+            75,
+            136
+          ],
+          "full": 25,
+          "frames": 103
+        }
+      ]
+    },
+    {
+      "case": 5,
+      "name": "resume_r2.wav",
+      "expected": 3,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 5,
+          "id": 3,
+          "scores": [
+            44,
+            42,
+            22
+          ],
+          "full_scores": [
+            43,
+            31,
+            24
+          ],
+          "combined": [
+            130,
+            104,
+            70
+          ],
+          "full": 24,
+          "frames": 81
+        },
+        {
+          "case": 5,
+          "id": 0,
+          "scores": [
+            34,
+            35,
+            50
+          ],
+          "full_scores": [
+            62,
+            73,
+            78
+          ],
+          "combined": [
+            158,
+            181,
+            206
+          ],
+          "full": 62,
+          "frames": 26
+        }
+      ],
+      "old": [
+        {
+          "case": 5,
+          "id": 3,
+          "scores": [
+            62,
+            56,
+            25
+          ],
+          "full_scores": [
+            43,
+            32,
+            26
+          ],
+          "combined": [
+            148,
+            120,
+            77
+          ],
+          "full": 26,
+          "frames": 79
+        }
+      ]
+    },
+    {
+      "case": 6,
+      "name": "next_r3.wav",
+      "expected": 1,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 6,
+          "id": 1,
+          "scores": [
+            24,
+            37,
+            41
+          ],
+          "full_scores": [
+            26,
+            42,
+            44
+          ],
+          "combined": [
+            76,
+            121,
+            129
+          ],
+          "full": 26,
+          "frames": 58
+        },
+        {
+          "case": 6,
+          "id": 0,
+          "scores": [
+            41,
+            38,
+            46
+          ],
+          "full_scores": [
+            45,
+            49,
+            51
+          ],
+          "combined": [
+            131,
+            136,
+            148
+          ],
+          "full": 45,
+          "frames": 85
+        }
+      ],
+      "old": [
+        {
+          "case": 6,
+          "id": 1,
+          "scores": [
+            23,
+            45,
+            61
+          ],
+          "full_scores": [
+            31,
+            44,
+            47
+          ],
+          "combined": [
+            85,
+            133,
+            155
+          ],
+          "full": 31,
+          "frames": 53
+        }
+      ]
+    },
+    {
+      "case": 7,
+      "name": "pause_r3.wav",
+      "expected": 2,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 7,
+          "id": 2,
+          "scores": [
+            31,
+            21,
+            36
+          ],
+          "full_scores": [
+            41,
+            27,
+            39
+          ],
+          "combined": [
+            113,
+            75,
+            114
+          ],
+          "full": 27,
+          "frames": 101
+        },
+        {
+          "case": 7,
+          "id": 0,
+          "scores": [
+            52,
+            42,
+            51
+          ],
+          "full_scores": [
+            68,
+            78,
+            84
+          ],
+          "combined": [
+            188,
+            198,
+            219
+          ],
+          "full": 68,
+          "frames": 7
+        }
+      ],
+      "old": [
+        {
+          "case": 7,
+          "id": 2,
+          "scores": [
+            45,
+            26,
+            46
+          ],
+          "full_scores": [
+            41,
+            28,
+            44
+          ],
+          "combined": [
+            127,
+            82,
+            134
+          ],
+          "full": 28,
+          "frames": 101
+        }
+      ]
+    },
+    {
+      "case": 8,
+      "name": "resume_r3.wav",
+      "expected": 3,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 8,
+          "id": 3,
+          "scores": [
+            43,
+            40,
+            23
+          ],
+          "full_scores": [
+            45,
+            33,
+            33
+          ],
+          "combined": [
+            133,
+            106,
+            89
+          ],
+          "full": 33,
+          "frames": 108
+        },
+        {
+          "case": 8,
+          "id": 0,
+          "scores": [
+            44,
+            35,
+            45
+          ],
+          "full_scores": [
+            70,
+            78,
+            84
+          ],
+          "combined": [
+            184,
+            191,
+            213
+          ],
+          "full": 70,
+          "frames": 15
+        }
+      ],
+      "old": [
+        {
+          "case": 8,
+          "id": 3,
+          "scores": [
+            62,
+            56,
+            25
+          ],
+          "full_scores": [
+            41,
+            34,
+            36
+          ],
+          "combined": [
+            144,
+            124,
+            97
+          ],
+          "full": 36,
+          "frames": 116
+        }
+      ]
+    },
+    {
+      "case": 9,
+      "name": "next_r2.wav",
+      "expected": 1,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 9,
+          "id": 1,
+          "scores": [
+            22,
+            35,
+            41
+          ],
+          "full_scores": [
+            28,
+            46,
+            48
+          ],
+          "combined": [
+            78,
+            127,
+            137
+          ],
+          "full": 28,
+          "frames": 51
+        },
+        {
+          "case": 9,
+          "id": 0,
+          "scores": [
+            47,
+            36,
+            46
+          ],
+          "full_scores": [
+            42,
+            44,
+            50
+          ],
+          "combined": [
+            131,
+            124,
+            146
+          ],
+          "full": 44,
+          "frames": 72
+        }
+      ],
+      "old": [
+        {
+          "case": 9,
+          "id": 0,
+          "scores": [
+            27,
+            46,
+            58
+          ],
+          "full_scores": [
+            46,
+            57,
+            60
+          ],
+          "combined": [
+            119,
+            160,
+            178
+          ],
+          "full": 46,
+          "frames": 38
+        }
+      ]
+    },
+    {
+      "case": 10,
+      "name": "pause_r2.wav",
+      "expected": 2,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 10,
+          "id": 2,
+          "scores": [
+            33,
+            21,
+            41
+          ],
+          "full_scores": [
+            40,
+            24,
+            35
+          ],
+          "combined": [
+            113,
+            69,
+            111
+          ],
+          "full": 24,
+          "frames": 88
+        },
+        {
+          "case": 10,
+          "id": 0,
+          "scores": [
+            36,
+            34,
+            46
+          ],
+          "full_scores": [
+            48,
+            51,
+            57
+          ],
+          "combined": [
+            132,
+            136,
+            160
+          ],
+          "full": 48,
+          "frames": 42
+        }
+      ],
+      "old": [
+        {
+          "case": 10,
+          "id": 2,
+          "scores": [
+            48,
+            26,
+            54
+          ],
+          "full_scores": [
+            44,
+            27,
+            37
+          ],
+          "combined": [
+            136,
+            80,
+            128
+          ],
+          "full": 27,
+          "frames": 76
+        }
+      ]
+    },
+    {
+      "case": 11,
+      "name": "resume_r2.wav",
+      "expected": 3,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 11,
+          "id": 3,
+          "scores": [
+            44,
+            42,
+            22
+          ],
+          "full_scores": [
+            43,
+            32,
+            24
+          ],
+          "combined": [
+            130,
+            106,
+            70
+          ],
+          "full": 24,
+          "frames": 81
+        },
+        {
+          "case": 11,
+          "id": 0,
+          "scores": [
+            34,
+            35,
+            50
+          ],
+          "full_scores": [
+            56,
+            64,
+            68
+          ],
+          "combined": [
+            146,
+            163,
+            186
+          ],
+          "full": 56,
+          "frames": 26
+        }
+      ],
+      "old": [
+        {
+          "case": 11,
+          "id": 3,
+          "scores": [
+            61,
+            55,
+            24
+          ],
+          "full_scores": [
+            44,
+            36,
+            26
+          ],
+          "combined": [
+            149,
+            127,
+            76
+          ],
+          "full": 26,
+          "frames": 63
+        }
+      ]
+    },
+    {
+      "case": 12,
+      "name": "next_r3.wav",
+      "expected": 1,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 12,
+          "id": 1,
+          "scores": [
+            24,
+            37,
+            41
+          ],
+          "full_scores": [
+            28,
+            47,
+            47
+          ],
+          "combined": [
+            80,
+            131,
+            135
+          ],
+          "full": 28,
+          "frames": 52
+        },
+        {
+          "case": 12,
+          "id": 0,
+          "scores": [
+            42,
+            36,
+            37
+          ],
+          "full_scores": [
+            45,
+            47,
+            50
+          ],
+          "combined": [
+            132,
+            130,
+            137
+          ],
+          "full": 47,
+          "frames": 92
+        }
+      ],
+      "old": [
+        {
+          "case": 12,
+          "id": 0,
+          "scores": [
+            29,
+            48,
+            64
+          ],
+          "full_scores": [
+            49,
+            55,
+            56
+          ],
+          "combined": [
+            127,
+            158,
+            176
+          ],
+          "full": 49,
+          "frames": 39
+        }
+      ]
+    },
+    {
+      "case": 13,
+      "name": "pause_r3.wav",
+      "expected": 2,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 13,
+          "id": 2,
+          "scores": [
+            31,
+            21,
+            36
+          ],
+          "full_scores": [
+            39,
+            26,
+            29
+          ],
+          "combined": [
+            109,
+            73,
+            94
+          ],
+          "full": 26,
+          "frames": 68
+        },
+        {
+          "case": 13,
+          "id": 0,
+          "scores": [
+            117,
+            98,
+            85
+          ],
+          "full_scores": [
+            72,
+            66,
+            67
+          ],
+          "combined": [
+            261,
+            230,
+            219
+          ],
+          "full": 67,
+          "frames": 57
+        }
+      ],
+      "old": [
+        {
+          "case": 13,
+          "id": 2,
+          "scores": [
+            47,
+            26,
+            46
+          ],
+          "full_scores": [
+            43,
+            30,
+            34
+          ],
+          "combined": [
+            133,
+            86,
+            114
+          ],
+          "full": 30,
+          "frames": 55
+        },
+        {
+          "case": 13,
+          "id": 0,
+          "scores": [
+            77,
+            63,
+            62
+          ],
+          "full_scores": [
+            63,
+            64,
+            65
+          ],
+          "combined": [
+            203,
+            191,
+            192
+          ],
+          "full": 65,
+          "frames": 27
+        }
+      ]
+    },
+    {
+      "case": 14,
+      "name": "resume_r3.wav",
+      "expected": 3,
+      "divisor": 4,
+      "new": [
+        {
+          "case": 14,
+          "id": 3,
+          "scores": [
+            43,
+            40,
+            23
+          ],
+          "full_scores": [
+            45,
+            33,
+            33
+          ],
+          "combined": [
+            133,
+            106,
+            89
+          ],
+          "full": 33,
+          "frames": 108
+        },
+        {
+          "case": 14,
+          "id": 0,
+          "scores": [
+            43,
+            36,
+            43
+          ],
+          "full_scores": [
+            63,
+            71,
+            75
+          ],
+          "combined": [
+            169,
+            178,
+            193
+          ],
+          "full": 63,
+          "frames": 15
+        }
+      ],
+      "old": [
+        {
+          "case": 14,
+          "id": 3,
+          "scores": [
+            63,
+            56,
+            25
+          ],
+          "full_scores": [
+            44,
+            37,
+            29
+          ],
+          "combined": [
+            151,
+            130,
+            83
+          ],
+          "full": 29,
+          "frames": 72
+        }
+      ]
+    },
+    {
+      "case": 15,
+      "name": "next_r2.wav",
+      "expected": 1,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 15,
+          "id": 1,
+          "scores": [
+            33,
+            37,
+            50
+          ],
+          "full_scores": [
+            31,
+            49,
+            51
+          ],
+          "combined": [
+            95,
+            135,
+            152
+          ],
+          "full": 31,
+          "frames": 42
+        },
+        {
+          "case": 15,
+          "id": 0,
+          "scores": [
+            51,
+            40,
+            42
+          ],
+          "full_scores": [
+            44,
+            45,
+            53
+          ],
+          "combined": [
+            139,
+            130,
+            148
+          ],
+          "full": 45,
+          "frames": 65
+        }
+      ],
+      "old": [
+        {
+          "case": 15,
+          "id": 0,
+          "scores": [
+            37,
+            40,
+            61
+          ],
+          "full_scores": [
+            49,
+            57,
+            59
+          ],
+          "combined": [
+            135,
+            154,
+            179
+          ],
+          "full": 49,
+          "frames": 26
+        }
+      ]
+    },
+    {
+      "case": 16,
+      "name": "pause_r2.wav",
+      "expected": 2,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 16,
+          "id": 2,
+          "scores": [
+            51,
+            43,
+            50
+          ],
+          "full_scores": [
+            42,
+            26,
+            37
+          ],
+          "combined": [
+            135,
+            95,
+            124
+          ],
+          "full": 26,
+          "frames": 80
+        }
+      ],
+      "old": [
+        {
+          "case": 16,
+          "id": 0,
+          "scores": [
+            64,
+            38,
+            52
+          ],
+          "full_scores": [
+            54,
+            43,
+            44
+          ],
+          "combined": [
+            172,
+            124,
+            140
+          ],
+          "full": 43,
+          "frames": 46
+        }
+      ]
+    },
+    {
+      "case": 17,
+      "name": "resume_r2.wav",
+      "expected": 3,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 17,
+          "id": 3,
+          "scores": [
+            62,
+            58,
+            42
+          ],
+          "full_scores": [
+            46,
+            33,
+            26
+          ],
+          "combined": [
+            154,
+            124,
+            94
+          ],
+          "full": 26,
+          "frames": 73
+        }
+      ],
+      "old": [
+        {
+          "case": 17,
+          "id": 3,
+          "scores": [
+            79,
+            71,
+            43
+          ],
+          "full_scores": [
+            57,
+            44,
+            35
+          ],
+          "combined": [
+            193,
+            159,
+            113
+          ],
+          "full": 35,
+          "frames": 42
+        }
+      ]
+    },
+    {
+      "case": 18,
+      "name": "next_r3.wav",
+      "expected": 1,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 18,
+          "id": 1,
+          "scores": [
+            30,
+            37,
+            50
+          ],
+          "full_scores": [
+            29,
+            49,
+            50
+          ],
+          "combined": [
+            88,
+            135,
+            150
+          ],
+          "full": 29,
+          "frames": 43
+        },
+        {
+          "case": 18,
+          "id": 0,
+          "scores": [
+            41,
+            40,
+            50
+          ],
+          "full_scores": [
+            48,
+            52,
+            54
+          ],
+          "combined": [
+            137,
+            144,
+            158
+          ],
+          "full": 48,
+          "frames": 73
+        }
+      ],
+      "old": [
+        {
+          "case": 18,
+          "id": 0,
+          "scores": [
+            37,
+            41,
+            65
+          ],
+          "full_scores": [
+            49,
+            52,
+            57
+          ],
+          "combined": [
+            135,
+            145,
+            179
+          ],
+          "full": 49,
+          "frames": 27
+        }
+      ]
+    },
+    {
+      "case": 19,
+      "name": "pause_r3.wav",
+      "expected": 2,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 19,
+          "id": 2,
+          "scores": [
+            60,
+            47,
+            52
+          ],
+          "full_scores": [
+            43,
+            28,
+            32
+          ],
+          "combined": [
+            146,
+            103,
+            116
+          ],
+          "full": 28,
+          "frames": 57
+        },
+        {
+          "case": 19,
+          "id": 0,
+          "scores": [
+            115,
+            96,
+            84
+          ],
+          "full_scores": [
+            72,
+            66,
+            66
+          ],
+          "combined": [
+            259,
+            228,
+            216
+          ],
+          "full": 66,
+          "frames": 57
+        }
+      ],
+      "old": [
+        {
+          "case": 19,
+          "id": 0,
+          "scores": [
+            74,
+            45,
+            60
+          ],
+          "full_scores": [
+            54,
+            43,
+            46
+          ],
+          "combined": [
+            182,
+            131,
+            152
+          ],
+          "full": 43,
+          "frames": 38
+        }
+      ]
+    },
+    {
+      "case": 20,
+      "name": "resume_r3.wav",
+      "expected": 3,
+      "divisor": 16,
+      "new": [
+        {
+          "case": 20,
+          "id": 3,
+          "scores": [
+            59,
+            58,
+            36
+          ],
+          "full_scores": [
+            47,
+            34,
+            34
+          ],
+          "combined": [
+            153,
+            126,
+            104
+          ],
+          "full": 34,
+          "frames": 102
+        }
+      ],
+      "old": [
+        {
+          "case": 20,
+          "id": 3,
+          "scores": [
+            68,
+            58,
+            30
+          ],
+          "full_scores": [
+            55,
+            44,
+            33
+          ],
+          "combined": [
+            178,
+            146,
+            96
+          ],
+          "full": 33,
+          "frames": 44
+        }
+      ]
+    },
+    {
+      "case": 21,
+      "name": "next_r2.wav",
+      "expected": 1,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 21,
+          "id": 1,
+          "scores": [
+            54,
+            54,
+            57
+          ],
+          "full_scores": [
+            38,
+            54,
+            60
+          ],
+          "combined": [
+            130,
+            162,
+            177
+          ],
+          "full": 38,
+          "frames": 39
+        },
+        {
+          "case": 21,
+          "id": 0,
+          "scores": [
+            50,
+            45,
+            54
+          ],
+          "full_scores": [
+            64,
+            66,
+            73
+          ],
+          "combined": [
+            178,
+            177,
+            200
+          ],
+          "full": 66,
+          "frames": 11
+        }
+      ],
+      "old": [
+        {
+          "case": 21,
+          "id": 0,
+          "scores": [
+            60,
+            49,
+            72
+          ],
+          "full_scores": [
+            63,
+            65,
+            73
+          ],
+          "combined": [
+            186,
+            179,
+            218
+          ],
+          "full": 65,
+          "frames": 17
+        }
+      ]
+    },
+    {
+      "case": 22,
+      "name": "pause_r2.wav",
+      "expected": 2,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 22,
+          "id": 2,
+          "scores": [
+            61,
+            52,
+            52
+          ],
+          "full_scores": [
+            46,
+            28,
+            39
+          ],
+          "combined": [
+            153,
+            108,
+            130
+          ],
+          "full": 28,
+          "frames": 76
+        }
+      ],
+      "old": [
+        {
+          "case": 22,
+          "id": 0,
+          "scores": [
+            69,
+            50,
+            85
+          ],
+          "full_scores": [
+            74,
+            69,
+            82
+          ],
+          "combined": [
+            217,
+            188,
+            249
+          ],
+          "full": 69,
+          "frames": 10
+        },
+        {
+          "case": 22,
+          "id": 0,
+          "scores": [
+            74,
+            61,
+            86
+          ],
+          "full_scores": [
+            64,
+            69,
+            76
+          ],
+          "combined": [
+            202,
+            199,
+            238
+          ],
+          "full": 69,
+          "frames": 10
+        }
+      ]
+    },
+    {
+      "case": 23,
+      "name": "resume_r2.wav",
+      "expected": 3,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 23,
+          "id": 3,
+          "scores": [
+            74,
+            67,
+            52
+          ],
+          "full_scores": [
+            50,
+            38,
+            32
+          ],
+          "combined": [
+            174,
+            143,
+            116
+          ],
+          "full": 32,
+          "frames": 69
+        }
+      ],
+      "old": [
+        {
+          "case": 23,
+          "id": 0,
+          "scores": [
+            66,
+            53,
+            56
+          ],
+          "full_scores": [
+            60,
+            54,
+            51
+          ],
+          "combined": [
+            186,
+            161,
+            158
+          ],
+          "full": 54,
+          "frames": 23
+        }
+      ]
+    },
+    {
+      "case": 24,
+      "name": "next_r3.wav",
+      "expected": 1,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 24,
+          "id": 1,
+          "scores": [
+            49,
+            50,
+            56
+          ],
+          "full_scores": [
+            35,
+            53,
+            59
+          ],
+          "combined": [
+            119,
+            156,
+            174
+          ],
+          "full": 35,
+          "frames": 40
+        }
+      ],
+      "old": [
+        {
+          "case": 24,
+          "id": 0,
+          "scores": [
+            61,
+            45,
+            69
+          ],
+          "full_scores": [
+            58,
+            59,
+            66
+          ],
+          "combined": [
+            177,
+            163,
+            201
+          ],
+          "full": 59,
+          "frames": 21
+        }
+      ]
+    },
+    {
+      "case": 25,
+      "name": "pause_r3.wav",
+      "expected": 2,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 25,
+          "id": 0,
+          "scores": [
+            69,
+            57,
+            53
+          ],
+          "full_scores": [
+            47,
+            30,
+            37
+          ],
+          "combined": [
+            163,
+            117,
+            127
+          ],
+          "full": 30,
+          "frames": 55
+        },
+        {
+          "case": 25,
+          "id": 0,
+          "scores": [
+            113,
+            94,
+            81
+          ],
+          "full_scores": [
+            79,
+            71,
+            73
+          ],
+          "combined": [
+            271,
+            236,
+            227
+          ],
+          "full": 73,
+          "frames": 32
+        }
+      ],
+      "old": [
+        {
+          "case": 25,
+          "id": 0,
+          "scores": [
+            62,
+            43,
+            68
+          ],
+          "full_scores": [
+            62,
+            61,
+            69
+          ],
+          "combined": [
+            186,
+            165,
+            206
+          ],
+          "full": 61,
+          "frames": 17
+        }
+      ]
+    },
+    {
+      "case": 26,
+      "name": "resume_r3.wav",
+      "expected": 3,
+      "divisor": 32,
+      "new": [
+        {
+          "case": 26,
+          "id": 3,
+          "scores": [
+            82,
+            72,
+            51
+          ],
+          "full_scores": [
+            52,
+            43,
+            43
+          ],
+          "combined": [
+            186,
+            158,
+            137
+          ],
+          "full": 43,
+          "frames": 95
+        }
+      ],
+      "old": [
+        {
+          "case": 26,
+          "id": 0,
+          "scores": [
+            68,
+            59,
+            57
+          ],
+          "full_scores": [
+            61,
+            56,
+            52
+          ],
+          "combined": [
+            190,
+            171,
+            161
+          ],
+          "full": 52,
+          "frames": 27
+        }
+      ]
+    },
+    {
+      "case": 27,
+      "name": "quiet",
+      "expected": 0,
+      "divisor": 1,
+      "new": [],
+      "old": []
+    },
+    {
+      "case": 28,
+      "name": "low_background",
+      "expected": 0,
+      "divisor": 1,
+      "new": [],
+      "old": []
+    },
+    {
+      "case": 29,
+      "name": "single_click",
+      "expected": 0,
+      "divisor": 1,
+      "new": [],
+      "old": []
+    },
+    {
+      "case": 30,
+      "name": "steady_tone",
+      "expected": 0,
+      "divisor": 1,
+      "new": [
+        {
+          "case": 30,
+          "id": 0,
+          "scores": [
+            70,
+            65,
+            76
+          ],
+          "full_scores": [
+            71,
+            76,
+            83
+          ],
+          "combined": [
+            212,
+            217,
+            242
+          ],
+          "full": 71,
+          "frames": 51
+        }
+      ],
+      "old": [
+        {
+          "case": 30,
+          "id": 0,
+          "scores": [
+            75,
+            69,
+            91
+          ],
+          "full_scores": [
+            79,
+            88,
+            88
+          ],
+          "combined": [
+            233,
+            245,
+            267
+          ],
+          "full": 88,
+          "frames": 51
+        }
+      ]
+    }
+  ],
+  "new_training": [
+    {
+      "case": 0,
+      "train": 1,
+      "frames": 65
+    },
+    {
+      "case": 1,
+      "train": 2,
+      "frames": 93
+    },
+    {
+      "case": 2,
+      "train": 3,
+      "frames": 70
+    }
+  ],
+  "old_training": [
+    {
+      "case": 0,
+      "train": 1,
+      "frames": 96
+    },
+    {
+      "case": 1,
+      "train": 2,
+      "frames": 101
+    },
+    {
+      "case": 2,
+      "train": 3,
+      "frames": 73
+    }
+  ]
+}

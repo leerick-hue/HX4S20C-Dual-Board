@@ -1,0 +1,38 @@
+{
+  "stage": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_unit_5b74b53118",
+  "sources": {
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\SD\\sd_card_bmp.v": "03a416fcb8c614d22227bcd2a84ae7c19d7c27cf7cbbc7e5b89bf11a19875b83",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\SD\\bmp_read_scaled.v": "975d005c71ec826d8c001fb0c3020ba23069365e52a3276d6401caf7b8d7c769",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\tb_period_regression.sv": "0e8bc6a37a0fd3ca0b3199cdf4d81a57de5483bff0db7071c21fe6a9a9f0f0e0",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\run_period_unit.py": "75ab452d8f2bf3c93f55cdcd048b44cc6a6050016c5a05bbc8e1dd11eef3bca8"
+  },
+  "commands": [
+    [
+      "vlib.exe",
+      "work"
+    ],
+    [
+      "vlog.exe",
+      "-sv",
+      "-permissive",
+      "sd_card_bmp.v",
+      "bmp_read_scaled.v",
+      "tb_period_regression.sv"
+    ],
+    [
+      "vsim.exe",
+      "-c",
+      "-t",
+      "1ps",
+      "-onfinish",
+      "stop",
+      "work.tb_period_regression",
+      "-do",
+      "run -all; quit -code 0"
+    ]
+  ],
+  "scope": "Actual period/gesture scheduler RTL with forced ideal parser/display/consumer.\nNo full-album, SD, SDRAM, HDMI, routed/SDF, or physical-button acceptance claim.",
+  "pass": false,
+  "error": "Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl\n\n# 10.3c\n\n# vsim -c -t 1ps -onfinish stop work.tb_period_regression -do \"run -all; quit -code 0\" \n# Start time: 10:47:32 on Nov 03,2026\n# Loading sv_std.std\n# Loading work.tb_period_regression\n# Loading work.sd_card_bmp\n# Loading work.key_press_debounce\n# Loading work.bmp_read_scaled\n# ** Error: (vsim-3033) bmp_read_scaled.v(77): Instantiation of 'bmp24_scale_stream' failed. The design unit was not found.\n# \n#         Region: /tb_period_regression/dut/bmp_read_m0\n#         Searched libraries:\n#             E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_unit_5b74b53118/work\n# ** Error: (vsim-3033) bmp_read_scaled.v(77): Instantiation of 'bmp24_scale_stream' failed. The design unit was not found.\n# \n#         Region: /tb_period_regression/wide/bmp_read_m0\n#         Searched libraries:\n#             E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_unit_5b74b53118/work\n# Error loading design\nError loading design\n# End time: 10:47:32 on Nov 03,2026, Elapsed time: 0:00:00\n# Errors: 2, Warnings: 0\n",
+  "wall_seconds": 7.047000000020489
+}

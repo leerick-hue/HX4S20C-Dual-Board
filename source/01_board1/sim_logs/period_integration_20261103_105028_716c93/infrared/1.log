@@ -1,0 +1,16 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 10:50:30 on Nov 03,2026
+vlog -sv E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_keymap.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\us_tick_1m.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_nec_rx.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_media_bridge.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\media_command_cdc.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\key_debounce.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\board_video_controls.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\sim\tb_phone_ir_media.sv 
+-- Compiling module ir_keymap
+-- Compiling module us_tick_1m
+-- Compiling module ir_nec_rx
+-- Compiling module ir_media_bridge
+-- Compiling module media_command_cdc
+-- Compiling module key_debounce
+-- Compiling module board_video_controls
+-- Compiling module tb_phone_ir_media
+
+Top level modules:
+	tb_phone_ir_media
+End time: 10:50:30 on Nov 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

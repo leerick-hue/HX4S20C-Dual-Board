@@ -1,0 +1,37 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_period_regression -do "run -all; quit -code 0" 
+# Start time: 10:50:07 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_period_regression
+# Loading work.sd_card_bmp
+# Loading work.key_press_debounce
+# Loading work.bmp_read_scaled
+# Loading work.bmp24_scale_stream
+# ** Warning: (vsim-3017) sd_card_bmp.v(143): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /tb_period_regression/dut/u_key_next
+# ** Warning: (vsim-3722) sd_card_bmp.v(143): [TFMPC] - Missing connection for port 'release_pulse'.
+# 
+# ** Warning: (vsim-3017) sd_card_bmp.v(143): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /tb_period_regression/wide/u_key_next
+# ** Warning: (vsim-3722) sd_card_bmp.v(143): [TFMPC] - Missing connection for port 'release_pulse'.
+# 
+# run -all
+# PERIOD_CASE real_debounce_short_long_wrap=PASS
+# PERIOD_CASE natural_period seconds=1 cycles=1000 PASS
+# PERIOD_CASE natural_period seconds=2 cycles=2000 PASS
+# PERIOD_CASE natural_period seconds=5 cycles=5000 PASS
+# PERIOD_CASE natural_period seconds=10 cycles=10000 PASS
+# PERIOD_CASE natural_period seconds=30 cycles=30000 PASS
+# PASS period_regression checks=48076 actual_debounce=1 periods=1/2/5/10/30 threshold_release_priority=1 inhibit_cancel=1 pause_step_tick_priority=1 manual_pause=1 unsigned100MHz30s=1 scope=scheduler_unit_forced_ready_display_consumer
+# ** Note: $finish    : tb_period_regression.sv(171)
+#    Time: 641417 ns  Iteration: 0  Instance: /tb_period_regression
+# Break in Module tb_period_regression at tb_period_regression.sv line 171
+# Stopped at tb_period_regression.sv line 171
+#  quit -code 0
+# End time: 10:50:10 on Nov 03,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 4

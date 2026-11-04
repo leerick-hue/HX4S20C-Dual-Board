@@ -1,0 +1,46 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -onfinish stop work.tb_unified_controls -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 10:50:32 on Nov 03,2026
+# Loading sv_std.std
+# Loading work.tb_unified_controls
+# Loading work.board_video_controls
+# Loading work.media_mode_reset
+# Loading work.media_control_arbiter
+# Loading work.media_command_cdc
+# Loading work.ir_media_bridge
+# Loading work.ir_nec_rx
+# Loading work.us_tick_1m
+# Loading work.ir_keymap
+# Loading work.board_remote_control
+# Loading work.uart_rx
+# Loading work.event_packet_rx
+# Loading work.event_fifo
+# Loading work.key_debounce
+# ** Warning: (vsim-3017) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Too few port connections. Expected 20, found 15.
+# 
+#         Region: /tb_unified_controls/remote
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Missing connection for port 'received_byte_count'.
+# 
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Missing connection for port 'valid_packet_count'.
+# 
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Missing connection for port 'ack_valid'.
+# 
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Missing connection for port 'ack_data'.
+# 
+# ** Warning: (vsim-3722) E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(56): [TFMPC] - Missing connection for port 'ack_sequence'.
+# 
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS photo_ui checks=74 controls=42 next=2 auto=6: six physical-key modes/debounce, vblank commits, all16 UART shortcuts through queue/arbiter/CDC, IR command mailbox, saturation/mute/music
+# SCOPE accelerated UART10clocks/bit and debounce3clocks, IR command boundary injected; actual74.25/40MHz clocks; physical NEC/115200 ACK covered separately
+# ** Note: $finish    : E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv(231)
+#    Time: 489050016 ps  Iteration: 1  Instance: /tb_unified_controls
+# Break in Module tb_unified_controls at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv line 231
+# Stopped at E:/HX4S20C_Test_20261026/board1_album_period_20261103/sim_stages/period_integration_20261103_105028_716c93/sim/tb_unified_controls.sv line 231
+#  quit -code 0
+# End time: 10:50:33 on Nov 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 6

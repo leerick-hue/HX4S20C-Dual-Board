@@ -1,0 +1,68 @@
+{
+  "format": "HXAU v1",
+  "sector_size": 512,
+  "header": {
+    "version": 1,
+    "sample_rate": 48000,
+    "channels": 2,
+    "bits_per_sample": 16,
+    "audio_start_sector": 34328,
+    "audio_frame_count": 576000,
+    "photo_end_sector_exclusive": 34328,
+    "photo_count": 4,
+    "total_image_sectors": 38828
+  },
+  "output": {
+    "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\DELIVERY\\01_ALBUM_USER2_SCENERY2_BOARD1.img",
+    "size_bytes": 19879936,
+    "sha256": "0c415055414e5739c6c8c76308b856b92d9ca80ad57dd8d67ede4b6886a8c126"
+  },
+  "photos": [
+    {
+      "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0001.BMP",
+      "name": "0001.BMP",
+      "size_bytes": 4143414,
+      "width": 1438,
+      "height": 960,
+      "start_sector": 1,
+      "end_sector_exclusive": 8094,
+      "sha256": "f1a6e78e17a5dacce327cb22e4f9fcae5c9c4cd463f5e36b6ed4d35b048cdb8d"
+    },
+    {
+      "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0002.BMP",
+      "name": "0002.BMP",
+      "size_bytes": 2890134,
+      "width": 891,
+      "height": 1080,
+      "start_sector": 8094,
+      "end_sector_exclusive": 13739,
+      "sha256": "7d8758b7287051ca2a33666a209794affa20450739d1694b46b1ee405bd25f47"
+    },
+    {
+      "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0003.BMP",
+      "name": "0003.BMP",
+      "size_bytes": 4665654,
+      "width": 1440,
+      "height": 1080,
+      "start_sector": 13739,
+      "end_sector_exclusive": 22852,
+      "sha256": "8ad3e95143da633ff7de9138231145f71beb0e38eaf10f36d2fa78fe8d3b2b4a"
+    },
+    {
+      "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\album1_bmp\\0004.BMP",
+      "name": "0004.BMP",
+      "size_bytes": 5875254,
+      "width": 1813,
+      "height": 1080,
+      "start_sector": 22852,
+      "end_sector_exclusive": 34328,
+      "sha256": "a36d2ca4a59405056b097a0e2922b51f9addf05fb5bb9180657ef8d13772cb1e"
+    }
+  ],
+  "audio": {
+    "path": "E:\\HX4S20C_Deliveries\\CARD_MEDIA_20261102_211850\\sources\\album_existing_demo_music.wav",
+    "frame_count": 576000,
+    "seconds": 12.0,
+    "payload_sha256": "f5271233c40a1f315ffa2e71e7a216cf7ce1deada3c64094d39421f0da120776"
+  }
+}

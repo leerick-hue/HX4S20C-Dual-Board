@@ -1,0 +1,22 @@
+Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+Start time: 10:50:30 on Nov 03,2026
+vlog -sv E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_keymap.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\us_tick_1m.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_nec_rx.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\ir_media_bridge.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\media_command_cdc.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\key_debounce.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\media_control_arbiter.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\board_remote_control.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\event_packet_rx.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\uart_rx.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\extensions\event_fifo.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\src\user_source\hdl_source\board_video_controls.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\rtl\media_mode_reset.v E:\HX4S20C_Test_20261026\board1_album_period_20261103\sim_stages\period_integration_20261103_105028_716c93\sim\tb_unified_controls.sv 
+-- Compiling module ir_keymap
+-- Compiling module us_tick_1m
+-- Compiling module ir_nec_rx
+-- Compiling module ir_media_bridge
+-- Compiling module media_command_cdc
+-- Compiling module key_debounce
+-- Compiling module media_control_arbiter
+-- Compiling module board_remote_control
+-- Compiling module event_packet_rx
+-- Compiling module uart_rx
+-- Compiling module event_fifo
+-- Compiling module board_video_controls
+-- Compiling module media_mode_reset
+-- Compiling module tb_unified_controls
+
+Top level modules:
+	tb_unified_controls
+End time: 10:50:30 on Nov 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

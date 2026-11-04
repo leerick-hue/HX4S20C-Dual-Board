@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "numerical_tolerance": {
+    "max_channel_error": 8,
+    "mean_absolute_error": 1.2,
+    "note": "Existing 4-level limit rejected first480p JPEG: max6 on64 red samples of921600 channels, MAE0.494; record and qualify bounded fixed-point differences at8/255, not bit-exact C equivalence."
+  },
+  "stage": "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\rtl_check_cea638e1",
+  "indices": [
+    0,
+    149,
+    230,
+    299
+  ],
+  "results": [
+    {
+      "frame": 0,
+      "jpeg_bytes": 45775,
+      "cmodel_max_channel_error": 6,
+      "cmodel_mae": 0.49351562500000007,
+      "channels_error_gt4": 64,
+      "repeats": 2,
+      "pixels_per_frame": 307200,
+      "decode_cycles": [
+        944886,
+        944790
+      ],
+      "decode_ms_40mhz": [
+        23.62215,
+        23.61975
+      ]
+    },
+    {
+      "frame": 149,
+      "jpeg_bytes": 29591,
+      "cmodel_max_channel_error": 2,
+      "cmodel_mae": 0.4908637152777778,
+      "channels_error_gt4": 0,
+      "repeats": 2,
+      "pixels_per_frame": 307200,
+      "decode_cycles": [
+        821734,
+        821593
+      ],
+      "decode_ms_40mhz": [
+        20.54335,
+        20.539825
+      ]
+    },
+    {
+      "frame": 230,
+      "jpeg_bytes": 49982,
+      "cmodel_max_channel_error": 3,
+      "cmodel_mae": 0.4896809895833334,
+      "channels_error_gt4": 0,
+      "repeats": 2,
+      "pixels_per_frame": 307200,
+      "decode_cycles": [
+        855541,
+        855450
+      ],
+      "decode_ms_40mhz": [
+        21.388525,
+        21.38625
+      ]
+    },
+    {
+      "frame": 299,
+      "jpeg_bytes": 49954,
+      "cmodel_max_channel_error": 2,
+      "cmodel_mae": 0.49136067708333336,
+      "channels_error_gt4": 0,
+      "repeats": 2,
+      "pixels_per_frame": 307200,
+      "decode_cycles": [
+        855587,
+        855632
+      ],
+      "decode_ms_40mhz": [
+        21.389675,
+        21.3908
+      ]
+    }
+  ],
+  "sources": {
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_bitbuffer.v": "b4cfe631350b982e3f348610999f94596f9ec4cdc911799030af535adf58bf22",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_core.v": "bcec6089a061f66ce058e8a875cad75b67ee05013174931fdacd90b2ee507d39",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dht.v": "055de4d51bcc15e70ad8054064a23af91dc28763d576c121656ac750d5fd8883",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dht_std_cx_ac.v": "efd4192e61341e9ed919cd68d12a67d208273b36143e356f79332b8fdcffca92",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dht_std_cx_dc.v": "1b46dd8aba258f6fb20d75b7617a6ad3715297da032f615370fa4f0362feded4",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dht_std_y_ac.v": "27700bcd791489a825af5876d02c907ad9ee8b4b0eaf6a54a762ad6b2841ae93",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dht_std_y_dc.v": "72362d3bc664f2c2c29ed6dc5cbeda70676d6a82431892d9ce2e018e4c851b8e",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_dqt.v": "e99bb750bf20903b9cf80407aa1e8274170296c3366e43be0030265a08afcb99",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct.v": "f2a45496e29d43eb2b2f024921a5b96732ce57a3f74e4c856686cf00acacd0b6",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_fifo.v": "487d095dc70369d4bb7c9a27e6f27cc4db082b95e9bb6ce13292dc31fb2cf5e0",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_ram.v": "b45d1f8663c290a27085ed595d633caec980410a1483f10a80be1bfad87a570a",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_ram_dp.v": "191622cc6447224294c1cfe98aef9fbb329b3a8b00932ed1b33920e90d2b61ea",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_transpose.v": "4b765d2227366e6cfd7953f0f17de3fbbd9f1bf2f55e8207bd5611a96a21e54c",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_transpose_ram.v": "833abadcd8fb585d08dddc7e1cc24cfd3e39a9eb728aa72a8d7b016694fc370b",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_x.v": "99b8681e002d948fa4ed5fbd3a29704634400c31c376b5e120c07d1392ef62c0",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_idct_y.v": "df2bbd47864431354baa2dbc0160b809d94de624d5e16d1a45b313d4564bc9c8",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_input.v": "da2d2f9c72ee581db05a11d471364b6d41b4ef43a1cf9cddff8f59b36b6d0b8a",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_mcu_id.v": "82f2e44c2ada135d1e45d6b3d54d9bada29f5cfde1c0e4a6df8a3819c159e650",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_mcu_proc.v": "cfd8b35fe75a29c02950f5cfcc1493419bee6da155d253d0062aff91493d43af",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_output.v": "68153a6a5367dd37105165814681cb8c4f7dcba66d2040609cdc9ffb2b35ae11",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_output_cx_ram.v": "570bea46974744831816eceda8033425266ae4f3c2178fe8c4935e4194209da1",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_output_fifo.v": "66cde6db3c4f8c8b64ab35f80c7ef0b383b13d3e395114b9cff5e7ba0d22be72",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\src\\jpeg\\jpeg_output_y_ram.v": "a17dcca6dc7a696453d8fb3ddae8155abce18e06f868fe41eedce55f7c0d04eb",
+    "E:\\HX4S20C_Extensions\\hx4s20c_media_core\\board\\mjpeg_20261023\\decode_sim\\tb_jpeg_decode.sv": "6328c5d4117ce044b10158b8d3814e951ad9d5e30e4edd3bdc5814bceefd20e3",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\frames\\frame_00000000.jpg": "5b30d3802c3cdbf1678b06bd474f94e0ceb8d293cfc00f914f53622dd3a9e94a",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\frames\\frame_00000149.jpg": "b00f74fa03b55abd18ddaf98528d23f8b1e98b162b2916a9b9d56894b2186508",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\frames\\frame_00000230.jpg": "28a5544ec0d24885bcb710ade58e1024a7307b1986c346bfa44dc0bbda7167cd",
+    "E:\\HX4S20C_Test_20261026\\board2_video480p15_20261102\\media\\frames\\frame_00000299.jpg": "74bc6d4a425f6aebd8dbb56a05a7808e7b95705f4f866fd58afaf60819ede573"
+  },
+  "scope": "Exact 480p candidate JPEG RTL only; first/middle/last/largest JPEG, twice each without reset, 40MHz, input gaps and output stalls; independent C-model pixel comparison. Not all300frames in RTL, nor full player/TF/SDRAM/HDMI or hardware/frame-rate proof.",
+  "staged_testbench_sha256": "c05ba229a7fa6e865394f2822f1b85c590fa3a58a02a5354b89a462c90b184da",
+  "card_sha256": "c9c7c50f40313dd598616b25c73ebfba14d3ff352381a2ddce7831ae86247c73"
+}

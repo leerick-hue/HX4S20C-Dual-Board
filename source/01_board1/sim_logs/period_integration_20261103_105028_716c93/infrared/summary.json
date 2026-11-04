@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "stage": "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\jobs\\infrared",
+  "sources": {
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_keymap.v": "bd0eed781c5a9c831fd37d32aab89ec1456720db56b9cb21c464c868bfc2c78f",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\us_tick_1m.v": "51c65a9f8651dd52c111203f5dcdeaadc75f65bae31ee042e05d8532505b2b59",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_nec_rx.v": "578320a6ce6429cba37503003cff76306ff70f923687d8532b092987f031f719",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\ir_media_bridge.v": "3e1e3b5fdf338363d695e5afd83b7816f7aa586f7af2b9f5e4bf46a9d8fc4030",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\media_command_cdc.v": "da610ab69f9efb70c36250a97ae1fcb5f0abad720cf43fd209d8d4e8051bac00",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\extensions\\key_debounce.v": "3b4db810a17299919c87629c82d7192989206db7107182021981f5d06cafcf4a",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\src\\user_source\\hdl_source\\board_video_controls.v": "67dbd45c1c9a31467e319207fdde9c0d1d2b9a23234dec012f2998343e9e1f5a",
+    "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim\\tb_phone_ir_media.sv": "0d82c38146618be2834ad037ee0fe345e170e0a50f79f25012272ab527b5421f"
+  },
+  "commands": [
+    [
+      "vlib.exe",
+      "work"
+    ],
+    [
+      "vlog.exe",
+      "-sv",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_keymap.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\us_tick_1m.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_nec_rx.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\ir_media_bridge.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\media_command_cdc.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\extensions\\key_debounce.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\src\\user_source\\hdl_source\\board_video_controls.v",
+      "E:\\HX4S20C_Test_20261026\\board1_album_period_20261103\\sim_stages\\period_integration_20261103_105028_716c93\\sim\\tb_phone_ir_media.sv"
+    ],
+    [
+      "vsim.exe",
+      "-c",
+      "-t",
+      "1ps",
+      "-onfinish",
+      "stop",
+      "work.tb_phone_ir_media",
+      "-do",
+      "onerror {quit -code 1}; run -all; quit -code 0"
+    ]
+  ],
+  "markers": [
+    "# PASS phone physical NEC: BF00 wire address, five keys through production receiver/bridge/CDC/controls, volume 8->7->8, mute/restore, queued next, slideshow on/off, unknown/foreign rejection"
+  ],
+  "wall_seconds": 480.625
+}

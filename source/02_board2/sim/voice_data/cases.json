@@ -1,0 +1,268 @@
+{
+  "scope": "Existing human development speech with digital amplitude changes, not distance.",
+  "sources": {
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\manifest.json": "d30ff452a6f14ae7103007873ecc98d4bbb75188f1beec54951fdc07b171a0ac",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\next_r1.wav": "32b24f5697f2c29404384ea617c5504e70c60b7268e336ffc58001824706e907",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\pause_r1.wav": "9fbcc501da80dc49a6325d4f821499885e367aa9df21344478ddc5dd447f77cf",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\resume_r1.wav": "c4bbe16396a9098a13d35c7cd3203ef38ad5ff280f4fb7e9644fd95166196ea6",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\next_r2.wav": "f0019dc33895117c5f7fe7de06d5aa58316651fb16d3f3634170383e1b4f7d6c",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\pause_r2.wav": "a105a38631934bed566653a51425b8e70cdd917e0e7462148b41d1838a83d31b",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\resume_r2.wav": "cbbd136e85e8eb8accc62dae3c1ec4fbb79b9450f57e0c5e921e70c62c2339e1",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\next_r3.wav": "d4afd577f42d373e1df58aef3dfa66df6898be899881398328f7123962b4634e",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\pause_r3.wav": "f3c94077c0ba057a2a1126028b7f2bb72ee46cb91f644fec34d6b84554212192",
+    "E:\\HX4S20C_Board2\\work\\voice_diagnosis_20261025\\recordings\\20261025_220753\\resume_r3.wav": "0c3a109fa41af45c66e2cf4aae185a8b11672c463355b54d84da550f4b61488a"
+  },
+  "cases": [
+    {
+      "name": "next_r1.wav",
+      "label": 1,
+      "train": 1,
+      "divisor": 1,
+      "first": 12288,
+      "samples": 45824
+    },
+    {
+      "name": "pause_r1.wav",
+      "label": 2,
+      "train": 2,
+      "divisor": 1,
+      "first": 58112,
+      "samples": 48640
+    },
+    {
+      "name": "resume_r1.wav",
+      "label": 3,
+      "train": 3,
+      "divisor": 1,
+      "first": 106752,
+      "samples": 45056
+    },
+    {
+      "name": "next_r2.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 1,
+      "first": 151808,
+      "samples": 46592
+    },
+    {
+      "name": "pause_r2.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 1,
+      "first": 198400,
+      "samples": 54272
+    },
+    {
+      "name": "resume_r2.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 1,
+      "first": 252672,
+      "samples": 45056
+    },
+    {
+      "name": "next_r3.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 1,
+      "first": 297728,
+      "samples": 51968
+    },
+    {
+      "name": "pause_r3.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 1,
+      "first": 349696,
+      "samples": 47360
+    },
+    {
+      "name": "resume_r3.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 1,
+      "first": 397056,
+      "samples": 51712
+    },
+    {
+      "name": "next_r2.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 4,
+      "first": 448768,
+      "samples": 46592
+    },
+    {
+      "name": "pause_r2.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 4,
+      "first": 495360,
+      "samples": 54272
+    },
+    {
+      "name": "resume_r2.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 4,
+      "first": 549632,
+      "samples": 45056
+    },
+    {
+      "name": "next_r3.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 4,
+      "first": 594688,
+      "samples": 51968
+    },
+    {
+      "name": "pause_r3.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 4,
+      "first": 646656,
+      "samples": 47360
+    },
+    {
+      "name": "resume_r3.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 4,
+      "first": 694016,
+      "samples": 51712
+    },
+    {
+      "name": "next_r2.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 16,
+      "first": 745728,
+      "samples": 46592
+    },
+    {
+      "name": "pause_r2.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 16,
+      "first": 792320,
+      "samples": 54272
+    },
+    {
+      "name": "resume_r2.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 16,
+      "first": 846592,
+      "samples": 45056
+    },
+    {
+      "name": "next_r3.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 16,
+      "first": 891648,
+      "samples": 51968
+    },
+    {
+      "name": "pause_r3.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 16,
+      "first": 943616,
+      "samples": 47360
+    },
+    {
+      "name": "resume_r3.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 16,
+      "first": 990976,
+      "samples": 51712
+    },
+    {
+      "name": "next_r2.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 32,
+      "first": 1042688,
+      "samples": 46592
+    },
+    {
+      "name": "pause_r2.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 32,
+      "first": 1089280,
+      "samples": 54272
+    },
+    {
+      "name": "resume_r2.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 32,
+      "first": 1143552,
+      "samples": 45056
+    },
+    {
+      "name": "next_r3.wav",
+      "label": 1,
+      "train": 0,
+      "divisor": 32,
+      "first": 1188608,
+      "samples": 51968
+    },
+    {
+      "name": "pause_r3.wav",
+      "label": 2,
+      "train": 0,
+      "divisor": 32,
+      "first": 1240576,
+      "samples": 47360
+    },
+    {
+      "name": "resume_r3.wav",
+      "label": 3,
+      "train": 0,
+      "divisor": 32,
+      "first": 1287936,
+      "samples": 51712
+    },
+    {
+      "name": "quiet",
+      "label": 0,
+      "train": 0,
+      "divisor": 1,
+      "first": 1339648,
+      "samples": 23040
+    },
+    {
+      "name": "low_background",
+      "label": 0,
+      "train": 0,
+      "divisor": 1,
+      "first": 1362688,
+      "samples": 25600
+    },
+    {
+      "name": "single_click",
+      "label": 0,
+      "train": 0,
+      "divisor": 1,
+      "first": 1388288,
+      "samples": 22784
+    },
+    {
+      "name": "steady_tone",
+      "label": 0,
+      "train": 0,
+      "divisor": 1,
+      "first": 1411072,
+      "samples": 23040
+    }
+  ],
+  "total_samples": 1434112,
+  "initial_samples": 12288,
+  "caveat": "Digitally attenuated existing development WAVs lifted to24bit surrogate, with fixed DC offset. No physical distance/reverberation evidence. Training repeat1, distinct repeat2/3 test recordings."
+}

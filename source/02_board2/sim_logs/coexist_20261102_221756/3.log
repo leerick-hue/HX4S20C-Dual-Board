@@ -1,0 +1,154 @@
+Reading E:/Modelsim/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.3c
+
+# vsim -c -t 1ps -gCARD_BYTES=143872 -onfinish stop work.glbl work.tb_coexist -do "run -all; quit -code 0" 
+# Start time: 22:18:00 on Nov 02,2026
+# Loading work.glbl
+# Loading sv_std.std
+# Loading work.tb_coexist
+# Loading work.top
+# Loading work.board2_voice_top
+# Loading work.reset_sync
+# Loading work.inmp441_rx
+# Loading work.mic_pcm_conditioner
+# Loading work.speech_command_core
+# Loading work.speech_features
+# Loading work.speech_dtw
+# Loading work.pcm_uart_stream
+# Loading work.uart_tx
+# Loading work.keypad_scan_4x4
+# Loading work.event_arbiter
+# Loading work.event_fifo
+# Loading work.reliable_event_link
+# Loading work.event_packet_tx
+# Loading work.uart_rx
+# Loading work.event_packet_rx
+# Loading work.voice_status_leds
+# Loading work.diag_control
+# Loading work.sys_pll
+# Loading work.sd_card_top
+# Loading work.video_path
+# Loading work.video_source
+# Loading work.sd_sector_cdc
+# Loading work.media_catalog
+# Loading work.mjpeg_video_player
+# Loading work.jpeg_sector_stream
+# Loading work.jpeg_core
+# Loading work.jpeg_input
+# Loading work.jpeg_dht
+# Loading work.jpeg_idct
+# Loading work.jpeg_idct_ram
+# Loading work.jpeg_idct_ram_dp
+# Loading work.jpeg_idct_x
+# Loading work.jpeg_idct_transpose
+# Loading work.jpeg_idct_transpose_ram
+# Loading work.jpeg_idct_y
+# Loading work.jpeg_idct_fifo
+# Loading work.jpeg_dqt
+# Loading work.jpeg_output
+# Loading work.jpeg_output_y_ram
+# Loading work.jpeg_output_y_ram_ram_dp_512_9
+# Loading work.jpeg_output_cx_ram
+# Loading work.jpeg_output_cx_ram_ram_dp_256_8
+# Loading work.jpeg_output_fifo
+# Loading work.jpeg_bitbuffer
+# Loading work.jpeg_mcu_proc
+# Loading work.jpeg_mcu_id
+# Loading work.rgb565_pack
+# Loading work.media_viewport
+# Loading work.video_delay
+# Loading work.rgb565_unpack
+# Loading work.frame_swap_fx_cdc
+# Loading work.board_frame_request
+# Loading work.frame_read_write
+# Loading work.pixel_write_fifo
+# Loading work.frame_fifo_write
+# Loading work.rfifo_32_32_512
+# Loading work.fifo_cross_domain_addr_process_al_rfifo_32_32_512
+# Loading work.ram_infer_rfifo_32_32_512
+# Loading work.frame_fifo_read
+# Loading work.sdram
+# Loading work.sdr_as_ram
+# Loading work.sdr_init_ref
+# Loading work.EG_PHY_SDRAM_2M_32
+# Loading work.sdram_retention_model
+# Loading work.native_video_timing
+# Loading work.video_rgb_to_axis_640x480
+# Loading work.seg_decoder
+# Loading work.seg_scan
+# Loading work.hdmi_1_4b_transmitter_core_wrapper
+# Loading work.hdmi_phy_wrapper
+# Loading work.board_remote_control
+# Loading work.peer_uart_rx
+# Loading work.peer_event_packet_rx
+# Loading work.peer_event_fifo
+# Loading work.voice_feature_preroll
+# Loading work.key_debounce
+# Loading work.jpeg_dht_std_y_dc
+# Loading work.jpeg_dht_std_y_ac
+# Loading work.jpeg_dht_std_cx_dc
+# Loading work.jpeg_dht_std_cx_ac
+# Loading work.EG_LOGIC_RAMFIFO
+# Loading work.gray_count
+# Loading work.showahead_buffer
+# Loading work.gray2bin
+# Loading work.video_hd_pll
+# ** Warning: (vsim-3017) ../src/frame_read_write.v(159): [TFMPC] - Too few port connections. Expected 14, found 11.
+# 
+#         Region: /tb_coexist/dut/motion/dma/read_buf
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'valid'.
+# 
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'afull'.
+# 
+# ** Warning: (vsim-3722) ../src/frame_read_write.v(159): [TFMPC] - Missing connection for port 'aempty'.
+# 
+# ** Warning: (vsim-3017) ../src/afifo_32_16_256.v(231): [TFMPC] - Too few port connections. Expected 16, found 14.
+# 
+#         Region: /tb_coexist/dut/motion/dma/read_buf/ram_inst
+# ** Warning: (vsim-3722) ../src/afifo_32_16_256.v(231): [TFMPC] - Missing connection for port 'doa'.
+# 
+# ** Warning: (vsim-3722) ../src/afifo_32_16_256.v(231): [TFMPC] - Missing connection for port 'dib'.
+# 
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'bea'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (11) does not match connection size (32) for port 'dib'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'beb'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'bea'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (9) does not match connection size (32) for port 'dib'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'beb'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'bea'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (96) does not match connection size (32) for port 'dib'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'beb'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'bea'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (24) does not match connection size (32) for port 'dib'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# ** Warning: (vsim-3015) ../vendor/eg_logic_ramfifo.v(159): [PCDPC] - Port size (1) does not match connection size (32) for port 'beb'. The port definition is at: nofile(59).
+# 
+#         Region: /tb_coexist/dut/hdmi/<protected>/<protected>/<protected>/<protected>/<protected>/u5
+# run -all
+# FRAME n=1 displayed=0 id=0 committed=0 state=8 playhead=0
+# NATIVE_FRAME_PASS frame=1 words=153600 RGB565_direct=1
+# MIC_PASS physical_I2S_conditioner_debug_UART_samples=512 CRC_sequence_checked=1
+# FRAME n=2 displayed=0 id=0 committed=0 state=11 playhead=0
+** Fatal: Exiting VSIM license process.

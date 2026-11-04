@@ -1,0 +1,1307 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Mon Nov  2 23:26:56 2026
+
+Top Model           : top
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 95.90%
+Constraint File     : 
+Confidence          : Routed
+Check Corner        : Both (Slow and Fast)
+CRPR Enabled        : Yes
+Report Scheme       : 10 end point(s) per path group, 1 path(s) per end point
+
+
+Check Status
+-------------
+
+Corner   | Max      Min     
+------------------------------------
+Slow     | yes      yes     
+Fast     | yes      yes     
+
+
+Timing Status
+--------------------
+	SWNS: -3.372ns, STNS: -19.543ns
+	HWNS: 0.056ns, HTNS: 0.000ns
+	Period Check WNS: 16.586ns
+
+
+Clock Summary
+--------------------
+
+       Clock-Id:       C-Freq       Fanout   Clock-Name
+--------------------------------------------------------------------------------
+           clk0:       50.000         6902   DeriveClock
+--------------------------------------------------------------------------------
+
+       Name            Type         Rise(ns)   Fall(ns)          C-Period(ns)     C-Freq(MHz)          R-Period(ns)     R-Freq(MHz)         SWNS(ns)   STNS(ns)         HWNS(ns)   HTNS(ns)         Skew(ns)           Fanout        Max-Level        CC-From    CC-To
+       clk0           local            0.000     10.000                20.000          50.000                23.372          42.786           -3.372    -19.543            0.056      0.000            0.000             6902               20             no       no
+
+Notes
+----------
+C-Period  :  constraint period
+C-Freq    :  constraint freq
+R-Period  :  report min period
+R-Freq    :  report fmax
+CC-From   :  has path(s) from cross-domain clock
+CC-To     :  has path(s) to cross-domain clock
+
+
+*   Clock R-Period data only takes intra-clock timing. SWNS/STNS/HWNS/HTNS take both intra-clock and inter-clock timing.
+*   If there is mismatch between R-Period and SWNS, check inter-clock timing of this clock as capture clock.
+*   SWNS/STNS/HWNS/HTNS of timing exception (SMCP/SMD) only counted in global Timing Status, not counted in Clock Summary.
+
+Intra clock domain timing
+--------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     DeriveClock -> DeriveClock
+Type           :     Self
+From Clock     :     DeriveClock
+To Clock       :     DeriveClock
+Min Period     :     23.372ns
+Fmax           :     42.786MHz
+
+Statistics:
+Max            : SWNS     -3.372ns, STNS    -19.543ns,        18 Viol Endpoints,     21634 Total Endpoints,    427138 Paths Analyzed
+Min            : HWNS      0.056ns, HTNS      0.000ns,         0 Viol Endpoints,     21634 Total Endpoints,    427138 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : -3.372ns
+Begin Point         : voice/recognizer/matcher/best_class_reg[0]_syn_7.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/matcher/command_id_reg[1]_syn_7.a[0] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 23.156ns (cell 8.046ns (34%), net 15.110ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 18 ( LUT5=13  LUT4=2  LUT3=2  LUT2=1 )
+Max Fanout          : 61
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x006y006z2          0.146    r     0.146          pin: voice/recognizer/matcher/best_class_reg[0]_syn_7.q[0]
+net (fo=17)                             0.543          0.689          net: voice/recognizer/matcher/best_class[1],  ../src/voice/speech_dtw.v(14)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_815.c[0]
+LUT2                x006y003z3          0.348    f     1.037       1  pin: voice/recognizer/matcher/command_valid_reg_syn_815.f[0]
+net (fo=61)                             0.777          1.814          net: voice/recognizer/matcher/command_valid_reg_syn_56,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_693.a[1]
+LUT5                x011y001z1          0.618    f     2.432       2  pin: voice/recognizer/matcher/command_valid_reg_syn_693.fx[0]
+net (fo=1)                              0.715          3.147          net: voice/recognizer/matcher/command_valid_reg_syn_60,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_706.c[1]
+LUT5                x006y001z3          0.348    f     3.495       3  pin: voice/recognizer/matcher/command_valid_reg_syn_706.f[1]
+net (fo=4)                              1.656          5.151          net: voice/recognizer/matcher/command_valid_reg_syn_62,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_700.a[0]
+LUT5                x036y001z0          0.618    f     5.769       4  pin: voice/recognizer/matcher/command_valid_reg_syn_700.fx[0]
+net (fo=1)                              0.700          6.469          net: voice/recognizer/matcher/command_valid_reg_syn_68,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_862.d[1]
+LUT4                x035y009z1          0.205    r     6.674       5  pin: voice/recognizer/matcher/command_valid_reg_syn_862.f[1]
+net (fo=2)                              1.461          8.135          net: voice/recognizer/matcher/command_valid_reg_syn_70,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_745.a[1]
+LUT5                x011y001z0          0.618    f     8.753       6  pin: voice/recognizer/matcher/command_valid_reg_syn_745.fx[0]
+net (fo=17)                             0.935          9.688          net: voice/recognizer/matcher/mux105_syn_18,  ../src/voice/speech_dtw.v(29)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_895.d[1]
+LUT3                x007y005z0          0.205    r     9.893       7  pin: voice/recognizer/matcher/command_valid_reg_syn_895.f[1]
+net (fo=2)                              0.603         10.496          net: voice/recognizer/matcher/command_valid_reg_syn_103,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_662.d[1]
+LUT4                x007y004z3          0.262    r    10.758       8  pin: voice/recognizer/matcher/command_valid_reg_syn_662.f[1]
+net (fo=1)                              0.603         11.361          net: voice/recognizer/matcher/command_valid_reg_syn_105,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_656.a[1]
+LUT5                x007y005z3          0.424    f    11.785       9  pin: voice/recognizer/matcher/command_valid_reg_syn_656.f[1]
+net (fo=2)                              0.459         12.244          net: voice/recognizer/matcher/command_valid_reg_syn_111,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_785.a[0]
+LUT5                x007y005z1          0.618    f    12.862      10  pin: voice/recognizer/matcher/command_valid_reg_syn_785.fx[0]
+net (fo=1)                              0.651         13.513          net: voice/recognizer/matcher/command_valid_reg_syn_117,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.a[0]
+LUT5                x005y003z3          0.424    f    13.937      11  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[0]
+net (fo=1)                              0.456         14.393          net: voice/recognizer/matcher/command_valid_reg_syn_134,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.d[1]
+LUT5                x005y003z3          0.262    r    14.655      12  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[1]
+net (fo=9)                              1.004         15.659          net: voice/recognizer/matcher/command_valid_reg_syn_157,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_922.d[1]
+LUT3                x017y007z1          0.205    r    15.864      13  pin: voice/recognizer/matcher/command_valid_reg_syn_922.f[1]
+net (fo=2)                              0.928         16.792          net: voice/recognizer/matcher/command_valid_reg_syn_161,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_798.b[1]
+LUT5                x007y006z0          0.543    f    17.335      14  pin: voice/recognizer/matcher/command_valid_reg_syn_798.fx[0]
+net (fo=5)                              0.825         18.160          net: voice/recognizer/matcher/command_valid_reg_syn_165,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_770.a[1]
+LUT5                x015y009z1          0.618    f    18.778      15  pin: voice/recognizer/matcher/command_valid_reg_syn_770.fx[0]
+net (fo=1)                              0.807         19.585          net: voice/recognizer/matcher/command_valid_reg_syn_177,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_791.a[0]
+LUT5                x007y006z2          0.424    f    20.009      16  pin: voice/recognizer/matcher/command_valid_reg_syn_791.f[0]
+net (fo=2)                              0.815         20.824          net: voice/recognizer/matcher/command_valid_reg_syn_197,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_800.a[1]
+LUT5                x021y006z1          0.618    f    21.442      17  pin: voice/recognizer/matcher/command_valid_reg_syn_800.fx[0]
+net (fo=3)                              1.172         22.614          net: voice/recognizer/matcher/command_valid_reg_syn_391,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_id_reg[1]_syn_7.a[0]
+LUT5 (reg)          x005y004z2          0.542    f    23.156      18  net: voice/recognizer/matcher/command_id[0],  ../src/voice/speech_dtw.v(9)
+--------------------------------------------------------------------  ---------------
+Arrival                                               23.156               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -3.372               
+
+Slack               : -3.372ns
+Begin Point         : voice/recognizer/matcher/best_class_reg[0]_syn_7.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/matcher/command_id_reg[1]_syn_7.a[1] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 23.156ns (cell 8.046ns (34%), net 15.110ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 18 ( LUT5=13  LUT4=2  LUT3=2  LUT2=1 )
+Max Fanout          : 61
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x006y006z2          0.146    r     0.146          pin: voice/recognizer/matcher/best_class_reg[0]_syn_7.q[0]
+net (fo=17)                             0.543          0.689          net: voice/recognizer/matcher/best_class[1],  ../src/voice/speech_dtw.v(14)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_815.c[0]
+LUT2                x006y003z3          0.348    f     1.037       1  pin: voice/recognizer/matcher/command_valid_reg_syn_815.f[0]
+net (fo=61)                             0.777          1.814          net: voice/recognizer/matcher/command_valid_reg_syn_56,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_693.a[1]
+LUT5                x011y001z1          0.618    f     2.432       2  pin: voice/recognizer/matcher/command_valid_reg_syn_693.fx[0]
+net (fo=1)                              0.715          3.147          net: voice/recognizer/matcher/command_valid_reg_syn_60,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_706.c[1]
+LUT5                x006y001z3          0.348    f     3.495       3  pin: voice/recognizer/matcher/command_valid_reg_syn_706.f[1]
+net (fo=4)                              1.656          5.151          net: voice/recognizer/matcher/command_valid_reg_syn_62,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_700.a[0]
+LUT5                x036y001z0          0.618    f     5.769       4  pin: voice/recognizer/matcher/command_valid_reg_syn_700.fx[0]
+net (fo=1)                              0.700          6.469          net: voice/recognizer/matcher/command_valid_reg_syn_68,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_862.d[1]
+LUT4                x035y009z1          0.205    r     6.674       5  pin: voice/recognizer/matcher/command_valid_reg_syn_862.f[1]
+net (fo=2)                              1.461          8.135          net: voice/recognizer/matcher/command_valid_reg_syn_70,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_745.a[1]
+LUT5                x011y001z0          0.618    f     8.753       6  pin: voice/recognizer/matcher/command_valid_reg_syn_745.fx[0]
+net (fo=17)                             0.935          9.688          net: voice/recognizer/matcher/mux105_syn_18,  ../src/voice/speech_dtw.v(29)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_895.d[1]
+LUT3                x007y005z0          0.205    r     9.893       7  pin: voice/recognizer/matcher/command_valid_reg_syn_895.f[1]
+net (fo=2)                              0.603         10.496          net: voice/recognizer/matcher/command_valid_reg_syn_103,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_662.d[1]
+LUT4                x007y004z3          0.262    r    10.758       8  pin: voice/recognizer/matcher/command_valid_reg_syn_662.f[1]
+net (fo=1)                              0.603         11.361          net: voice/recognizer/matcher/command_valid_reg_syn_105,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_656.a[1]
+LUT5                x007y005z3          0.424    f    11.785       9  pin: voice/recognizer/matcher/command_valid_reg_syn_656.f[1]
+net (fo=2)                              0.459         12.244          net: voice/recognizer/matcher/command_valid_reg_syn_111,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_785.a[0]
+LUT5                x007y005z1          0.618    f    12.862      10  pin: voice/recognizer/matcher/command_valid_reg_syn_785.fx[0]
+net (fo=1)                              0.651         13.513          net: voice/recognizer/matcher/command_valid_reg_syn_117,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.a[0]
+LUT5                x005y003z3          0.424    f    13.937      11  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[0]
+net (fo=1)                              0.456         14.393          net: voice/recognizer/matcher/command_valid_reg_syn_134,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.d[1]
+LUT5                x005y003z3          0.262    r    14.655      12  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[1]
+net (fo=9)                              1.004         15.659          net: voice/recognizer/matcher/command_valid_reg_syn_157,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_922.d[1]
+LUT3                x017y007z1          0.205    r    15.864      13  pin: voice/recognizer/matcher/command_valid_reg_syn_922.f[1]
+net (fo=2)                              0.928         16.792          net: voice/recognizer/matcher/command_valid_reg_syn_161,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_798.b[1]
+LUT5                x007y006z0          0.543    f    17.335      14  pin: voice/recognizer/matcher/command_valid_reg_syn_798.fx[0]
+net (fo=5)                              0.825         18.160          net: voice/recognizer/matcher/command_valid_reg_syn_165,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_770.a[1]
+LUT5                x015y009z1          0.618    f    18.778      15  pin: voice/recognizer/matcher/command_valid_reg_syn_770.fx[0]
+net (fo=1)                              0.807         19.585          net: voice/recognizer/matcher/command_valid_reg_syn_177,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_791.a[0]
+LUT5                x007y006z2          0.424    f    20.009      16  pin: voice/recognizer/matcher/command_valid_reg_syn_791.f[0]
+net (fo=2)                              0.815         20.824          net: voice/recognizer/matcher/command_valid_reg_syn_197,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_800.a[1]
+LUT5                x021y006z1          0.618    f    21.442      17  pin: voice/recognizer/matcher/command_valid_reg_syn_800.fx[0]
+net (fo=3)                              1.172         22.614          net: voice/recognizer/matcher/command_valid_reg_syn_391,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_id_reg[1]_syn_7.a[1]
+LUT5 (reg)          x005y004z2          0.542    f    23.156      18  net: voice/recognizer/matcher/command_id[1],  ../src/voice/speech_dtw.v(9)
+--------------------------------------------------------------------  ---------------
+Arrival                                               23.156               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -3.372               
+
+Slack               : -3.213ns
+Begin Point         : voice/recognizer/matcher/best_class_reg[0]_syn_7.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/matcher/command_valid_reg_syn_656.a[0] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 22.997ns (cell 8.046ns (34%), net 14.951ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 18 ( LUT5=13  LUT4=2  LUT3=2  LUT2=1 )
+Max Fanout          : 61
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x006y006z2          0.146    r     0.146          pin: voice/recognizer/matcher/best_class_reg[0]_syn_7.q[0]
+net (fo=17)                             0.543          0.689          net: voice/recognizer/matcher/best_class[1],  ../src/voice/speech_dtw.v(14)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_815.c[0]
+LUT2                x006y003z3          0.348    f     1.037       1  pin: voice/recognizer/matcher/command_valid_reg_syn_815.f[0]
+net (fo=61)                             0.777          1.814          net: voice/recognizer/matcher/command_valid_reg_syn_56,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_693.a[1]
+LUT5                x011y001z1          0.618    f     2.432       2  pin: voice/recognizer/matcher/command_valid_reg_syn_693.fx[0]
+net (fo=1)                              0.715          3.147          net: voice/recognizer/matcher/command_valid_reg_syn_60,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_706.c[1]
+LUT5                x006y001z3          0.348    f     3.495       3  pin: voice/recognizer/matcher/command_valid_reg_syn_706.f[1]
+net (fo=4)                              1.656          5.151          net: voice/recognizer/matcher/command_valid_reg_syn_62,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_700.a[0]
+LUT5                x036y001z0          0.618    f     5.769       4  pin: voice/recognizer/matcher/command_valid_reg_syn_700.fx[0]
+net (fo=1)                              0.700          6.469          net: voice/recognizer/matcher/command_valid_reg_syn_68,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_862.d[1]
+LUT4                x035y009z1          0.205    r     6.674       5  pin: voice/recognizer/matcher/command_valid_reg_syn_862.f[1]
+net (fo=2)                              1.461          8.135          net: voice/recognizer/matcher/command_valid_reg_syn_70,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_745.a[1]
+LUT5                x011y001z0          0.618    f     8.753       6  pin: voice/recognizer/matcher/command_valid_reg_syn_745.fx[0]
+net (fo=17)                             0.935          9.688          net: voice/recognizer/matcher/mux105_syn_18,  ../src/voice/speech_dtw.v(29)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_895.d[1]
+LUT3                x007y005z0          0.205    r     9.893       7  pin: voice/recognizer/matcher/command_valid_reg_syn_895.f[1]
+net (fo=2)                              0.603         10.496          net: voice/recognizer/matcher/command_valid_reg_syn_103,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_662.d[1]
+LUT4                x007y004z3          0.262    r    10.758       8  pin: voice/recognizer/matcher/command_valid_reg_syn_662.f[1]
+net (fo=1)                              0.603         11.361          net: voice/recognizer/matcher/command_valid_reg_syn_105,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_656.a[1]
+LUT5                x007y005z3          0.424    f    11.785       9  pin: voice/recognizer/matcher/command_valid_reg_syn_656.f[1]
+net (fo=2)                              0.459         12.244          net: voice/recognizer/matcher/command_valid_reg_syn_111,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_785.a[0]
+LUT5                x007y005z1          0.618    f    12.862      10  pin: voice/recognizer/matcher/command_valid_reg_syn_785.fx[0]
+net (fo=1)                              0.651         13.513          net: voice/recognizer/matcher/command_valid_reg_syn_117,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.a[0]
+LUT5                x005y003z3          0.424    f    13.937      11  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[0]
+net (fo=1)                              0.456         14.393          net: voice/recognizer/matcher/command_valid_reg_syn_134,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_777.d[1]
+LUT5                x005y003z3          0.262    r    14.655      12  pin: voice/recognizer/matcher/command_valid_reg_syn_777.f[1]
+net (fo=9)                              1.004         15.659          net: voice/recognizer/matcher/command_valid_reg_syn_157,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_922.d[1]
+LUT3                x017y007z1          0.205    r    15.864      13  pin: voice/recognizer/matcher/command_valid_reg_syn_922.f[1]
+net (fo=2)                              0.928         16.792          net: voice/recognizer/matcher/command_valid_reg_syn_161,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_798.b[1]
+LUT5                x007y006z0          0.543    f    17.335      14  pin: voice/recognizer/matcher/command_valid_reg_syn_798.fx[0]
+net (fo=5)                              0.825         18.160          net: voice/recognizer/matcher/command_valid_reg_syn_165,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_770.a[1]
+LUT5                x015y009z1          0.618    f    18.778      15  pin: voice/recognizer/matcher/command_valid_reg_syn_770.fx[0]
+net (fo=1)                              0.807         19.585          net: voice/recognizer/matcher/command_valid_reg_syn_177,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_791.a[0]
+LUT5                x007y006z2          0.424    f    20.009      16  pin: voice/recognizer/matcher/command_valid_reg_syn_791.f[0]
+net (fo=2)                              0.815         20.824          net: voice/recognizer/matcher/command_valid_reg_syn_197,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_800.a[1]
+LUT5                x021y006z1          0.618    f    21.442      17  pin: voice/recognizer/matcher/command_valid_reg_syn_800.fx[0]
+net (fo=3)                              1.013         22.455          net: voice/recognizer/matcher/command_valid_reg_syn_391,  ../src/voice/speech_dtw.v(86)
+                                                                      pin: voice/recognizer/matcher/command_valid_reg_syn_656.a[0]
+LUT5 (reg)          x007y005z3          0.542    f    22.997      18  net: voice/recognizer/matcher/command_valid,  ../src/voice/speech_dtw.v(9)
+--------------------------------------------------------------------  ---------------
+Arrival                                               22.997               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -3.213               
+
+Slack               : -1.499ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/max_log_reg[5]_syn_4.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 21.283ns (cell 6.723ns (31%), net 14.560ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              1.467         21.196          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/max_log_reg[5]_syn_4.ce
+reg                 x013y006z3          0.087    r    21.283               
+--------------------------------------------------------------------  ---------------
+Arrival                                               21.283               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.499               
+
+Slack               : -1.352ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/max_log_reg[1]_syn_4.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 21.136ns (cell 6.723ns (31%), net 14.413ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              1.320         21.049          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/max_log_reg[1]_syn_4.ce
+reg                 x015y007z2          0.087    r    21.136               
+--------------------------------------------------------------------  ---------------
+Arrival                                               21.136               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.352               
+
+Slack               : -1.267ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/feature_data_b1[54]_syn_126.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 21.051ns (cell 6.723ns (31%), net 14.328ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              1.235         20.964          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/feature_data_b1[54]_syn_126.ce
+reg                 x017y006z3          0.087    r    21.051               
+--------------------------------------------------------------------  ---------------
+Arrival                                               21.051               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -1.267               
+
+Slack               : -0.957ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/mux264_syn_415.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 20.741ns (cell 6.723ns (32%), net 14.018ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              0.925         20.654          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_415.ce
+reg                 x018y009z0          0.087    r    20.741               
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.741               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.957               
+
+Slack               : -0.782ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/mux264_syn_417.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 20.566ns (cell 6.723ns (32%), net 13.843ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              0.750         20.479          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.ce
+reg                 x019y009z0          0.087    r    20.566               
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.566               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.782               
+
+Slack               : -0.782ns
+Begin Point         : voice/recognizer/extract/band_power_reg[35]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/mux264_syn_419.ce (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 20.566ns (cell 6.723ns (32%), net 13.843ns (68%))
+Clock Skew          : 0.000ns
+Logic Level         : 17 ( LUT5=8  LUT4=5  LUT2=3  LUT3=1 )
+Max Fanout          : 22
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y014z1          0.146    r     0.146          pin: voice/recognizer/extract/band_power_reg[35]_syn_4.q[1]
+net (fo=6)                              0.643          0.789          net: voice/recognizer/extract/band_power[35],  ../src/voice/speech_features.v(14)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.b[1]
+LUT5                x017y013z3          0.431    f     1.220       1  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_2d_reg[16]_syn_4.f[1]
+net (fo=1)                              0.503          1.723          net: voice/recognizer/extract/mux225_syn_9,  ../src/voice/speech_features.v(49)
+                                                                      pin: voice/recognizer/extract/mux264_syn_487.d[1]
+LUT4                x018y016z1          0.205    r     1.928       2  pin: voice/recognizer/extract/mux264_syn_487.f[1]
+net (fo=1)                              0.618          2.546          net: voice/recognizer/extract/mux264_syn_132,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_536.a[1]
+LUT4                x020y014z1          0.408    f     2.954       3  pin: voice/recognizer/extract/mux264_syn_536.f[1]
+net (fo=1)                              1.974          4.928          net: voice/recognizer/extract/this_log_b2[1]_syn_18,  NOFILE(0)
+                                                                      pin: motion/pipeline/mask_d_reg[14]_syn_4.a[0]
+LUT4                x018y014z1          0.408    f     5.336       4  pin: motion/pipeline/mask_d_reg[14]_syn_4.f[0]
+net (fo=1)                              0.720          6.056          net: voice/recognizer/extract/mux264_syn_137,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_476.b[0]
+LUT5                x013y012z3          0.431    f     6.487       5  pin: voice/recognizer/extract/mux264_syn_476.f[0]
+net (fo=1)                              0.456          6.943          net: voice/recognizer/extract/mux264_syn_147,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_481.d[1]
+LUT5                x013y010z3          0.262    r     7.205       6  pin: voice/recognizer/extract/mux264_syn_481.f[1]
+net (fo=10)                             1.037          8.242          net: voice/recognizer/extract/mux264_syn_158,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_417.d[1]
+LUT2                x019y009z0          0.205    r     8.447       7  pin: voice/recognizer/extract/mux264_syn_417.f[1]
+net (fo=2)                              0.459          8.906          net: voice/recognizer/extract/mux264_syn_168,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_527.d[1]
+LUT4                x019y009z1          0.205    r     9.111       8  pin: voice/recognizer/extract/mux264_syn_527.f[1]
+net (fo=2)                              0.695          9.806          net: voice/recognizer/extract/mux264_syn_170,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_518.d[1]
+LUT3                x014y008z3          0.262    r    10.068       9  pin: voice/recognizer/extract/mux264_syn_518.f[1]
+net (fo=22)                             1.487         11.555          net: voice/recognizer/extract/mux264_syn_172,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_425.a[1]
+LUT5                x018y013z0          0.618    f    12.173      10  pin: voice/recognizer/extract/mux264_syn_425.fx[0]
+net (fo=2)                              0.761         12.934          net: voice/recognizer/extract/mux264_syn_245,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_445.a[0]
+LUT5                x013y011z3          0.424    f    13.358      11  pin: voice/recognizer/extract/mux264_syn_445.f[0]
+net (fo=1)                              0.503         13.861          net: voice/recognizer/extract/mux264_syn_251,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_569.b[1]
+LUT2                x015y014z1          0.333    f    14.194      12  pin: voice/recognizer/extract/mux264_syn_569.f[1]
+net (fo=1)                              0.664         14.858          net: voice/recognizer/extract/mux264_syn_253,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_551.a[0]
+LUT4                x013y009z2          0.424    f    15.282      13  pin: voice/recognizer/extract/mux264_syn_551.f[0]
+net (fo=4)                              1.178         16.460          net: voice/recognizer/extract/mux264_syn_255,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_465.a[0]
+LUT5                x018y008z0          0.618    f    17.078      14  pin: voice/recognizer/extract/mux264_syn_465.fx[0]
+net (fo=1)                              0.625         17.703          net: voice/recognizer/extract/lt4_syn_21,  ../src/voice/speech_features.v(120)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[1]
+LUT5                x017y008z2          0.424    f    18.127      15  pin: voice/recognizer/extract/mux264_syn_395.f[1]
+net (fo=1)                              0.158         18.285          net: voice/recognizer/extract/mux264_syn_260,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_395.a[0]
+LUT5                x017y008z2          0.424    f    18.709      16  pin: voice/recognizer/extract/mux264_syn_395.f[0]
+net (fo=1)                              0.612         19.321          net: voice/recognizer/extract/mux264_syn_270,  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_497.a[1]
+LUT2                x020y010z0          0.408    f    19.729      17  pin: voice/recognizer/extract/mux264_syn_497.f[1]
+net (fo=6)                              0.750         20.479          net: voice/recognizer/extract/mux264_syn_2[7],  ../src/voice/speech_features.v(73)
+                                                                      pin: voice/recognizer/extract/mux264_syn_419.ce
+reg                 x019y008z1          0.087    r    20.566               
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.566               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.782               
+
+Slack               : -0.656ns
+Begin Point         : voice/condition_input/dc_q_reg[1]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/condition_input/pcm_sample_b1[12]_syn_151.a[0] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : setup
+Process             : slow
+Budget              : 20.000ns { DeriveClock rising@20.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 20.440ns (cell 9.035ns (44%), net 11.405ns (56%))
+Clock Skew          : 0.000ns
+Logic Level         : 16 ( LUT5=5  LUT4=4  ADDER=4  LUT2=3 )
+Max Fanout          : 35
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x021y022z3          0.146    r     0.146          pin: voice/condition_input/dc_q_reg[1]_syn_4.q[0]
+net (fo=2)                              0.602          0.748          net: voice/condition_input/dc_q[2],  ../src/voice/mic_pcm_conditioner.v(19)
+                                                                      pin: voice/condition_input/sub1_syn_223.e[1]
+ADDER               x020y022z2          0.715    f     1.463       1  pin: voice/condition_input/sub1_syn_223.fco
+net (fo=1)                              0.000          1.463          net: voice/condition_input/sub1_syn_184,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_224.fci
+ADDER               x020y022z3          0.132    f     1.595          pin: voice/condition_input/sub1_syn_224.fco
+net (fo=1)                              0.000          1.595          net: voice/condition_input/sub1_syn_188,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_225.fci
+ADDER               x020y023z2          0.132    f     1.727          pin: voice/condition_input/sub1_syn_225.fco
+net (fo=1)                              0.000          1.727          net: voice/condition_input/sub1_syn_192,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_226.fci
+ADDER               x020y023z3          0.132    f     1.859          pin: voice/condition_input/sub1_syn_226.fco
+net (fo=1)                              0.000          1.859          net: voice/condition_input/sub1_syn_196,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_227.fci
+ADDER               x020y024z2          0.132    f     1.991          pin: voice/condition_input/sub1_syn_227.fco
+net (fo=1)                              0.000          1.991          net: voice/condition_input/sub1_syn_200,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_228.fci
+ADDER               x020y024z3          0.132    f     2.123          pin: voice/condition_input/sub1_syn_228.fco
+net (fo=1)                              0.000          2.123          net: voice/condition_input/sub1_syn_204,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_229.fci
+ADDER               x020y025z2          0.132    f     2.255          pin: voice/condition_input/sub1_syn_229.fco
+net (fo=1)                              0.000          2.255          net: voice/condition_input/sub1_syn_208,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_230.fci
+ADDER               x020y025z3          0.132    f     2.387          pin: voice/condition_input/sub1_syn_230.fco
+net (fo=1)                              0.000          2.387          net: voice/condition_input/sub1_syn_212,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_231.fci
+ADDER               x020y026z2          0.132    f     2.519          pin: voice/condition_input/sub1_syn_231.fco
+net (fo=1)                              0.000          2.519          net: voice/condition_input/sub1_syn_216,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_232.fci
+ADDER               x020y026z3          0.132    f     2.651          pin: voice/condition_input/sub1_syn_232.fco
+net (fo=1)                              0.000          2.651          net: voice/condition_input/sub1_syn_220,  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: voice/condition_input/sub1_syn_233.fci
+ADDER               x020y027z2          0.387    f     3.038       2  pin: voice/condition_input/sub1_syn_233.fx[0]
+net (fo=35)                             0.767          3.805          net: voice/condition_input/difference[40],  ../src/voice/mic_pcm_conditioner.v(21)
+                                                                      pin: phy/u0_lane_lvds_8_1/S_oddr_data_reg[1]_syn_4.d[0]
+LUT2                x028y026z2          0.262    r     4.067       3  pin: phy/u0_lane_lvds_8_1/S_oddr_data_reg[1]_syn_4.f[0]
+net (fo=1)                              0.870          4.937          net: al_381[0],  NOFILE(0)
+                                                                      pin: voice/condition_input/neg0_syn_179.a[1]
+ADDER               x020y024z0          0.627    f     5.564       4  pin: voice/condition_input/neg0_syn_179.fco
+net (fo=1)                              0.000          5.564          net: voice/condition_input/neg0_syn_126,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_182.fci
+ADDER               x020y024z1          0.073    f     5.637          pin: voice/condition_input/neg0_syn_182.fco
+net (fo=1)                              0.000          5.637          net: voice/condition_input/neg0_syn_128,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_185.fci
+ADDER               x020y025z0          0.073    f     5.710          pin: voice/condition_input/neg0_syn_185.fco
+net (fo=1)                              0.000          5.710          net: voice/condition_input/neg0_syn_130,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_188.fci
+ADDER               x020y025z1          0.073    f     5.783          pin: voice/condition_input/neg0_syn_188.fco
+net (fo=1)                              0.000          5.783          net: voice/condition_input/neg0_syn_132,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_191.fci
+ADDER               x020y026z0          0.073    f     5.856          pin: voice/condition_input/neg0_syn_191.fco
+net (fo=1)                              0.000          5.856          net: voice/condition_input/neg0_syn_134,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_194.fci
+ADDER               x020y026z1          0.073    f     5.929          pin: voice/condition_input/neg0_syn_194.fco
+net (fo=1)                              0.000          5.929          net: voice/condition_input/neg0_syn_136,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_197.fci
+ADDER               x020y027z0          0.073    f     6.002          pin: voice/condition_input/neg0_syn_197.fco
+net (fo=1)                              0.000          6.002          net: voice/condition_input/neg0_syn_138,  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/neg0_syn_200.fci
+ADDER               x020y027z1          0.355    f     6.357       5  pin: voice/condition_input/neg0_syn_200.f[1]
+net (fo=7)                              1.059          7.416          net: voice/condition_input/magnitude[14],  ../src/voice/mic_pcm_conditioner.v(25)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_419.b[0]
+LUT5                x020y031z2          0.431    f     7.847       6  pin: voice/condition_input/gain_level_reg[1]_syn_419.f[0]
+net (fo=2)                              0.603          8.450          net: voice/condition_input/lt4_syn_182,  ../src/voice/mic_pcm_conditioner.v(29)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_429.a[1]
+LUT5                x019y034z0          0.618    f     9.068       7  pin: voice/condition_input/gain_level_reg[1]_syn_429.fx[0]
+net (fo=1)                              0.770          9.838          net: voice/condition_input/gain_level_reg[1]_syn_15,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/pcm_sample_b1[12]_syn_190.a[0]
+LUT4                x020y033z1          0.408    f    10.246       8  pin: voice/condition_input/pcm_sample_b1[12]_syn_190.f[0]
+net (fo=20)                             1.482         11.728          net: voice/condition_input/gain_level_reg[1]_syn_29,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_400.a[0]
+LUT5                x018y027z3          0.424    f    12.152       9  pin: voice/condition_input/gain_level_reg[1]_syn_400.f[0]
+net (fo=4)                              0.672         12.824          net: voice/condition_input/frame_peak[7],  ../src/voice/mic_pcm_conditioner.v(29)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_365.b[1]
+LUT4                x015y029z3          0.431    f    13.255      10  pin: voice/condition_input/gain_level_reg[1]_syn_365.f[1]
+net (fo=1)                              0.615         13.870          net: voice/condition_input/gain_level_reg[1]_syn_110,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: motion/pipeline/mask_d_reg[5]_syn_4.d[1]
+LUT2                x014y025z1          0.205    r    14.075      11  pin: motion/pipeline/mask_d_reg[5]_syn_4.f[1]
+net (fo=1)                              0.468         14.543          net: voice/condition_input/lt0_syn_176,  ../src/voice/mic_pcm_conditioner.v(69)
+                                                                      pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_4d_reg[22]_syn_4.a[0]
+LUT4                x011y025z1          0.408    f    14.951      12  pin: motion/memory/u2_ram/u2_wrrd/app_wr_din_4d_reg[22]_syn_4.f[0]
+net (fo=1)                              0.794         15.745          net: voice/condition_input/gain_level_reg[1]_syn_118,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_355.a[1]
+LUT2                x015y029z2          0.424    f    16.169      13  pin: voice/condition_input/gain_level_reg[1]_syn_355.f[1]
+net (fo=1)                              0.673         16.842          net: voice/condition_input/gain_level_reg[1]_syn_120,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_383.a[0]
+LUT5                x018y031z2          0.424    f    17.266      14  pin: voice/condition_input/gain_level_reg[1]_syn_383.f[0]
+net (fo=6)                              1.095         18.361          net: voice/condition_input/gain_level_reg[1]_syn_168,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_407.a[1]
+LUT5                x020y035z0          0.618    f    18.979      15  pin: voice/condition_input/gain_level_reg[1]_syn_407.fx[0]
+net (fo=4)                              0.935         19.914          net: voice/condition_input/gain_level_reg[1]_syn_230,  ../src/voice/mic_pcm_conditioner.v(55)
+                                                                      pin: voice/condition_input/pcm_sample_b1[12]_syn_151.a[0]
+LUT4 (reg)          x023y034z1          0.526    f    20.440      16  net: voice/condition_input/agc_gain[0],  ../src/voice/mic_pcm_conditioner.v(15)
+--------------------------------------------------------------------  ---------------
+Arrival                                               20.440               
+
+capture edge                           20.000    r    20.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.116         19.884               
+clock uncertainty                      -0.100         19.784               
+clock pessimism                         0.000         19.784               
+--------------------------------------------------------------------  ---------------
+Required                                              19.784               
+--------------------------------------------------------------------  ---------------
+Slack                                                 -0.656               
+
+
+Period Check
+----------------------------------------------------------------------------------------------------
+    Type       Setting(ns)      Required(ns)         Slack(ns)   Point
+--------------------------------------------------------------------------------
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_idct/u_idct_x/mult3_syn_5.clk
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_dqt/mult0_syn_2.clk
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_idct/u_idct_x/mult0_syn_4.clk
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_idct/u_idct_x/mult2_syn_5.clk
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_idct/u_idct_x/mult1_syn_5.clk
+    ERAM            20.000             3.414            16.586   motion/source/player/decoder/u_jpeg_idct/u_idct_x/mult6_syn_4.clk
+    ERAM            20.000             3.400            16.600   motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram3/ramread0_syn_101.clkb
+    ERAM            20.000             3.400            16.600   motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram3/ramread0_syn_82.clkb
+    ERAM            20.000             3.400            16.600   motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram3/ramread0_syn_101.clka
+    ERAM            20.000             3.400            16.600   motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram3/ramread0_syn_82.clka
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.056ns
+Begin Point         : pixel_clk_syn_1006.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/O_bit_tx_data_type_b1[1]_syn_102.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.409ns (cell 0.161ns (39%), net 0.248ns (61%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 59
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x017y067z2          0.109    f     0.109          pin: pixel_clk_syn_1006.q[0]
+net (fo=59)                             0.248          0.357          net: hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_33,  ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(0)
+                                                                      pin: hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_transmitter_controller/O_bit_tx_data_type_b1[1]_syn_102.sr
+reg                 x017y066z2          0.052    f     0.409               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.409               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.056               
+
+Slack               : 0.066ns
+Begin Point         : motion/source/player/decoder/u_jpeg_idct/u_transpose/rd_addr_q_reg[0]_syn_9.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram0/ramread0_syn_82.addrb[5] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.366ns (cell 0.109ns (29%), net 0.257ns (71%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 12
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x005y039z1          0.109    f     0.109          pin: motion/source/player/decoder/u_jpeg_idct/u_transpose/rd_addr_q_reg[0]_syn_9.q[0]
+net (fo=12)                             0.257          0.366          net: motion/source/player/decoder/u_jpeg_idct/u_transpose/rd_addr_q[1],  ../src/jpeg/jpeg_idct_transpose.v(59)
+                                                                      pin: motion/source/player/decoder/u_jpeg_idct/u_transpose/u_ram0/ramread0_syn_82.addrb[5]
+EMB (reg)           x008y036            0.000    f     0.366       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.366               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.100          0.300               
+clock pessimism                         0.000          0.300               
+--------------------------------------------------------------------  ---------------
+Required                                               0.300               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.066               
+
+Slack               : 0.075ns
+Begin Point         : motion/source/player/stream/word_index_reg[0]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : motion/source/player/stream/ramread0_syn_25.addrb[6] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.375ns (cell 0.109ns (29%), net 0.266ns (71%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 6
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x034y045z0          0.109    f     0.109          pin: motion/source/player/stream/word_index_reg[0]_syn_4.q[0]
+net (fo=6)                              0.266          0.375          net: motion/source/player/stream/word_index[2],  ../src/jpeg_sector_stream.v(16)
+                                                                      pin: motion/source/player/stream/ramread0_syn_25.addrb[6]
+EMB (reg)           x032y045            0.000    f     0.375       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.375               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.100          0.300               
+clock pessimism                         0.000          0.300               
+--------------------------------------------------------------------  ---------------
+Required                                               0.300               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.075               
+
+Slack               : 0.082ns
+Begin Point         : motion/dma/read_buf/rd_addr_reg[2]_syn_4.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : motion/dma/read_buf/ram_inst/ramread0_syn_6.addrb[6] (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.382ns (cell 0.109ns (28%), net 0.273ns (72%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( EMB=1 )
+Max Fanout          : 8
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y020z1          0.109    f     0.109          pin: motion/dma/read_buf/rd_addr_reg[2]_syn_4.q[1]
+net (fo=8)                              0.273          0.382          net: motion/dma/read_buf/rd_addr[2],  ../src/afifo_32_16_256.v(54)
+                                                                      pin: motion/dma/read_buf/ram_inst/ramread0_syn_6.addrb[6]
+EMB (reg)           x008y018            0.000    f     0.382       1       
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.382               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+hold                                    0.200          0.200               
+clock uncertainty                       0.100          0.300               
+clock pessimism                         0.000          0.300               
+--------------------------------------------------------------------  ---------------
+Required                                               0.300               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.082               
+
+Slack               : 0.083ns
+Begin Point         : voice/condition_input/gain_level_reg[1]_syn_389.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/condition_input/gain_level_reg[1]_syn_385.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.436ns (cell 0.196ns (44%), net 0.240ns (56%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 24
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x017y029z2          0.109    f     0.109          pin: voice/condition_input/gain_level_reg[1]_syn_389.q[0]
+net (fo=24)                             0.240          0.349          net: control/rst_sync[1]_dup_11,  ../src/diag_control.v(21)
+                                                                      pin: voice/condition_input/gain_level_reg[1]_syn_385.sr
+reg                 x017y031z3          0.087    r     0.436               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.436               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.083               
+
+Slack               : 0.091ns
+Begin Point         : voice/recognizer/extract/band_power_b8[53]_syn_175.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/band_power_b8[53]_syn_167.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.444ns (cell 0.196ns (44%), net 0.248ns (56%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1951
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y018z2          0.109    f     0.109          pin: voice/recognizer/extract/band_power_b8[53]_syn_175.q[0]
+net (fo=1951)                           0.248          0.357          net: voice/release_reset/pipe[2],  ../src/reset_sync.v(4)
+                                                                      pin: voice/recognizer/extract/band_power_b8[53]_syn_167.sr
+reg                 x020y017z3          0.087    r     0.444               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.444               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.091               
+
+Slack               : 0.099ns
+Begin Point         : voice/recognizer/extract/band_power_b8[53]_syn_175.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/cal_sum_reg[7]_syn_4.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.452ns (cell 0.196ns (43%), net 0.256ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1951
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y018z2          0.109    f     0.109          pin: voice/recognizer/extract/band_power_b8[53]_syn_175.q[0]
+net (fo=1951)                           0.256          0.365          net: voice/release_reset/pipe[2],  ../src/reset_sync.v(4)
+                                                                      pin: voice/recognizer/cal_sum_reg[7]_syn_4.sr
+reg                 x020y020z2          0.087    r     0.452               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.452               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.099               
+
+Slack               : 0.099ns
+Begin Point         : voice/recognizer/extract/band_power_b8[53]_syn_175.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/power_sum_reg[44]_syn_4.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.452ns (cell 0.196ns (43%), net 0.256ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1951
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y018z2          0.109    f     0.109          pin: voice/recognizer/extract/band_power_b8[53]_syn_175.q[0]
+net (fo=1951)                           0.256          0.365          net: voice/release_reset/pipe[2],  ../src/reset_sync.v(4)
+                                                                      pin: voice/recognizer/extract/power_sum_reg[44]_syn_4.sr
+reg                 x020y019z3          0.087    r     0.452               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.452               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.099               
+
+Slack               : 0.099ns
+Begin Point         : voice/recognizer/extract/band_power_b8[53]_syn_175.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : voice/recognizer/extract/power_sum_reg[52]_syn_4.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.452ns (cell 0.196ns (43%), net 0.256ns (57%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1951
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x020y018z2          0.109    f     0.109          pin: voice/recognizer/extract/band_power_b8[53]_syn_175.q[0]
+net (fo=1951)                           0.256          0.365          net: voice/release_reset/pipe[2],  ../src/reset_sync.v(4)
+                                                                      pin: voice/recognizer/extract/power_sum_reg[52]_syn_4.sr
+reg                 x020y019z2          0.087    r     0.452               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.452               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.099               
+
+Slack               : 0.108ns
+Begin Point         : pixel_clk_syn_1006.clk (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_bit_transmitter/S_clk_bit_cnt_b[7]_syn_7.sr (rising edge triggered by clock DeriveClock  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : removal
+Process             : fast
+Budget              : 0.000ns { DeriveClock rising@0.000ns - DeriveClock rising@0.000ns }
+Data Path Delay     : 0.461ns (cell 0.161ns (34%), net 0.300ns (66%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 59
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+launch edge                             0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+clk2q               x017y067z2          0.109    f     0.109          pin: pixel_clk_syn_1006.q[0]
+net (fo=59)                             0.300          0.409          net: hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_receiver_controller/I_rst_dup_33,  ../src/hdmi_1_4b_transmitter_core_wrapper.enc.v(0)
+                                                                      pin: hdmi/u_hdmi_edid_wrapper/u_iic_master_wrapper/u_iic_bit_transmitter/S_clk_bit_cnt_b[7]_syn_7.sr
+reg                 x015y067z3          0.052    f     0.461               
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.461               
+
+capture edge                            0.000    r     0.000               
+--------------------------------------------------------------------  ---------------
+removal                                 0.253          0.253               
+clock uncertainty                       0.100          0.353               
+clock pessimism                         0.000          0.353               
+--------------------------------------------------------------------  ---------------
+Required                                               0.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.108               
+
+
+Inter clock domain timing
+--------------------------------------------------
+
+IP timing
+--------------------------------------------------

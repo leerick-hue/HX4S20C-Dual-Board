@@ -1,0 +1,62 @@
+[
+  {
+    "id": "moraine",
+    "title": "梦莲湖与雪山",
+    "local_path": "sources\\photos\\moraine.jpg",
+    "sha256": "adb3041e3ac2de4cf3e7c3d186ea2c39a1a811b4a5fff4f888a6711579833d5f",
+    "author": "Gorgo",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg"
+  },
+  {
+    "id": "mist",
+    "title": "云雾群山",
+    "local_path": "sources\\photos\\mist.jpg",
+    "sha256": "87905d6a150021764d3850645f0286ce8102d0639cb9be5f4219cb70727f8f18",
+    "author": "Not independently resolved; attribution is optional under Unsplash License",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=max&w=1920&q=90&fm=jpg"
+  },
+  {
+    "id": "valley",
+    "title": "山谷溪流",
+    "local_path": "sources\\photos\\valley.jpg",
+    "sha256": "8e77e7e28752e5cfbfcf6ea657409508f2f15dbf710e388f979f31e5f2bb2b2c",
+    "author": "Not independently resolved; attribution is optional under Unsplash License",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=max&w=1920&q=90&fm=jpg"
+  },
+  {
+    "id": "forest",
+    "title": "林间阳光",
+    "local_path": "sources\\photos\\forest.jpg",
+    "sha256": "ceda522ff10b851d52a5baaba7b23bbfe14047839c5755e160a9332b08268563",
+    "author": "Not independently resolved; attribution is optional under Unsplash License",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=max&w=1920&q=90&fm=jpg"
+  },
+  {
+    "id": "mountain",
+    "title": "雪山群峰",
+    "local_path": "sources\\photos\\mountain.jpg",
+    "sha256": "8709edd3dad18cf6fe493eeeeff9aaeb3d5d7fa7f46ab10b9bd85994e519839c",
+    "author": "Not independently resolved; attribution is optional under Unsplash License",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=max&w=1440&q=90&fm=jpg"
+  },
+  {
+    "id": "desert",
+    "title": "红岩荒漠",
+    "local_path": "sources\\photos\\desert.jpg",
+    "sha256": "157ba58aaeff879b4b676f6403f3b165b5a64f12c150a4f895a91337c66a327c",
+    "author": "Not independently resolved; attribution is optional under Unsplash License",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "source_url": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=max&w=1920&q=90&fm=jpg"
+  }
+]

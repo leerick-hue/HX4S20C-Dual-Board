@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+sim_stages/
+build_stages/
+*.wlf
+*.dmp
+*.logw

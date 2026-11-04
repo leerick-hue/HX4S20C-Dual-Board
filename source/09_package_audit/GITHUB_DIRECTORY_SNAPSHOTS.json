@@ -1,0 +1,140 @@
+[
+  {
+    "viewed_date_Asia_Shanghai": "2026-11-03",
+    "url": "https://api.github.com/repos/ultraembedded/FPGAmp/contents",
+    "files": [
+      {
+        "name": ".gitmodules",
+        "type": "file",
+        "sha": "8cf7174a252fff91d91e2ab1695138bb6ac69c5f",
+        "url": "https://github.com/ultraembedded/FPGAmp/blob/master/.gitmodules"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "url": "https://github.com/ultraembedded/FPGAmp/blob/master/LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "sha": "e23ca150c05f5181197ccc1c5e44a7b899e28060",
+        "url": "https://github.com/ultraembedded/FPGAmp/blob/master/README.md"
+      },
+      {
+        "name": "bitstreams",
+        "type": "dir",
+        "sha": "5685f5a995e81fa480da8bdf615e8207b204d4e7",
+        "url": "https://github.com/ultraembedded/FPGAmp/tree/master/bitstreams"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "sha": "b8cf53b4f57049e3a50ac5d45793f7952759a503",
+        "url": "https://github.com/ultraembedded/FPGAmp/tree/master/docs"
+      },
+      {
+        "name": "firmware",
+        "type": "dir",
+        "sha": "9e33613687973a298902cb2a910fa64b8fa81481",
+        "url": "https://github.com/ultraembedded/FPGAmp/tree/master/firmware"
+      },
+      {
+        "name": "gateware",
+        "type": "dir",
+        "sha": "150858d240a4883a57adad6bf8e388595ca52319",
+        "url": "https://github.com/ultraembedded/FPGAmp/tree/master/gateware"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "sha": "9ff0690aa377200a73c7c25161b593c162f11c25",
+        "url": "https://github.com/ultraembedded/FPGAmp/tree/master/scripts"
+      }
+    ]
+  },
+  {
+    "viewed_date_Asia_Shanghai": "2026-11-03",
+    "url": "https://api.github.com/repos/nand2mario/nanospc/contents",
+    "files": [
+      {
+        "name": "COPYING",
+        "type": "file",
+        "sha": "20d40b6bceca3a6c0237d7455ebf1820aeff3680",
+        "url": "https://github.com/nand2mario/nanospc/blob/master/COPYING"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "sha": "bc564ec9cd8cc989d9ad32a34a5fff7217a0e198",
+        "url": "https://github.com/nand2mario/nanospc/blob/master/README.md"
+      },
+      {
+        "name": "doc",
+        "type": "dir",
+        "sha": "e4f73a0aba426ba1aeade60af5330d2f80a9b2be",
+        "url": "https://github.com/nand2mario/nanospc/tree/master/doc"
+      },
+      {
+        "name": "nanospc.gprj",
+        "type": "file",
+        "sha": "c6fbd9514ca9e9f74afd0a7d6a3751a12267d71a",
+        "url": "https://github.com/nand2mario/nanospc/blob/master/nanospc.gprj"
+      },
+      {
+        "name": "scripts",
+        "type": "dir",
+        "sha": "601e546605d290cd02139355c4d8a9242b1ca0e1",
+        "url": "https://github.com/nand2mario/nanospc/tree/master/scripts"
+      },
+      {
+        "name": "src",
+        "type": "dir",
+        "sha": "d8147ef793b0d21795dbc1168c5451fd850b66bb",
+        "url": "https://github.com/nand2mario/nanospc/tree/master/src"
+      },
+      {
+        "name": "verilator",
+        "type": "dir",
+        "sha": "805c7f3fedd027a0800ea46f56d692dfda3b2b1c",
+        "url": "https://github.com/nand2mario/nanospc/tree/master/verilator"
+      }
+    ]
+  },
+  {
+    "viewed_date_Asia_Shanghai": "2026-11-03",
+    "url": "https://api.github.com/repos/ultraembedded/core_jpeg/contents",
+    "files": [
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "url": "https://github.com/ultraembedded/core_jpeg/blob/main/LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "sha": "a9af1df0b507c31c6fd2549e02c266da8e5b4b61",
+        "url": "https://github.com/ultraembedded/core_jpeg/blob/main/README.md"
+      },
+      {
+        "name": "c_model",
+        "type": "dir",
+        "sha": "3e8e3118e91227da94b9a33534b59d68a73ee6d6",
+        "url": "https://github.com/ultraembedded/core_jpeg/tree/main/c_model"
+      },
+      {
+        "name": "docs",
+        "type": "dir",
+        "sha": "952098c0608e9f80061f53b0f0eecab9357abd25",
+        "url": "https://github.com/ultraembedded/core_jpeg/tree/main/docs"
+      },
+      {
+        "name": "src_v",
+        "type": "dir",
+        "sha": "8434ffd9c08cc17f92a39fe949bdc7d5531479d1",
+        "url": "https://github.com/ultraembedded/core_jpeg/tree/main/src_v"
+      }
+    ]
+  }
+]

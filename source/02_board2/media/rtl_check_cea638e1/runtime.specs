@@ -1,0 +1,15 @@
+*msvcrt:
+msvcrt
+
+*moldname:
+moldname
+
+*msvcrt_version:
+-D__MSVCRT_VERSION=0x0600
+
+*startfile:
+crt2.o%s
+
+*endfile:
+%{ffast-math:crtfastmath.o%s}
+
